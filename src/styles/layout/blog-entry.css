@@ -1,0 +1,15 @@
+.blog-entry {
+  line-height: 1.7em;
+}
+
+.blog-entry img {
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+}
+
+th, td {
+  padding: 0 8px;
+}
