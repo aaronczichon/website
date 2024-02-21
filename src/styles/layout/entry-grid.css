@@ -22,3 +22,9 @@
 .entry p {
   line-height: 1.7em;
 }
+
+.entry--date {
+  color: var(--primary-color-dark);
+  margin-left: 8px;
+  font-size: 0.8em;
+}
