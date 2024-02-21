@@ -8,3 +8,12 @@
 .entry {
   width: 100%;
 }
+
+.entry img {
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.entry p {
+  line-height: 1.7em;
+}
