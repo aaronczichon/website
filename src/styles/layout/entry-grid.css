@@ -1,0 +1,10 @@
+.entry-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fit, minmax(328px, 328px));
+  margin-bottom: 32px;
+}
+
+.entry {
+  width: 100%;
+}
