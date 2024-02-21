@@ -1,5 +1,7 @@
 body {
   background-color: var(--background-color);
+  color: var(--heading-color);
+  font-family: 'Mona Sans';
 }
 
 .container {
@@ -37,6 +39,6 @@ body {
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {
   .container {
-    width: 60%;
+    width: 50%;
   }
 }
