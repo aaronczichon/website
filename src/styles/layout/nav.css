@@ -41,7 +41,7 @@
  /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
  @media screen and (max-width: 48em) {
   .topnav {
-    display: initial;
+    display: block;
     align-items: initial;
   }
 
