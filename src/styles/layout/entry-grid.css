@@ -9,6 +9,11 @@
   width: 100%;
 }
 
+.entry, .entry:hover, .entry:visited {
+  color: var(--heading-color);
+  text-decoration: none;
+}
+
 .entry img {
   width: 100%;
   border-radius: var(--border-radius);
