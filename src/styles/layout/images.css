@@ -1,0 +1,32 @@
+.image-grid {
+	display: grid;
+	gap: 8px;
+	grid-template-columns: repeat(auto-fit, minmax(328px, 1fr));
+	margin-bottom: 32px;
+}
+
+.image {
+	width: 100%;
+}
+
+.image,
+.image:hover,
+.image:visited {
+	color: var(--heading-color);
+	text-decoration: none;
+}
+
+.image img {
+	width: 100%;
+	border-radius: var(--border-radius);
+}
+
+.image p {
+	line-height: 1.7em;
+}
+
+.image--date {
+	color: var(--primary-color-dark);
+	margin-left: 8px;
+	font-size: 0.8em;
+}
