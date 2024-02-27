@@ -59,6 +59,19 @@
       }
     }
 
+    const createCustomMarker = () => {
+      const el = document.createElement('div');
+      const width = '25';
+      const height = '25';
+      el.className = 'marker';
+      // el.style.backgroundImage = `url(${imageUrl})`; Need to be updated with canada flag later
+      el.style.backgroundColor = `red`;
+      el.style.width = `${width}px`;
+      el.style.height = `${height}px`;
+      el.style.backgroundSize = '100%';
+
+      return el;
+    };
 
     // Mapbox
     mapboxgl.accessToken = 'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2lvYmt1djVqMDA0OXV3bTFuMHZjNWI5MCJ9.ltEAHRP0jWVKshgCqt5Z7g';
@@ -77,8 +90,15 @@
     map.addControl(nav, 'top-right');
 
     // Sample marker
-    const marker = new mapboxgl.Marker()
+    const customDesign = createCustomMarker();
+    const marker = new mapboxgl.Marker(customDesign)
       .setLngLat([8.562501320092023, 50.038170771247394])
+      .setPopup(
+        new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML(
+            `<h3>Frankfurt Flughafen</h3><p>Hier ging es am 01.03.24 los in Richtung Halifax!</p>`
+          )
+      )
       .addTo(map);
   </script>
 </body>

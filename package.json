@@ -16,6 +16,7 @@
   "author": "Aaron Czichon <aaronczichon@plan-b-gmbh.com>",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "prettier": "^3.2.5"
   }
 }
