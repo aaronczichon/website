@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "parcel",
 		"build": "parcel build",
-		"prettier": "prettier --write ."
+		"prettier": "prettier --write .",
+    "copy:styles": "cp -R src/styles ../web/src/styles"
 	},
 	"keywords": [
 		"design",

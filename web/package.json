@@ -4,11 +4,12 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "astro dev",
-		"start": "astro dev",
+		"start": "npm run copy:styles && npm run dev",
 		"build": "astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"prettier": "prettier --write ."
+		"prettier": "prettier --write .",
+    "copy:styles": "cp -R ../design/src/styles ./src/styles"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.6",
