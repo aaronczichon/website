@@ -9,7 +9,8 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"prettier": "prettier --write .",
-    "copy:styles": "cp -R ../design/src/styles ./src/styles"
+    "copy:styles": "cp -R ../design/src/styles ./src/styles",
+		"copy:assets": "cp -R ../design/src/assets ./public/assets"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.6",

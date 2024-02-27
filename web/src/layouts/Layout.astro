@@ -6,48 +6,71 @@ interface Props {
 const { title } = Astro.props;
 
 import '../styles/index.css';
+import '../styles/fonts/mona-sans.css';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Personal website of Aaron Czichon" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+		<link
+			rel="preload"
+			href="/assets/fonts/Mona-Sans.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="container">
+		<div class="topnav" id="myTopnav">
+			<a href="index.html" class="active">
+				<img src="./assets/images/profile.jpg" alt="Aaron Czichon" class="img-profile" />
+			</a>
+			<a href="#contact">Canada</a>
+			<a href="blog.html">Blog</a>
+			<a href="map.html">Map</a>
+			<a href="images.html">Images</a>
+			<a href="#about">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+				<?xml version="1.0" encoding="utf-8"?>
+				<div class="icon-menu">
+					<svg
+						width="25px"
+						height="25px"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
+							fill="#0F0F0F"
+						/>
+						<path
+							d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
+							fill="#0F0F0F"
+						/>
+						<path
+							d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
+							fill="#0F0F0F"
+						/>
+					</svg>
+				</div>
+			</a>
+		</div>
 		<slot />
+		<script>
+			function toggleNav() {
+				var x = document.getElementById('myTopnav')!;
+				if (x.className === 'topnav') {
+					x.className += ' responsive';
+				} else {
+					x.className = 'topnav';
+				}
+			}
+		</script>
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>

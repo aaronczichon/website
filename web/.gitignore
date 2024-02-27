@@ -20,5 +20,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# Ignore styles as they come from design folder
+# Ignore styles and assets as they come from design folder
 styles/
+public/assets/
