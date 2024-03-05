@@ -46,7 +46,7 @@
 	}
 
 	.topnav.responsive {
-		background-color: var(--secondary-color);
+		background-color: var(--background-color);
 	}
 
 	.topnav a:not(:first-child) {
