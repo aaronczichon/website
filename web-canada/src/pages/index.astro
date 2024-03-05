@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
 const allPosts = await Astro.glob('../pages/blog/*.md');
 
 const dateOptions: object = {
@@ -10,7 +11,8 @@ const dateOptions: object = {
 ---
 
 <Layout title="Aaron Czichon - Home">
-	<main>
+	<Hero />
+	<main class="container">
 		<article>
 			<h1>Hi I'm Aaron,</h1>
 			I work at PlanB. GmbH since September 2020 as an Solution Expert with focus on web

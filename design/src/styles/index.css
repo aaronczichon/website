@@ -5,6 +5,7 @@
 @import './common/headings.css';
 
 @import './layout/main.css';
+@import './layout/hero.css';
 @import './layout/nav.css';
 @import './layout/profile.css';
 @import './layout/article.css';
