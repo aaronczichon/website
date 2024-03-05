@@ -4,7 +4,7 @@
 
 body {
 	background-color: var(--background-color);
-	color: var(--heading-color);
+	color: var(--primary-font-color);
 	font-family: 'Mona Sans';
 }
 

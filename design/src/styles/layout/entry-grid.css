@@ -12,13 +12,17 @@
 .entry,
 .entry:hover,
 .entry:visited {
-	color: var(--heading-color);
+	color: var(--primary-font-color);
 	text-decoration: none;
 }
 
 .entry img {
 	width: 100%;
 	border-radius: var(--border-radius);
+}
+
+.entry h3 {
+	color: var(--heading-color);
 }
 
 .entry p {
