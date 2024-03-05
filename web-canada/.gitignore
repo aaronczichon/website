@@ -22,4 +22,3 @@ pnpm-debug.log*
 
 # Ignore styles and assets as they come from design folder
 styles/
-public/assets/
