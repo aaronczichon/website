@@ -3,6 +3,7 @@
 @import './common/debug.css';
 @import './common/colors.css';
 @import './common/headings.css';
+@import './common/fun.css';
 
 @import './layout/main.css';
 @import './layout/hero.css';
