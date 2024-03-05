@@ -9,8 +9,8 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"prettier": "prettier --write .",
-		"copy:aaron-colors": "cp ../design/src/styles/variants/colors-aaron.css ./src/styles/common/colors.css",
-    "copy:styles": "npm run copy:aaron-colors && cp -R ../design/src/styles ./src/styles",
+		"copy:canada-colors": "cp ../design/src/styles/variants/colors-canada.css ./src/styles/common/colors.css",
+    "copy:styles": "cp -R ../design/src/styles ./src/styles && npm run copy:canada-colors",
 		"copy:assets": "cp -R ../design/src/assets ./public/assets"
 	},
 	"dependencies": {

@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+const allPosts = await Astro.glob('../pages/blog/*.md');
+
+const dateOptions: object = {
+	year: "numeric",
+	month: "short",
+	day: "numeric",
+};
+---
+
+<Layout title="Aaron Czichon - Home">
+	<main>
+		<article>
+			<h1>Hi I'm Aaron,</h1>
+			I work at PlanB. GmbH since September 2020 as an Solution Expert with focus on web
+			technologies. In previous years I worked at cellent AG as a developer and at a startup as
+			Head of Software Development.
+			<br /><br />
+			Over the past few years of software development I wrote several apps, articles and talked at
+			conferences. Since August 2022 I'm listed as an official Ionic Developer Expert (IDE).
+			<br /><br />
+			You can also take a look at my public Github profile or let me hear something from you on
+			Twitter.
+			<br /><br />
+			Need a conversation starter? I like motorcycling, volleyball and Formula 1.
+			<br /><br />
+			If you have questions don't hesitate to contact me.
+			<br /><br />
+			Want to talk to me? Book a slot if you like. I would love to chat :)
+		</article>
+		<h2>Newest entries</h2>
+		<div class="entry-grid">
+      {allPosts.map((post) => 
+        <a href={post.url} class="entry">
+        <img src={post.frontmatter.image.url} alt={post.frontmatter.image.alt} />
+        <h3>{post.frontmatter.title}<span class="entry--date">{new Date(post.frontmatter.pubDate).toLocaleDateString("en-CA", dateOptions)}</span></h3>
+        <p>{post.frontmatter.description}</p>
+        </a>
+      )}
+		</div>
+	</main>
+</Layout>
