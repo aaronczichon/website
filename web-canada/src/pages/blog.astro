@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-const allPosts = await Astro.glob('../pages/blog/*.md');
+const allPosts = await Astro.glob('../pages/blog/*.mdx');
 
 const dateOptions: object = {
 	year: "numeric",

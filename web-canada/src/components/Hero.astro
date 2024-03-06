@@ -1,6 +1,6 @@
 ---
-
+const { url, alt } = Astro.props;
 ---
 <div class="hero">
-  <img src="./assets/images/example.jpeg" />
+  <img src={url} alt={alt} />
 </div>
