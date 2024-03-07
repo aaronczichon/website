@@ -1,14 +1,9 @@
 ---
-import { Image } from 'astro:assets';
 const { url, alt } = Astro.props;
 ---
 <div class="hero">
-  <Image 
+  <img 
   src={url} alt={alt} 
-  widths={[768, 1024, 1600, url.width]}
-  sizes={`(max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1600px) 1600px, ${url.width}px`}
-  width="1600"
-  height="900"
   decoding="async"
   loading="lazy"/>
 </div>
