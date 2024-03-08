@@ -1,9 +1,21 @@
 ---
-const { url, alt } = Astro.props;
+import { getImage, Image } from "astro:assets"
+const { url, alt, image } = Astro.props;
+
+// const img = await getImage({src: url});
 ---
 <div class="hero">
-  <img 
-  src={url} alt={alt} 
-  decoding="async"
-  loading="lazy"/>
+  {
+    image ? 
+    <Image
+      src={image}
+      alt={alt}
+      style="height: 100%; width: 100%; object-fit: cover;"
+    />
+    :
+    <img 
+      src={url} alt={alt} 
+      decoding="async"
+      loading="lazy"/>
+  }
 </div>
