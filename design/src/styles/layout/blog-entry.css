@@ -4,6 +4,12 @@
 
 .blog-entry img {
 	width: 100%;
+	max-height: 450px;
+	object-fit: contain;
+}
+
+.blog-entry blockquote {
+	text-align: center;
 }
 
 th,
