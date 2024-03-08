@@ -1,7 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-const allPosts = await Astro.glob('../pages/blog/*.mdx');
+import { getCollection } from 'astro:content';
+const allPosts = await getCollection('blog');
 
 const dateOptions: object = {
 	year: "numeric",
@@ -29,10 +30,10 @@ import image from '../resources/hero.jpeg';
 		<h2>Neusten Beiträge</h2>
 		<div class="entry-grid">
       {allPosts.map((post) => 
-        <a href={post.url} class="entry">
-        <img src={post.frontmatter.image.url} alt={post.frontmatter.image.alt} />
-        <h3>{post.frontmatter.title}<span class="entry--date">{new Date(post.frontmatter.pubDate).toLocaleDateString("de-DE", dateOptions)}</span></h3>
-        <p>{post.frontmatter.description}</p>
+        <a href={'/blog/' + post.slug} class="entry">
+        <img src={post.data.image?.url} alt={post.data.image?.alt} />
+        <h3>{post.data.title}<span class="entry--date">{new Date(post.data.pubDate).toLocaleDateString("de-DE", dateOptions)}</span></h3>
+        <p>{post.data.description}</p>
         </a>
       )}
 		</div>
