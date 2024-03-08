@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
+import { Image } from "astro:assets";
 
 const dateOptions: object = {
 	year: "numeric",
@@ -20,7 +21,10 @@ const allPosts = await getCollection('blog');
     <div class="entry-grid">
       {allPosts.map((post) => 
         <a href={'/blog/' + post.slug} class="entry">
-        <img src={post.data.image?.url} alt={post.data.image?.alt} />
+         {post.data.image ? <Image
+          src={post.data.image.url}
+          alt={post.data.image.alt}
+          style="max-height: 400px; width: 100%; object-fit: cover;" /> : null }
         <h3>{post.data.title}<span class="entry--date">{new Date(post.data.pubDate).toLocaleDateString("en-CA", dateOptions)}</span></h3>
         <p>{post.data.description}</p>
         </a>

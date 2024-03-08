@@ -14,7 +14,7 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
 <Layout title={'Canada - ' + entry.data.title}>
-  {entry.data.image ? <Hero url={entry.data.image.url} alt={entry.data.image.alt} /> : ''}
+  {entry.data.image ? <Hero image={entry.data.image.url} alt={entry.data.image.alt} /> : ''}
 	<main class="container">
     <article class="blog-entry">
       <Content />
