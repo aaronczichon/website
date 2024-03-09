@@ -25,4 +25,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER_CANADA }}
           username: ${{ secrets.FTP_USER_CANADA }}
           password: ${{ secrets.FTP_PW_CANADA }}
+          protocol: ftps
           local-dir: "./web-canada/dist/"
