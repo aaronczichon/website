@@ -20,10 +20,10 @@ jobs:
       - run: cd web-canada && npm i
       - run: cd web-canada && npm run build
       - name: Sync to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: genietim/ftp-action@releases/v4
         with:
-          server: ${{ secrets.FTP_SERVER_CANADA }}
-          username: ${{ secrets.FTP_USER_CANADA }}
+          host: ${{ secrets.FTP_SERVER_CANADA }}
+          user: ${{ secrets.FTP_USER_CANADA }}
           password: ${{ secrets.FTP_PW_CANADA }}
-          protocol: ftps
-          local-dir: "./web-canada/dist/"
+          localDir: "web-canada/dist"
+          remoteDir: "."
