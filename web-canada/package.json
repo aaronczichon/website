@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "npm run copy:styles && npm run dev",
-		"build": "astro check && astro build",
+		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"prettier": "prettier --write .",
