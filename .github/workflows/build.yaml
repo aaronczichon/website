@@ -20,7 +20,7 @@ jobs:
       - run: cd web-canada && npm i
       - run: cd web-canada && npm run build
       - name: Sync to FTP
-        uses: SamKirkland/FTP-Deploy-Action@latest
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER_CANADA }}
           username: ${{ secrets.FTP_USER_CANADA }}
