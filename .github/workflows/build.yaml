@@ -20,7 +20,7 @@ jobs:
       - run: cd web-canada && npm i
       - run: cd web-canada && npm run build
       - name: Sync to FTP
-        uses: genietim/ftp-action@releases/v4
+        uses: genietim/ftp-action@v4.0.1
         with:
           host: ${{ secrets.FTP_SERVER_CANADA }}
           user: ${{ secrets.FTP_USER_CANADA }}
