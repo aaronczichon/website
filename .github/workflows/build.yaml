@@ -20,10 +20,9 @@ jobs:
       - run: cd web-canada && npm i
       - run: cd web-canada && npm run build
       - name: Sync to FTP
-        uses: genietim/ftp-action@v4.0.1
+        uses: airvzxf/ftp-deployment-action@latest
         with:
-          host: ${{ secrets.FTP_SERVER_CANADA }}
+          server: ${{ secrets.FTP_SERVER_CANADA }}
           user: ${{ secrets.FTP_USER_CANADA }}
           password: ${{ secrets.FTP_PW_CANADA }}
-          localDir: "web-canada/dist"
-          remoteDir: "."
+          local_dir: "./web-canada/dist"
