@@ -11,10 +11,10 @@ const currentPath = pathname.slice(1); // remove the first "/"
 			</a>
 			<!-- <a href="#contact">Canada</a> -->
 			<a href="/blog/" class={currentPath.indexOf('blog') > -1 ? "active" : ""}>Blog</a>
-			<a href="/pengiun">Find Pengiuns</a>
+			<a href="/pengiun" class={currentPath.indexOf('pengiun') > -1 ? "active" : ""}>Find Pengiuns</a>
 			<!-- <a href="map.html">Map</a> -->
 			<!-- <a href="images.html">Images</a> -->
-			<a href="/about/">Über uns</a>
+			<a href="/about/" class={currentPath.indexOf('about') > -1 ? "active" : ""}>Über uns</a>
 			<a href="https://aaronczichon.de/imprint/" target="_blank">Impressum</a>
 			<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
 				<MenuIcon />
