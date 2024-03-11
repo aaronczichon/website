@@ -21,10 +21,11 @@ Es ist nun schon eine Woche her, dass wir in Halifax angekommen sind. Nach den �
 
 <Picture src={IMG_E3412}
  			alt="Blick aus einem Flugzeugfenster über den Flügel bei Regen"
- 			densities={[1.5, 2]}
+ 			widths={[240, 540, 720, IMG_E3412.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
  			formats={['avif', 'webp']}
  			fallbackFormat="jpg"
- 			loading="eager"
+ 			loading="lazy"
  			fetchpriority="auto" />  
 
 > Ankunft in Halifax bei Regen und kalten -10 Grad.
@@ -34,10 +35,11 @@ Auch die Temperaturen schwanken aktuell stark zwischen -10 Grad bei unserer Anku
 
 <Picture src={IMG_E3427}
  			alt="Sonnenuntergang von der Halifax Transit Ferry"
- 			densities={[1.5, 2]}
+ 			widths={[240, 540, 720, IMG_E3412.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
  			formats={['avif', 'webp']}
  			fallbackFormat="jpg"
- 			loading="eager"
+ 			loading="lazy"
  			fetchpriority="auto" />
 
 Unsere Wohnung bzw. unser Apartment liegt im süd-östlichen Teil von Halifax in der South Street. Das ist nicht direkt Downtown aber es ist alles gut fußläufig erreichbar. Bis zum Hafen sind es etwa 600m, bis Downtown und Citadel ca. 1,5km und bis zum Point Pleasant Park gute 2km. 
@@ -46,10 +48,11 @@ Da wir aktuell noch kein Auto haben, erleichtert uns das vieles.
 
 <Picture src={IMG_E8691}
  			alt="Häuserzug in Halifax mit unterschiedlichen Farben aus gelb, militärgrün, hellblau"
- 			densities={[1.5, 2]}
+ 			widths={[240, 540, 720, IMG_E3412.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
  			formats={['avif', 'webp']}
  			fallbackFormat="jpg"
- 			loading="eager"
+ 			loading="lazy"
  			fetchpriority="auto" />
 
 Bisher ist es noch so, dass man jeden Tag etwas Neues entdecken (oder etwas schon bekanntes von letztem Jahr wieder entdecken) möchte. Daher wurde das erste Wochenende und die Nachmittage nach der Arbeit intensiv genutzt.
@@ -58,10 +61,9 @@ Heute geht es dann, ganz klassisch, zu einem Eishockeyspiel der Halifax Moosehea
 
 <Picture src={IMG_E3453}
  			alt="Blick aus dem 5. Stock nach unten in der Halifax Public Library"
- 			densities={[1.5, 2]}
  			formats={['avif', 'webp']}
  			fallbackFormat="jpg"
- 			loading="eager"
+ 			loading="lazy"
  			fetchpriority="auto" />
 
 Da wir auch direkt wieder "normal" weiterarbeiten, gilt es natürlich auch hier in einen entsprechenden Modus zu wechseln. Man versucht noch das richtige Arbeitsumfeld zu finden und wechselt auch ganz gerne Mal den Arbeitsort (zwischen kleinem Schreibtisch, Esstisch oder der Halifax Library).
