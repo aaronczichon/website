@@ -4,10 +4,14 @@ import MenuIcon from './MenuIcon.astro';
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
+import mainImage from './main.jpg';
+import { Image } from 'astro:assets';
 ---
 		<div class="container topnav" id="myTopnav">
 			<a href="/" class={currentPath === "" ? "active" : ""}>
-				<img src="/images/main.jpg" alt="Aaron Czichon & Lea Gräß" class="img-profile" />
+				<Image src={mainImage} alt="Aaron Czichon & Lea Gräß" class="img-profile"
+				widths={[30]}
+			 sizes={`30px`} />
 			</a>
 			<!-- <a href="#contact">Canada</a> -->
 			<a href="/blog/" class={currentPath.indexOf('blog') > -1 ? "active" : ""}>Blog</a>
