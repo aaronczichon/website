@@ -10,11 +10,14 @@ const dateOptions: object = {
 };
 
 const allPosts = await getCollection('blog');
+
+import rssIcon from '../resources/rss.svg';
 ---
 
 <Layout title="Canada - Blog">
 	<main class="container">
-    <h1>Blog</h1>
+    <h1>Blog <a href="/rss.xml"><Image style="width: 25px; height: 25px" src={rssIcon} alt="RSS Icon for subscribe to RSS feed." widths={[30]}
+      sizes={`30px`} /></a></h1>
     <p>
       Alle bisherigen Einträge findest du hier. <br />
     </p>
