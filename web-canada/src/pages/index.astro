@@ -30,7 +30,9 @@ import image from '../resources/hero.jpeg';
 		</article>
 		<h2>Neusten Beiträge</h2>
 		<div class="entry-grid">
-      {allPosts.map((post) => 
+      {allPosts.sort((a, b) => {
+				return a.data.pubDate > b.data.pubDate ? -1 : 1;
+			}).map((post) => 
         <a href={'/blog/' + post.slug} class="entry">
 					{post.data.image ? <Image
  					widths={[240, 540, 720, post.data.image.url.width]}
