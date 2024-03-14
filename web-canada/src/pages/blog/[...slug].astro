@@ -1,21 +1,29 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from '../../layouts/Layout.astro';
-import Hero from '../../components/Hero.astro';
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Hero from "../../components/Hero.astro";
 
 export async function getStaticPaths() {
-  const blogEntries = await getCollection('blog');
-  return blogEntries.map(entry => ({
-    params: { slug: entry.slug }, props: { entry },
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
   }));
 }
 
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 ---
-<Layout title={'Canada - ' + entry.data.title}>
-  {entry.data.image ? <Hero image={entry.data.image.url} alt={entry.data.image.alt} /> : ''}
-	<main class="container">
+
+<Layout title={"Canada - " + entry.data.title}>
+  {
+    entry.data.image ? (
+      <Hero image={entry.data.image.url} alt={entry.data.image.alt} />
+    ) : (
+      ""
+    )
+  }
+  <main class="container">
     <article class="blog-entry">
       <Content />
     </article>
