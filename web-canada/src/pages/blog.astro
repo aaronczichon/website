@@ -22,7 +22,9 @@ import rssIcon from '../resources/rss.svg';
       Alle bisherigen Einträge findest du hier. <br />
     </p>
     <div class="entry-grid">
-      {allPosts.map((post) => 
+      {allPosts.sort((a, b) => {
+        return a.data.pubDate > b.data.pubDate ? -1 : 1;
+      }).map((post) => 
         <a href={'/blog/' + post.slug} class="entry">
          {post.data.image ? <Image
           src={post.data.image.url}
