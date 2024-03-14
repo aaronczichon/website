@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 
 const dateOptions: object = {
 	year: "numeric",
-	month: "short",
+	month: "long",
 	day: "numeric",
 };
 
@@ -28,7 +28,7 @@ import rssIcon from '../resources/rss.svg';
           src={post.data.image.url}
           alt={post.data.image.alt}
           style="max-height: 400px; width: 100%; object-fit: cover;" /> : null }
-        <h3>{post.data.title}<span class="entry--date">{new Date(post.data.pubDate).toLocaleDateString("en-CA", dateOptions)}</span></h3>
+        <h3>{post.data.title}<span class="entry--date">{new Date(post.data.pubDate).toLocaleDateString("de-DE", dateOptions)}</span></h3>
         <p>{post.data.description}</p>
         </a>
       )}

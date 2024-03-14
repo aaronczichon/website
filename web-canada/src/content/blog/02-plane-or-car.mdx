@@ -9,9 +9,11 @@ image:
 tags: ["Kanada", "Halifax", "Nova Scotia", "Newfoundland", "Auto", "Flugzeug", "Öffentliche Verkehrsmittel", "Workcation", "Remote Work", "Digital Normads"]
 ---
 import { Picture } from 'astro:assets';
+import PubDate from '../../components/PubDate.astro';
 
 # Flugzeug und Auto - oder auch - wie komme ich von A nach B?
 
+<PubDate date={frontmatter.pubDate} />
 
 Wer immer gedacht hatte Deutschland sei das Land des Autos der ist wohl weit gefehlt.
 Hier in Kanada heißt es, es gibt nur ein wirkliches, öffentliches Verkehrsmittel und das heißt: Flugzeug. Für alles andere gibt es Autos.   
@@ -31,6 +33,8 @@ Wir haben in den letzten Tagen so einige Überlegungen bzgl. Auto gemacht. Es is
  			fallbackFormat="jpg"
  			loading="lazy"
  			fetchpriority="auto" />
+
+> 1033km von Halifax, NS nach Brighton, NL. Reine Fahrtzeit von ca. 15h. Davon sind ca. 8h auf der Fähre.
 ---
 
 Der ursprüngliche, blauäugige Plan lautete: Wir könnten in Halifax ein gebrauchtes Auto kaufen, in der Zeit bis Sommer, evtl. bis Ende August, nutzen und danach wieder verkaufen.

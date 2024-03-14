@@ -1,0 +1,10 @@
+---
+const { date } = Astro.props;
+---
+<p>
+  Veröffentlich am {new Date(date).toLocaleDateString('de-DE', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })}
+</p>
