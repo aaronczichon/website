@@ -1,70 +1,63 @@
 ---
-title: 'Willkommen in Kanada!'
+title: "Willkommen in Kanada!"
 pubDate: 2024-03-08
-description: 'Ankunft in Halifax, Nova Scotia. Start in das 12 Monate lange Abenteuer.'
-author: 'Aaron Czichon'
+description: "Ankunft in Halifax, Nova Scotia. Start in das 12 Monate lange Abenteuer."
+author: "Aaron Czichon"
 image:
-    url: './images/01/IMG_E8688.jpeg'
-    alt: 'Einzelne Person laufend auf dem Steg links vom Meer in Halifax'
-tags: ["Kanada", "Halifax", "Ankunft", "Workcation", "Remote Work", "Digital Normads"]
+  url: "./images/01/IMG_E8688.jpeg"
+  alt: "Einzelne Person laufend auf dem Steg links vom Meer in Halifax"
+tags:
+  [
+    "Kanada",
+    "Halifax",
+    "Ankunft",
+    "Workcation",
+    "Remote Work",
+    "Digital Normads",
+  ]
 ---
-import { Picture } from 'astro:assets';
 
-import IMG_E3412 from './images/01/IMG_E3412.jpg';
-import IMG_E3427 from './images/01/IMG_E3427.jpg';
-import IMG_E8691 from './images/01/IMG_E8691.jpeg';
-import IMG_E3453 from './images/01/IMG_E3453.jpeg';
+import ContentImage from "../../components/ContentImage.astro";
 
-# Willkommen in Kanada!
+import IMG_E3412 from "./images/01/IMG_E3412.jpg";
+import IMG_E3427 from "./images/01/IMG_E3427.jpg";
+import IMG_E8691 from "./images/01/IMG_E8691.jpeg";
+import IMG_E3453 from "./images/01/IMG_E3453.jpeg";
 
 Es ist nun schon eine Woche her, dass wir in Halifax angekommen sind. Nach den üblichen Ankunftsthemen wie Wohnung beziehen, Jetlag bewältigen und 1-2 grundlegende Einkäufe an Lebensmittel sind wir nun gut angekommen.
 
-<Picture src={IMG_E3412}
- 			alt="Blick aus einem Flugzeugfenster über den Flügel bei Regen"
- 			widths={[240, 540, 720, IMG_E3412.width]}
-            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
- 			formats={['avif', 'webp']}
- 			fallbackFormat="jpg"
- 			loading="lazy"
- 			fetchpriority="auto" />  
+<ContentImage
+  src={IMG_E3412}
+  alt="Blick aus einem Flugzeugfenster über den Flügel bei Regen"
+/>{" "}
 
 > Ankunft in Halifax bei Regen und kalten -10 Grad.
 
-Das Wetter spielt ihr an der Küste etwas verrückt und erinnert eher an einen "klassischen" April aus alten Tagen. Mal gibt es strahlenden Sonnenschein, viel Wind und Wolken oder jede Menge Regen. Oder alles zusammen. 
+Das Wetter spielt ihr an der Küste etwas verrückt und erinnert eher an einen "klassischen" April aus alten Tagen. Mal gibt es strahlenden Sonnenschein, viel Wind und Wolken oder jede Menge Regen. Oder alles zusammen.
 Auch die Temperaturen schwanken aktuell stark zwischen -10 Grad bei unserer Ankunft bis zu teilweise +11 Grad.
 
-<Picture src={IMG_E3427}
- 			alt="Sonnenuntergang von der Halifax Transit Ferry"
- 			widths={[240, 540, 720, IMG_E3412.width]}
-            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
- 			formats={['avif', 'webp']}
- 			fallbackFormat="jpg"
- 			loading="lazy"
- 			fetchpriority="auto" />
+<ContentImage
+  src={IMG_E3427}
+  alt="Sonnenuntergang von der Halifax Transit Ferry"
+/>
 
-Unsere Wohnung bzw. unser Apartment liegt im süd-östlichen Teil von Halifax in der South Street. Das ist nicht direkt Downtown aber es ist alles gut fußläufig erreichbar. Bis zum Hafen sind es etwa 600m, bis Downtown und Citadel ca. 1,5km und bis zum Point Pleasant Park gute 2km. 
+Unsere Wohnung bzw. unser Apartment liegt im süd-östlichen Teil von Halifax in der South Street. Das ist nicht direkt Downtown aber es ist alles gut fußläufig erreichbar. Bis zum Hafen sind es etwa 600m, bis Downtown und Citadel ca. 1,5km und bis zum Point Pleasant Park gute 2km.
 Alles was man zum Leben braucht (in erster Linie Lebensmittel) sind ebenfalls in etwa 5 Minuten zu Fuß erreichbar.
 Da wir aktuell noch kein Auto haben, erleichtert uns das vieles.
 
-<Picture src={IMG_E8691}
- 			alt="Häuserzug in Halifax mit unterschiedlichen Farben aus gelb, militärgrün, hellblau"
- 			widths={[240, 540, 720, IMG_E3412.width]}
-            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${IMG_E3412.width}px`}
- 			formats={['avif', 'webp']}
- 			fallbackFormat="jpg"
- 			loading="lazy"
- 			fetchpriority="auto" />
+<ContentImage
+  src={IMG_E8691}
+  alt="Häuserzug in Halifax mit unterschiedlichen Farben aus gelb, militärgrün, hellblau"
+/>
 
 Bisher ist es noch so, dass man jeden Tag etwas Neues entdecken (oder etwas schon bekanntes von letztem Jahr wieder entdecken) möchte. Daher wurde das erste Wochenende und die Nachmittage nach der Arbeit intensiv genutzt.
 Von Spaziergängen am Hafen und Point Pleasant Park, sowie Fährfahrten nach Dartmouth und ein Open Mic Besuch im `The Loose Cannon` war alles dabei.
 Heute geht es dann, ganz klassisch, zu einem Eishockeyspiel der Halifax Mooseheads.
 
-<Picture src={IMG_E3453}
- 			alt="Blick aus dem 5. Stock nach unten in der Halifax Public Library"
- 			formats={['avif', 'webp']}
- 			fallbackFormat="jpg"
- 			loading="lazy"
- 			fetchpriority="auto" />
+<ContentImage
+  src={IMG_E3453}
+  alt="Blick aus dem 5. Stock nach unten in der Halifax Public Library"
+/>
 
 Da wir auch direkt wieder "normal" weiterarbeiten, gilt es natürlich auch hier in einen entsprechenden Modus zu wechseln. Man versucht noch das richtige Arbeitsumfeld zu finden und wechselt auch ganz gerne Mal den Arbeitsort (zwischen kleinem Schreibtisch, Esstisch oder der Halifax Library).
 

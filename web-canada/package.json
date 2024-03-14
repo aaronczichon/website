@@ -8,7 +8,7 @@
 		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"prettier": "prettier --write .",
+		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro}\"",
 		"copy:canada-colors": "cp ../design/src/styles/variants/colors-canada.css ./src/styles/common/colors.css",
 		"copy:styles": "cp -R ../design/src/styles ./src/styles && npm run copy:canada-colors",
 		"copy:assets": "cp -R ../design/src/assets ./public/assets"
@@ -24,6 +24,7 @@
 		"typescript": "^5.3.3"
 	},
 	"devDependencies": {
-		"prettier": "^3.2.5"
+		"prettier": "^3.2.5",
+		"prettier-plugin-astro": "^0.13.0"
 	}
 }
