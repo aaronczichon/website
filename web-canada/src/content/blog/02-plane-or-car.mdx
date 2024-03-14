@@ -8,7 +8,7 @@ image:
     alt: 'Einzelne Person laufend auf dem Steg links vom Meer in Halifax'
 tags: ["Kanada", "Halifax", "Nova Scotia", "Newfoundland", "Auto", "Flugzeug", "Öffentliche Verkehrsmittel", "Workcation", "Remote Work", "Digital Normads"]
 ---
-import { Picture } from 'astro:assets';
+import ContentImage from '../../components/ContentImage.astro';
 import PubDate from '../../components/PubDate.astro';
 
 # Flugzeug und Auto - oder auch - wie komme ich von A nach B?
@@ -23,16 +23,10 @@ Will man schon etwa 20-30km außerhalb etwas anschauen kommt man an einem Auto n
 Nun mag man denken: Okay, ist jetzt vielleicht auch nicht die ökologischste Art, aber wenn das eben so ist, dann wird man ja auch ganz gute Möglichkeiten haben an ein Auto zu kommen.   
 Wir haben in den letzten Tagen so einige Überlegungen bzgl. Auto gemacht. Es ist so, dass wir ab Ende April bis einschließlich Juli auf jeden Fall in Newfoundland uns aufhalten wollen. Sprich wir fahren von Halifax bis nach Cape Breton, von dort mit der Fähre nach Newfoundland und dort vom Ferry Terminal zu unserer nächsten Unterkunft nach Brighton.
 
-<Picture alt="Straßenkarte von Nova Scotia und Newfoundland mit eingezeichneter Stecke von Halifax, NS nach Brighton, NL" 
-  src="https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/path-1+c32f3f(%7Du%7DpGbvrbKz%40mBbQnDzBue%40b%5Bj%5DtsBbfFvI_A%60UrhAeyRebBwkr%40aym%40uj_%40fmCcbBiyWcrZik%7C%40yaIm%7CdApCce%40pa%40mzk%40vaCqq%5Cq~GqdY_Q__hAiiK%7DsPpyDacXvFoZ%7Dj%5E_%7BLsv_%40cdg%40esBivVc%7CRgwVxo%40%7DdSsw_%40%7Ben%40kc%40%7BoIlaE%7BKijF_l%5B%60kJ_~Po%60gGmx%7BEsqBbbDwtQfp%5Cg%60Ihs%40gdi%40al_AkaUomKktGuhW%7BfWmeC%7DeOgfg%40qeVuiVouJs%60%5Cinv%40i_%60%40sdKkz%5BarOu_OotFpoCcvKmm%7B%40oe%60%40iwa%40_iM%7DgbAunUiwQbjSmjYkfd%40mevAqlB_%7Bf%40vjKovTc%7DRig%7BAlKppGmnD%7DrBGK)/-59.5844,47.253,5.6,0/800x600?access_token=pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2lvYmt1djVqMDA0OXV3bTFuMHZjNWI5MCJ9.ltEAHRP0jWVKshgCqt5Z7g"
-  widths={[240, 540, 720]}
+<ContentImage alt="Straßenkarte von Nova Scotia und Newfoundland mit eingezeichneter Stecke von Halifax, NS nach Brighton, NL" 
+  externalSrc="https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/path-1+c32f3f(%7Du%7DpGbvrbKz%40mBbQnDzBue%40b%5Bj%5DtsBbfFvI_A%60UrhAeyRebBwkr%40aym%40uj_%40fmCcbBiyWcrZik%7C%40yaIm%7CdApCce%40pa%40mzk%40vaCqq%5Cq~GqdY_Q__hAiiK%7DsPpyDacXvFoZ%7Dj%5E_%7BLsv_%40cdg%40esBivVc%7CRgwVxo%40%7DdSsw_%40%7Ben%40kc%40%7BoIlaE%7BKijF_l%5B%60kJ_~Po%60gGmx%7BEsqBbbDwtQfp%5Cg%60Ihs%40gdi%40al_AkaUomKktGuhW%7BfWmeC%7DeOgfg%40qeVuiVouJs%60%5Cinv%40i_%60%40sdKkz%5BarOu_OotFpoCcvKmm%7B%40oe%60%40iwa%40_iM%7DgbAunUiwQbjSmjYkfd%40mevAqlB_%7Bf%40vjKovTc%7DRig%7BAlKppGmnD%7DrBGK)/-59.5844,47.253,5.6,0/800x600?access_token=pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2lvYmt1djVqMDA0OXV3bTFuMHZjNWI5MCJ9.ltEAHRP0jWVKshgCqt5Z7g"
   width={800}
-  height={600}
-            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
- 			formats={['avif', 'webp']}
- 			fallbackFormat="jpg"
- 			loading="lazy"
- 			fetchpriority="auto" />
+  height={600} />
 
 > 1033km von Halifax, NS nach Brighton, NL. Reine Fahrtzeit von ca. 15h. Davon sind ca. 8h auf der Fähre.
 ---
