@@ -5,6 +5,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: var(--nav-margin);
+	border: var(--nav-border);
+	border-radius: var(--nav-border-radius);
 }
 
 /* Style the links inside the navigation bar */

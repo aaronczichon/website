@@ -1,9 +1,10 @@
 @import './common/breakpoints.css';
 @import './common/clear.css';
 @import './common/debug.css';
-@import './common/colors.css';
+@import './common/variables.css';
 @import './common/headings.css';
 @import './common/fun.css';
+@import './common/utils.css';
 
 @import './layout/main.css';
 @import './layout/hero.css';
