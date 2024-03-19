@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'preact/hooks';
-import * as mapboxgl from 'mapbox-gl';
-import gpxParser from 'gpxparser'; // Import a library to parse GPX files
+import BasicMap from './BasicMap';
 
-import 'mapbox-gl/dist/mapbox-gl.css';
+import { useState, useEffect } from 'preact/hooks';
+import gpxParser from 'gpxparser'; // Import a library to parse GPX files
 
 // Function to parse GPX file and extract route coordinates
 function parseGPX(gpxData) {
@@ -12,31 +11,9 @@ function parseGPX(gpxData) {
   return route;
 }
 
-export default function DynamicMap({ gpxUrl, zoom }) {
-  const [mapId] = useState('map-' + Math.random().toString(36).substr(2, 9))[0];
+export default function PathDynamicMap({gpxUrl, zoom}) {
   const [map, setMap] = useState(null);
   const [routeCoordinates, setRouteCoordinates] = useState(null);
-  
-  useEffect(() => {
-    // mapboxgl.accessToken =
-    // 'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2xrdHB6dHg0MGVqbTNnbzR4Z3pvbTBvNCJ9.jSswMTOvnmDuLu9v9mdp9w';
-    const accessToken = 'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2lvYmt1djVqMDA0OXV3bTFuMHZjNWI5MCJ9.ltEAHRP0jWVKshgCqt5Z7g'
-    const map = new mapboxgl.Map({
-      container: mapId,
-      style: 'mapbox://styles/mapbox/streets-v12',
-      center: [-63.582687, 44.65107],
-      zoom: zoom || 10,
-      accessToken
-    });
-
-
-    setMap(map);
-
-    // Clean up function (optional)
-    return () => {
-      map.remove(); // Cleanup Mapbox map
-    };
-  }, []); // Empty dependency array ensures that this effect runs only once
 
   useEffect(() => {
     // Fetch and parse GPX file
@@ -59,12 +36,7 @@ export default function DynamicMap({ gpxUrl, zoom }) {
   useEffect(() => {
     // Add route to map
     if (map && routeCoordinates) {
-      console.log('Adding route to map', routeCoordinates)
       map.on('load', () => {
-
-        map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-        map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
-        map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
 
         map.addLayer({
           id: 'route',
@@ -95,6 +67,6 @@ export default function DynamicMap({ gpxUrl, zoom }) {
   }, [map, routeCoordinates]);
 
   return (
-    <div id={mapId} class="map-container"></div>
+    <BasicMap zoom={zoom} setMap={setMap} />
   );
 }
