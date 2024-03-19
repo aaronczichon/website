@@ -5,6 +5,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin: var(--nav-margin);
+	border: var(--nav-border);
+	border-radius: var(--nav-border-radius);
+	min-width: 160px;
 }
 
 /* Style the links inside the navigation bar */
