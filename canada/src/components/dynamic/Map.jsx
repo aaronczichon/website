@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'preact/hooks';
 import * as mapboxgl from 'mapbox-gl';
+import gpxParser from 'gpxparser'; // Import a library to parse GPX files
+
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 // Function to parse GPX file and extract route coordinates
 function parseGPX(gpxData) {
@@ -9,7 +12,7 @@ function parseGPX(gpxData) {
   return route;
 }
 
-export default function DynamicMap({ gpxUrl }) {
+export default function DynamicMap({ gpxUrl, zoom }) {
   const [mapId] = useState('map-' + Math.random().toString(36).substr(2, 9))[0];
   const [map, setMap] = useState(null);
   const [routeCoordinates, setRouteCoordinates] = useState(null);
@@ -22,9 +25,10 @@ export default function DynamicMap({ gpxUrl }) {
       container: mapId,
       style: 'mapbox://styles/mapbox/streets-v12',
       center: [-63.582687, 44.65107],
-      zoom: 10,
+      zoom: zoom || 10,
       accessToken
     });
+
 
     setMap(map);
 
@@ -41,7 +45,10 @@ export default function DynamicMap({ gpxUrl }) {
         .then(response => response.text())
         .then(gpxData => {
           const route = parseGPX(gpxData);
-          setRouteCoordinates(route);
+          const switchedRoute = route.map(subArray => {
+            return [subArray[1], subArray[0]];
+        });
+          setRouteCoordinates(switchedRoute);
         })
         .catch(error => {
           console.error('Error fetching GPX file:', error);
@@ -52,7 +59,13 @@ export default function DynamicMap({ gpxUrl }) {
   useEffect(() => {
     // Add route to map
     if (map && routeCoordinates) {
+      console.log('Adding route to map', routeCoordinates)
       map.on('load', () => {
+
+        map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+        map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
+        map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
+
         map.addLayer({
           id: 'route',
           type: 'line',
@@ -72,11 +85,12 @@ export default function DynamicMap({ gpxUrl }) {
             'line-cap': 'round'
           },
           paint: {
-            'line-color': '#3887be',
-            'line-width': 8
+            'line-color': '#b33335',
+            'line-width': 7
           }
         });
       });
+      map.setCenter(routeCoordinates[0]);
     }
   }, [map, routeCoordinates]);
 

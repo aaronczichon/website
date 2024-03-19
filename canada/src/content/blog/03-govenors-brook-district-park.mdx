@@ -22,7 +22,7 @@ tags:
   ]
 ---
 
-import DynamicMap from '../../components/dynamic/Map';
+import DynamicMap from "../../components/dynamic/Map";
 
 Am vergangenen Wochenende, genauer gesagt am Samstag, nutzen wir das gute Wetter um den Govenors Brook District Park zu besuchen.
 
@@ -33,4 +33,8 @@ Das tolle ist ja weiterhin, dass alle Halifax Transit Verkehrsmittel für 2,5 St
 Der Park selbst besteht zu 90% aus Felsen und einem ehemaligen Wald der vermutlich vor ein paar Jahren mal durch einen Waldbrand vernichtet wurde.  
 Langsam zeichnet sich dort jedoch ein neues Leben ab und viele der Trail Routen innerhalb des Parks werden von Mountainbiker\*innen genutzt.
 
-<DynamicMap client:visible messages={["Hej", "Hallo", "Hola", "Habari"]} />
+<DynamicMap
+  client:visible
+  gpxUrl="/assets/routes/03-govenors-brook-district-park.gpx"
+  zoom="13"
+/>

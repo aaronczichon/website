@@ -1,7 +1,8 @@
 const element = document.getElementById('map');
 
-mapboxgl.accessToken =
-	'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2xrdHB6dHg0MGVqbTNnbzR4Z3pvbTBvNCJ9.jSswMTOvnmDuLu9v9mdp9w';
+// mapboxgl.accessToken =
+// 	'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2xrdHB6dHg0MGVqbTNnbzR4Z3pvbTBvNCJ9.jSswMTOvnmDuLu9v9mdp9w';
+mapboxgl.accessToken = 'pk.eyJ1Ijoid2ViYXRsYXMiLCJhIjoiY2lvYmt1djVqMDA0OXV3bTFuMHZjNWI5MCJ9.ltEAHRP0jWVKshgCqt5Z7g'
 const map = new mapboxgl.Map({
 	container: element,
 	style: 'mapbox://styles/mapbox/streets-v12',
@@ -11,7 +12,10 @@ const map = new mapboxgl.Map({
 
 map.on('load', async () => {
 	// Add zoom controls
-	map.addControl(new mapboxgl.NavigationControl());
+
+   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+   map.addControl(new mapboxgl.ScaleControl(), 'bottom-right');
+   map.addControl(new mapboxgl.FullscreenControl(), 'top-right');
 
 	map.addLayer({
 		id: 'circleLayer',
