@@ -47,11 +47,11 @@ import image from "../resources/hero.jpeg";
             <a href={"/blog/" + post.slug} class="entry">
               {post.data.image ? (
                 <Image
-                  widths={[240, 540, 720, post.data.image.url.width]}
-                  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${post.data.image.url.width}px`}
+                  widths={[700]}
+                  sizes={`700px`}
                   src={post.data.image.url}
                   alt={post.data.image.alt}
-                  style="max-height: 400px; width: 100%; object-fit: cover;"
+                  style="max-height: 350px; width: 100%; object-fit: cover;"
                 />
               ) : null}
               <h3>
