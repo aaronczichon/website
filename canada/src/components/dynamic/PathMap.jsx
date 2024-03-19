@@ -1,7 +1,8 @@
-import BasicMap from './BasicMap';
-
 import { useState, useEffect } from 'preact/hooks';
-import gpxParser from 'gpxparser'; // Import a library to parse GPX files
+import * as mapboxgl from 'mapbox-gl';
+import gpxParser from 'gpxparser';
+
+import BasicMap from './BasicMap';
 
 // Function to parse GPX file and extract route coordinates
 function parseGPX(gpxData) {
@@ -11,8 +12,9 @@ function parseGPX(gpxData) {
   return route;
 }
 
-export default function PathDynamicMap({gpxUrl, zoom}) {
+export default function PathDynamicMap({gpxUrl, zoom, tooltip}) {
   const [map, setMap] = useState(null);
+  const [popup, setPopup] = useState(null);
   const [routeCoordinates, setRouteCoordinates] = useState(null);
 
   useEffect(() => {
@@ -63,8 +65,24 @@ export default function PathDynamicMap({gpxUrl, zoom}) {
         });
       });
       map.setCenter(routeCoordinates[0]);
+
+      // Add popup on hover
+      if (!tooltip) return;
+
+      const popup = new mapboxgl.Popup({ closeOnClick: false })
+          .setHTML(tooltip);
+      // Add popup on hover over the route
+      map.on('mouseenter', 'route', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        popup.setLngLat(e.lngLat).addTo(map);
+      });
+
+      map.on('mouseleave', 'route', () => {
+          map.getCanvas().style.cursor = ''; // Reset cursor style
+          popup.remove(); // Remove popup on mouse leave
+      });
     }
-  }, [map, routeCoordinates]);
+  }, [map, routeCoordinates, popup, tooltip]);
 
   return (
     <BasicMap zoom={zoom} setMap={setMap} />
