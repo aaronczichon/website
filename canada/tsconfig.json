@@ -1,8 +1,12 @@
 {
-	"extends": "astro/tsconfigs/strict",
-	"compilerOptions": {
-		"strictNullChecks": true,
-		"allowJs": true
-	},
-	"exclude": ["public/**/*"]
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  },
+  "exclude": [
+    "public/**/*"
+  ]
 }
