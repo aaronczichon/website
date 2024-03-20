@@ -41,11 +41,11 @@ So we now have a working Ionic application with a Firebase authentication to sig
 Okay fine, so what's the actual status?  
 So our application has the option to logon and/or signup a new user:
 
-{images:1}
+![Screenshot: Basic Ionic App with Login](https://directus.aaronczichon.de/assets/2fe7fdb0-bf33-4270-a534-3d731873e801?download)
 
 If we've signed up or logged on with the Firebase authentication we where redirected to our `HomePage` of the application:
 
-{images:2}
+![Screenshot: Blank Ionic App](https://directus.aaronczichon.de/assets/4fbeea9d-011e-4ea4-813c-2c6c5fa88a77?download)
 
 ## Adding the camera plugin
 
@@ -414,7 +414,7 @@ Last we could add a second button for downloading the existing images without ta
 
 That's it. This is how your application should look like.
 
-{images:3}
+![Screenshot: Mobile app with two buttons for take a picture and showing them](https://directus.aaronczichon.de/assets/fbbe6034-598e-4562-9547-5ec177035c52?download)
 
 ## Conclusion
 
