@@ -45,7 +45,7 @@ At this year's [Google Next Conference](https://cloudnext.withgoogle.com), they 
 Cloud Functions for Firebase are part of Google Cloud and Firebase.
 Cloud Functions are basically a node server running for your Firebase project which executes your written functions on specified triggers. If you had, until now, a custom NodeJS server which uses Firebase Admin SDK for detecting changes on the database and sending push, this is basically the same like the Cloud Functions for Firebase but without managing the NodeJS.
 
-{images:1}
+![Drawing, Firebase and NodeJS functions](https://directus.aaronczichon.de/assets/b9df94e2-c257-4a3d-9639-8ecd5b97e3d4?download)
 
 In a Cloud Functions project you have one or more entry points (functions) which are executed by your trigger. Inside your function you could basically run everything which also runs inside NodeJS. But you have to keep in mind, that this functions are triggered by an event. After the function is executed the instance of this function is gone.
 Following triggers are available in Cloud Functions for Firebase:
@@ -116,7 +116,7 @@ firebase init functions
 
 During the generation the CLI asks you a few things about your project. For example for which Firebase project you're going to implement these functions:
 
-{images:2}
+![Screenshot: CLI project selection](https://directus.aaronczichon.de/assets/e7dc919f-ac67-422c-9070-a68db92a0b4e?download)
 
 Hint: If you're asked to install the node modules, answer with yes.
 
@@ -141,7 +141,7 @@ firebase.json
 
 As you can see inside the `package.json` file, the Firebase CLI adds `firebase-functions` and the `firebase-admin` SDKs by default. You're now ready to handle your Firebase project by cloud functions.
 
-{images:3}
+![Screenshot: Firebase dashboard](https://directus.aaronczichon.de/assets/dde41cb1-ad0b-456e-a6ad-afa57541be7e?download)
 
 We're switching now to the `index.js` file (inside the `functions` folder) and creating our first cloud functions.
 
@@ -357,7 +357,7 @@ firebase deploy --only functions
 
 After a successful deployment, you should get something like this.
 
-{images:4}
+![Screenshot: CLI deployment terminal](https://directus.aaronczichon.de/assets/694cfe3c-fcb4-4d37-a45a-4fd7e20eeebf?download)
 
 Hint: If you want to have a good logging, which is shown inside the `Logs` tab of your Firebase Console, add `console.log` statements to your cloud function.
 
