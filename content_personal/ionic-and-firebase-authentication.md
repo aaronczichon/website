@@ -53,15 +53,15 @@ This article is an introduction into authentication using firebase with email an
 First of all, if you want to start with Firebase, you need a valid Google account. For creating a new project you need to switch to the [Firebase Console].
 This console provides an overview of your existing project, links to the documentation, sample codes and API. There are two options of creating a new project. First, creating a entirely new project and second, importing an existing Google Cloud Project.
 
-{images:1}
+![Screenshot of the firebase dashboard](https://directus.aaronczichon.de/assets/a6d72743-c75e-40b2-ac6c-53776d207b96?download)
 
 In this example, we create a complete new Firebase project. The name of the project can be chosen by you. In our example we will call it “IGWorkshops”.
 
-{images:2}
+![Screenshot: create new firebase project](https://directus.aaronczichon.de/assets/c3a5619f-d097-4abc-bf33-f5eef15705cf?download)
 
 After the successful initialisation of the project, the console redirects you to the overview of the new project. On the left side of the project you can find important features for this project. On the right side of the project name you can find the project settings.
 
-{images:3}
+![Screenshot: firebase project settings](https://directus.aaronczichon.de/assets/aa23d8e6-8a95-4c98-a4c4-10d2db81d2ff?download)
 
 The most necessary informations and security options can be found there. For example, there you can find the project ID and the Web API Key.
 
@@ -80,7 +80,7 @@ ionic start IGWorkshops blank --v2
 
 The Ionic CLI now generates automatically a new Ionic project and runs the `npm install` command.
 
-{images:4}
+![Screenshot: NPM install](https://directus.aaronczichon.de/assets/4b92aaa9-133f-4c2b-a176-95db0c8b872a?download)
 
 Hint: For developing with Ionic you have to install `NodeJS` and the Ionic CLI (`npm install -g ionic`).
 
@@ -157,7 +157,7 @@ As mentioned before, we have to do a little bit of configuration for your Ionic 
 This module also has to be added to the App-Module, like our new generated pages. Also you need the credentials and keys for accessing your Firebase project.
 The credentials for our project can be found inside the Firebase Console. Select your project (in our case `IGWorkshops`) and navigate to the project settings. Inside the `General` tab you can find a button calling “Add Firebase to your web app”:
 
-{images:5}
+![Screenshot: adding web platform](https://directus.aaronczichon.de/assets/390d7794-e98d-4914-8c86-cc177c19e626?download)
 
 On click an dialog pops up, where you have to copy the `config` variable with all it’s properties. Switch now back to your Ionic app.
 
@@ -431,11 +431,11 @@ let alert = this.alertCtrl.create({
       alert.present();
 ```
 
-{images:6}
+![Screenshot: Mobile app with password length error](https://directus.aaronczichon.de/assets/ddfab856-d8c9-4291-9db3-6907c9015327?download)
 
 If the signup was successful the user get’s redirected to the `HomePage`.
 
-{images:7}
+![Screenshot: Empty mobile app after login](https://directus.aaronczichon.de/assets/2c20214f-3b5d-486b-a13b-e235bfe6bae3?download)
 
 The `SignupPage` is finished now. Here is the complete code.
 
@@ -538,7 +538,7 @@ let toast = this.toastCtrl.create({
 
 If something went wrong during the authentication process, the user gets notified by the toast.
 
-{images:8}
+![Screenshot: Login error message](https://directus.aaronczichon.de/assets/c0a195d8-2009-4608-9378-14c7fe5435a6?download)
 
 This is how the code for `LoginPage` looks like.
 
