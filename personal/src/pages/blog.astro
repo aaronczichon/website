@@ -16,27 +16,29 @@ import rssIcon from "../resources/rss.svg";
 
 <Layout title="Canada - Blog">
   <main class="container">
-    <h1>
-      Blog <a href="/rss.xml"
-        ><Image
-          style="width: 25px; height: 25px"
-          src={rssIcon}
-          alt="RSS Icon for subscribe to RSS feed."
-          widths={[30]}
-          sizes={`30px`}
-        /></a
-      >
-    </h1>
-    <p>
-      My blog represents my own opinions and does not represent any other
-      (except if explicit mentioned). It contains articles and tiny thoughts
-      about my daily life, software development and a lot of other things. <br
-      />
-      I trying my best to everyone feel comfortable to read my content and don't
-      want to offend anyone. <br />
-      But I'm also only a human being. So if there is anything you don't like or
-      you feel offended by, please let me knw. <br />
-    </p>
+    <article>
+      <h1>
+        Blog <a href="/rss.xml"
+          ><Image
+            style="width: 25px; height: 25px"
+            src={rssIcon}
+            alt="RSS Icon for subscribe to RSS feed."
+            widths={[30]}
+            sizes={`30px`}
+          /></a
+        >
+      </h1>
+      <p>
+        My blog represents my own opinions and does not represent any other
+        (except if explicit mentioned). It contains articles and tiny thoughts
+        about my daily life, software development and a lot of other things. <br
+        />
+        I trying my best to everyone feel comfortable to read my content and don't
+        want to offend anyone. <br />
+        But I'm also only a human being. So if there is anything you don't like or
+        you feel offended by, please let me knw. <br />
+      </p>
+    </article>
     <div class="entry-grid">
       {
         allPosts
