@@ -28,7 +28,7 @@ const result = JSON.stringify(profileData)
 
 The main problem now is, that you can't read the JSON string now as a human. If you want to show it the user in the frontend in a code editor it will always look like in VS Code:
 
-{images:1}
+![Screenshot: VSCode](https://directus.aaronczichon.de/assets/fd49f40d-3190-4605-9b7c-35649ee50398?download)
 
 So if you know have a large object it's nearly unreadable for the user.
 
