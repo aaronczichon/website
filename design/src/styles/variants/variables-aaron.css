@@ -16,6 +16,8 @@
 	--nav-border: 1px solid var(--primary-color-dark);
 	--nav-border-radius: 8px;
 
+	--entry-date-margin: 0 0 0 0;
+
 	@media (prefers-color-scheme: dark) {
 		--primary-color: #f2f0e9;
 		--primary-color-dark: #e8c872;

@@ -38,3 +38,18 @@ const readingTime = Math.ceil(wordCount / averageWPM);
     </article>
   </main>
 </Layout>
+<script is:inline>
+  /**
+   * Build linkable headings so they can be send as links if the article is large
+   * and you want to share a specific section with some people.
+   */
+  const anchorHeadings = document.querySelectorAll("h2, h3, h4, h5, h6");
+  [...anchorHeadings].forEach((heading) => {
+    const anchor = document.createElement("a");
+    anchor.href = `#${heading.id}`;
+    anchor.style.textDecoration = "none";
+    heading.parentNode.insertBefore(anchor, heading);
+
+    anchor.appendChild(heading);
+  });
+</script>

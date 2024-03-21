@@ -32,6 +32,6 @@
 
 .entry--date {
 	color: var(--primary-font-color);
-	margin-left: 8px;
+	margin: var(--entry-date-margin);
 	font-size: 0.8em;
 }
