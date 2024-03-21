@@ -56,13 +56,13 @@ The external connection situation without Thunderbolt 3. To be honest. Haven't f
 
 For solving my search problem I installed the new Windows [PowerToys](https://github.com/microsoft/PowerToys). They have a really nice search function there which is similar to the spotlight search on macOS. (Keyboard shortcut could be set to `Alt` + `Space` to emulate Spotlight feeling). 
 
-{images:1}
+![Screenshot: search of power toys](https://directus.aaronczichon.de/assets/8acf5300-dc6c-48b9-83ae-96a3b5646009?download)
 
 The downside: It still uses the default windows search index under the hood so not all files are found correctly. But it's better than the default search.
 
 The PowerToys also have a nice side-effect: They're coming with a keyboard/shortcut mapper. Yes, I could get used to the windows keyboard layout but some things are not good here and I mapped them to "macOS style", as I call it:
 
-{images:2}
+![Screenshot: PowerToys Keymapper](https://directus.aaronczichon.de/assets/5ee6be1f-35d0-4cac-bf7c-77dae220d8c2?download)
 
 Also I'm using the Surface only with an external keyboard as the build-in keyboard is unusable.
 
@@ -73,7 +73,7 @@ Remembering the window position on external monitors is still a problem. On some
 
 And: I will not start with the scaling issues on Windows in high DPI mode (like on a 4K monitor). I will leave only this screenshot here....
 
-{images:3}
+![Screenshot: Windows with Hight DI errors](https://directus.aaronczichon.de/assets/63ac09ef-6abe-402f-9430-59f9757bc430?download)
 
 ## My conclusion to you
 
