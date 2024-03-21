@@ -3,16 +3,11 @@ title: "Ionic and Firebase Storage - Saving Images"
 pubDate: 2017-04-18
 description: "Combining Ionic and the Firebase service. Use the Firebase storage provider to save taken images and show them inside the app."
 author: "Aaron Czichon"
-tags:
-  [
-    "Ionic",
-    "Firebase",
-    "Storage",
-    "Images"
-  ]
+tags: ["Ionic", "Firebase", "Storage", "Images"]
 ---
 
 ## Metadata for this article
+
 ```
 Ionic Version: 3.4.1
 Firebase SDK Version: 3.9.x
@@ -22,9 +17,9 @@ Time to read: 10 minutes
 
 ## What do you learn in this article?
 
-* Reusing the [Ionic - Firebase Authentication App](https://aaronczichon.de/2017/03/07/ionic-firebase-authentication/)
-* Taking a picture with Ionic and saving it to Firebase Storage
-* Showing all pictures in a grid
+- Reusing the [Ionic - Firebase Authentication App](https://aaronczichon.de/2017/03/07/ionic-firebase-authentication/)
+- Taking a picture with Ionic and saving it to Firebase Storage
+- Showing all pictures in a grid
 
 ## Where do I find the sample project?
 
@@ -50,18 +45,19 @@ If we've signed up or logged on with the Firebase authentication we where redire
 ## Adding the camera plugin
 
 Before we could start implementing the upload and taking the picture we need to add the camera plugin.  
-We need to run two commands from the command line. One for adding the Cordova plugin to our project and one for installing the `npm` package of the Ionic Native plugin for the camera module.  
+We need to run two commands from the command line. One for adding the Cordova plugin to our project and one for installing the `npm` package of the Ionic Native plugin for the camera module.
 
 ```bash
 ionic plugin add cordova-plugin-camera --save
 ```
 
 And for the `npm` package:
+
 ```bash
 npm install --save @ionic-native/camera
 ```
 
-Hint: To avoid build and publishing errors on iOS because of missing camera usage description we need to provide this info at our `config.xml` for build times.   
+Hint: To avoid build and publishing errors on iOS because of missing camera usage description we need to provide this info at our `config.xml` for build times.  
 Search for the `plugin` section where you can find the camera plugin. This should look like this:
 
 ```xml
@@ -79,19 +75,19 @@ Change it to:
 		<variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="IGWorkshops requires access to the photo library for selecting images which will be added to the users in-app library"/>
 </plugin>
 ```
-	
+
 Before we're able to use the camera plugin inside our application we have to add it to our application module in `app.module.ts`:
 
 ```js
 // ...
-import { Camera } from '@ionic-native/camera';
+import { Camera } from "@ionic-native/camera";
 // ...
 providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    StatusBar,
-    SplashScreen,
-    Camera
-    ]
+  { provide: ErrorHandler, useClass: IonicErrorHandler },
+  StatusBar,
+  SplashScreen,
+  Camera,
+];
 // ...
 ```
 
@@ -100,8 +96,9 @@ We've now successfully added the camera plugin to our application.
 ## Implementing the image provider
 
 Before we're able to take a picture and upload it, we should implement the image provider which should handle two things:
-* Uploading a new image as Base64 string to the users spaces
-* Getting a image list from the users space
+
+- Uploading a new image as Base64 string to the users spaces
+- Getting a image list from the users space
 
 For creating a new provider we're using the Ionic CLI generator:
 
@@ -113,21 +110,19 @@ This generates a new `image-provider.ts` file inside the `providers` folder. Bef
 
 ```js
 // image-provider.ts
-import { Injectable } from '@angular/core';
-import * as firebase from 'firebase';
+import { Injectable } from "@angular/core";
+import * as firebase from "firebase";
 
 export class ImageProvider {
-
-  constructor() {
-  }
-
+  constructor() {}
 }
 ```
 
 Now we create three function we going to need:
-* uploadImage which will have a base64 string and the user id as parameter
-* getImage which will have the user id and the image id as parameter
-* generateUUID as a private function for generating UUIDs as the image name
+
+- uploadImage which will have a base64 string and the user id as parameter
+- getImage which will have the user id and the image id as parameter
+- generateUUID as a private function for generating UUIDs as the image name
 
 ```js
 uploadImage(image: string, userId: string): any {
@@ -171,8 +166,9 @@ let imageRef = storageRef.child(`${userId}/${imageName}.jpg`);
 ```
 
 Now we got our image reference on which we now put our image:
+
 ```js
-return imageRef.putString(image, 'data_url');
+return imageRef.putString(image, "data_url");
 ```
 
 That's it. The image upload is now implemented. This is how your upload function should look like:
@@ -186,8 +182,8 @@ uploadImage(image: string, userId: string): any {
   }
 ```
 
-For downloading the image we need to implement the `getImage` function which needs the user id and the image id as parameter.   
-Like the upload function we have to create a storage reference and a reference to the existing image. On the image reference we  call the `getDownloadURL` function for getting the image URL. Your `getImage` function should look like this:
+For downloading the image we need to implement the `getImage` function which needs the user id and the image id as parameter.  
+Like the upload function we have to create a storage reference and a reference to the existing image. On the image reference we call the `getDownloadURL` function for getting the image URL. Your `getImage` function should look like this:
 
 ```js
 getImage(userId: string, imageId: string): any {
@@ -256,12 +252,12 @@ Inside the `HomePage` class we need an property for the camera options.
 // ...
 
 cameraOptions: CameraOptions = {
-    quality: 100,
-    destinationType: this.camera.DestinationType.DATA_URL,
-    encodingType: this.camera.EncodingType.JPEG,
-    mediaType: this.camera.MediaType.PICTURE
-  };
-  
+  quality: 100,
+  destinationType: this.camera.DestinationType.DATA_URL,
+  encodingType: this.camera.EncodingType.JPEG,
+  mediaType: this.camera.MediaType.PICTURE,
+};
+
 // ...
 ```
 
@@ -281,7 +277,7 @@ takePicture() {
 It's only three lines for taking the picture. For a working upload we now need the image data as a Base64 string, so wee need to extend the image data with the correct schema.
 
 ```js
-let base64Image = 'data:image/jpeg;base64,' + data;
+let base64Image = "data:image/jpeg;base64," + data;
 ```
 
 Now we create a new array for the image ids inside our `home.ts` and also add the `ImageProvider` to our `app.module.ts` and the `home.ts`:
@@ -289,15 +285,15 @@ Now we create a new array for the image ids inside our `home.ts` and also add th
 ```js
 // app.module.ts
 // ...
-import { ImageProvider } from '../providers/image-provider';
+import { ImageProvider } from "../providers/image-provider";
 // ...
 providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    StatusBar,
-    SplashScreen,
-    Camera,
-    ImageProvider
-    ]
+  { provide: ErrorHandler, useClass: IonicErrorHandler },
+  StatusBar,
+  SplashScreen,
+  Camera,
+  ImageProvider,
+];
 // ...
 ```
 
@@ -341,9 +337,8 @@ That's it! Image upload successfully implemented.
 The last step will be used to create a grid for all the users images that already has been uploaded. First we need to load the already saved image names from the `localStorage` inside our constructor of the `home.ts` file:
 
 ```js
-let data = localStorage.getItem('images');
-if(data)
-	this.images = JSON.parse(data);
+let data = localStorage.getItem("images");
+if (data) this.images = JSON.parse(data);
 ```
 
 Next is to extend the template file (`home.html`) with a grid for the images.
@@ -355,7 +350,13 @@ Next is to extend the template file (`home.html`) with a grid for the images.
   <button ion-button full (click)="takePictureMock()">Take Picture</button>
   <ion-grid>
     <ion-row>
-      <ion-col col-12 col-sm-4 col-md-3 col-lg-2 *ngFor="let image of imageUrls">
+      <ion-col
+        col-12
+        col-sm-4
+        col-md-3
+        col-lg-2
+        *ngFor="let image of imageUrls"
+      >
         <img [src]="image" />
       </ion-col>
     </ion-row>
@@ -418,9 +419,9 @@ That's it. This is how your application should look like.
 
 ## Conclusion
 
-You now have learn how to take a picture as a Base64 string and working with the Firebase Storage. You now able to write and read data from Firebase Storage and using it for larger files.   
-Now it's on your own if you extend your app with even more Firebase functionality for example by storing the image ids inside the Firebase Database rather than inside the `localStorage`.   
-As always you can find the sample code at the [Github repository](https://github.com/Inoverse/aaronczichon.de).   
+You now have learn how to take a picture as a Base64 string and working with the Firebase Storage. You now able to write and read data from Firebase Storage and using it for larger files.  
+Now it's on your own if you extend your app with even more Firebase functionality for example by storing the image ids inside the Firebase Database rather than inside the `localStorage`.  
+As always you can find the sample code at the [Github repository](https://github.com/Inoverse/aaronczichon.de).  
 If you have any questions, let me now in the comment section below.
 
 Best,

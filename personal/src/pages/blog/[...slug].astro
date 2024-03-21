@@ -31,7 +31,9 @@ const readingTime = Math.ceil(wordCount / averageWPM);
   <main class="container">
     <article class="blog-entry">
       <h1>{entry.data.title}</h1>
-      <PubDate date={entry.data.pubDate}> | Lesezeit: {readingTime}min</PubDate>
+      <PubDate date={entry.data.pubDate}>
+        | Reading time: {readingTime}min</PubDate
+      >
       <Content />
     </article>
   </main>

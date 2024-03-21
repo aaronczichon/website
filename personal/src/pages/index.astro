@@ -9,7 +9,6 @@ const dateOptions: object = {
   month: "long",
   day: "numeric",
 };
-
 ---
 
 <Layout title="Aaron Czichon">
@@ -17,16 +16,36 @@ const dateOptions: object = {
     <article>
       <h1>Hi, I'm Aaron!</h1>
       <p>
-        I work at <a target="_blank" href="https://plan-b-gmbh.com">PlanB. GmbH</a> since September 2020 as an Solution Expert with focus on web technologies.   
-        In previous years I worked at cellent AG as a developer and at a startup as Head of Software Development.
-    </p>
+        I work at <a target="_blank" href="https://plan-b-gmbh.com"
+          >PlanB. GmbH</a
+        > since September 2020 as an Solution Expert with focus on web technologies.
+        In previous years I worked at cellent AG as a developer and at a startup
+        as Head of Software Development.
+      </p>
       <p>
-        Over the past few years of software development I wrote several apps, articles and talked at conferences.    
-      Since August 2022 I'm listed as an official <a target="_blank" href="https://ionic.io/community">Ionic Developer Expert (IDE)</a>.</p>
-      <p>You can also take a look at my public <a target="_blank" href="https://github.com/aaronczichon">Github</a> profile or let me hear something from you on [Twitter](https://twitter.com/aaronczichon).</p>
-      <p>Need a conversation starter? <br/> I like motorcycling, volleyball and Formula 1.</p>
+        Over the past few years of software development I wrote several apps,
+        articles and talked at conferences. Since August 2022 I'm listed as an
+        official <a target="_blank" href="https://ionic.io/community"
+          >Ionic Developer Expert (IDE)</a
+        >.
+      </p>
+      <p>
+        You can also take a look at my public <a
+          target="_blank"
+          href="https://github.com/aaronczichon">Github</a
+        > profile or let me hear something from you on [Twitter](https://twitter.com/aaronczichon).
+      </p>
+      <p>
+        Need a conversation starter? <br /> I like motorcycling, volleyball and Formula
+        1.
+      </p>
       <p>If you have questions don't hesitate to contact me.</p>
-      <p>Want to talk to me? <a target="_blank" href="https://cal.com/aaronczichon/30min">Book</a> a slot if you like. I would love to chat :)</p>
+      <p>
+        Want to talk to me? <a
+          target="_blank"
+          href="https://cal.com/aaronczichon/30min">Book</a
+        > a slot if you like. I would love to chat :)
+      </p>
     </article>
     <h2>My latest blog entries</h2>
     <div class="entry-grid">
@@ -50,7 +69,7 @@ const dateOptions: object = {
                 {post.data.title}
                 <span class="entry--date">
                   {new Date(post.data.pubDate).toLocaleDateString(
-                    "de-DE",
+                    "en-CA",
                     dateOptions,
                   )}
                 </span>

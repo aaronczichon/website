@@ -3,13 +3,7 @@ title: "More than 3 years at PlanB."
 pubDate: 2023-11-26
 description: "My personal recap of more than 3 years at the PlanB. company."
 author: "Aaron Czichon"
-tags:
-  [
-    "Work",
-    "Recap",
-    "Review",
-    "PlanB"
-  ]
+tags: ["Work", "Recap", "Review", "PlanB"]
 ---
 
 > Disclaimer: Opinions are my own and do not represent the thoughts and opinions of others.

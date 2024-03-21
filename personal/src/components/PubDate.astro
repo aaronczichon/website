@@ -3,8 +3,8 @@ const { date } = Astro.props;
 ---
 
 <p>
-  Veröffentlich am {
-    new Date(date).toLocaleDateString("de-DE", {
+  Published on {
+    new Date(date).toLocaleDateString("en-CA", {
       year: "numeric",
       month: "long",
       day: "numeric",

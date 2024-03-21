@@ -24,8 +24,8 @@ Part 2 (coming later) will cover a more detailed version of the Trapeze configur
 The Trapeze configuration is a new configuration library for building and managing your mobile applications.
 If you're developing a whitelist application or an application which should be configured by an CI/CD pipeline you often need to deal with different types configuration. Depending on the distribution platforms like iOS and/or Android this can get complicated very soon.
 
-The Ionic team has build a new library called Trapeze (or also known as Capacitor Configure before) which should handle the configuration of mobile projects.   
-This should take place in the development platform which has previously served by the Cordova project. Some developers are missing the configuration options from Cordova in their Capacitor projects.   
+The Ionic team has build a new library called Trapeze (or also known as Capacitor Configure before) which should handle the configuration of mobile projects.  
+This should take place in the development platform which has previously served by the Cordova project. Some developers are missing the configuration options from Cordova in their Capacitor projects.  
 The good news is, that the Ionic team takes care of them with Trapeze. The even better news is: It's not only working with Capacitor projects it's also working with native projects (Xcode, Kotlin), Flutter, Electron and more!
 
 Example: In this article I'll cover some Trapeze functions and benefits by using an existing Ionic Capacitor application.
@@ -34,7 +34,7 @@ Example: In this article I'll cover some Trapeze functions and benefits by using
 
 To add Trapeze to your existing project it's easy as everything in the Ionic universe: `npm install @trapezedev/configure`. It's that simple!
 
-*Hint*: Make sure you have a correct  `JAVA_HOME` environment variable set so Trapeze can find the correct Java installation for Android support.
+_Hint_: Make sure you have a correct `JAVA_HOME` environment variable set so Trapeze can find the correct Java installation for Android support.
 
 With Trapeze there are 2 ways to configure your project: With `YAML` configuration files or using the Javascript/Typescript API which is provided by the `@trapezedev/project`.
 
@@ -57,11 +57,14 @@ As you can see my current application has a version called `1.3.0`.
 ![Screenshot: Apple XCode](https://directus.aaronczichon.de/assets/486823cb-a031-4e27-80a6-49758269f76e?download)
 
 For taking the Trapeze configuration to action I'll run:
+
 ```bash
 npx trapeze run config.yaml --android-project android --ios-project ios/App
 ```
+
 This specifies the used configuration file (which is `config.yaml` in my case) and also specifies the native projects for Android and iOS (which are the defaults for a Capacitor app in this case).
 The command first lists everything which is going to change and asks se if I want to apply them:
+
 ```bash
 run android versionName 1.3.1
 run ios version 1.3.1
@@ -74,6 +77,7 @@ updated ios/App/App/Info.plist
     operation.
 ? Apply? › (y/N)
 ```
+
 After applying the changes the native projects got updated and where good to go with our new versions.
 
 For better understanding I created a public Github repository which has the changes I've done to a simple demo application: [Github - Aaron Czichon Ionic Demo App](https://github.com/aaronczichon/aaronczichon-ionic-demo).
@@ -90,6 +94,7 @@ Sometimes it can annoying or challenging building the mobile apps every time loc
 The better and more reliable way is to setup a CI/CD pipeline which handles the building and packaging.
 
 For the demo part I'll setup the CI/CD for iOS application for now. For this you need to make sure to have the following information:
+
 - A valid Apple developer account
 - A valid iOS application created in your Apple developer account
 - A bundle ID (I picked `com.aaronczichon.mobile` for my project)
@@ -98,6 +103,7 @@ For the demo part I'll setup the CI/CD for iOS application for now. For this you
 - A exported certificate including key and secret as base 64 string
 
 Here is a sample of a Github Workflow which builds the iOS App and attaches the `.ipa` file as an artifact:
+
 ```yaml
 name: Bundle iOS App
 
@@ -137,14 +143,18 @@ jobs:
           name: iOS.ipa
           path: App.ipa
 ```
+
 As you may already notice: We have also a relevant Trapeze command inside the workflow:
+
 ```shell
 npx trapeze run config.yaml -y --ios-project ios/App
 ```
+
 This one is nearly same as the example above but in this case just for the iOS platform.
 
 The second part is now to add also the android platform build to the workflow.
 To support this I'll rename the `bundle-app` job to `bundle-ios-app` and adding a new job for the android build:
+
 ```yaml
 	bundle-android-app:
 		name: Build & Bundle Android App
@@ -167,14 +177,17 @@ To support this I'll rename the `bundle-app` job to `bundle-ios-app` and adding 
 				name: App.apk
 				path: App.apk
 ```
+
 For simplification I'll not signing the Android app here for the demo.
 
-*Hint*:
+_Hint_:
 From Apple you mostly get your certificates and/or provisioning profiles as files. Github needs them as bae64 string (so you can add them to your secrets).
 To convert a file into a base 64 string you can use this command:
+
 ```shell
 openssl base64 -in [SOME_FILE_PATH_HERE] -A
 ```
+
 ## Automatically increment build number with Trapeze
 
 As Trapeze currently only sets a static version number and bundle identifier it can do more for you. Example handling the automatic increment of the build number (version code) for your application.
@@ -187,8 +200,8 @@ vars:
     default: 1
 ```
 
-`GITHUB_RUN_NUMBER` is a special environment variable which is set by Github Actions during runtime and is automatically increased per workflow.   
-The `default` is just a default value which is used if the `GITHUB_RUN_NUMBER` variable is not provided. 
+`GITHUB_RUN_NUMBER` is a special environment variable which is set by Github Actions during runtime and is automatically increased per workflow.  
+The `default` is just a default value which is used if the `GITHUB_RUN_NUMBER` variable is not provided.
 
 As a next step I'll add also the option for updating Android (which we're not using now but still make it configurable for the future).
 So that we don't have to provide the package name (`com.aaronczichon.mobile`) twice, once for iOS and once for Android, we're moving it also to an environment variable:
@@ -240,6 +253,7 @@ platforms:
 ```
 
 **What does this configuration do in a nutshell?**
+
 - It defines 2 environment variables for the Trapeze context, both with default values
 - It provides configurations for 2 platforms (iOS and Android)
 - Both platforms have the version `1.0.0`

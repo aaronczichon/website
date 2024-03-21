@@ -3,12 +3,7 @@ title: "Don't underestimate the power of colors"
 pubDate: 2022-05-19
 description: "A short hail to the great VSCode extension Peacock."
 author: "Aaron Czichon"
-tags:
-  [
-    "Development",
-    "VSCode",
-    "Setup"
-  ]
+tags: ["Development", "VSCode", "Setup"]
 ---
 
 There are a bunch of cool Visual Studio Code extensions out there. Most of them are known or used by a large group of people.
@@ -18,7 +13,7 @@ The one I'm talking about is called [Peacock](https://marketplace.visualstudio.c
 
 ![Screenshot: VSCode Command Palette](https://directus.aaronczichon.de/assets/3ea79ee6-9963-44bc-a303-929544ab1a3a?download)
 
-Colors in different windows are often underestimated. Recently I worked on a project where I need to extract a part of the Angular application into its one Angular library to be distributed by a NPM package. 
+Colors in different windows are often underestimated. Recently I worked on a project where I need to extract a part of the Angular application into its one Angular library to be distributed by a NPM package.
 Have this context and multiple, different workspaces this color feature saved my life.
 Colored windows are easy to recognize in your workflow and makes window switching way faster and better to handle.
 

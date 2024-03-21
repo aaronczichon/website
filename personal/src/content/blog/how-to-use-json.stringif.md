@@ -3,12 +3,7 @@ title: "How to use JSON.stringify"
 pubDate: 2020-09-28
 description: "An easy and extended way to use JSON.stringify method."
 author: "Aaron Czichon"
-tags:
-  [
-    "Javascript",
-    "JSON",
-    "Web Development"
-  ]
+tags: ["Javascript", "JSON", "Web Development"]
 ---
 
 I bet every Javascript developer has used `JSON.stringify` before. So you definitely know how to make an Javascript object into a JSON string.
@@ -19,9 +14,14 @@ If you use the default behavior of the JSON method you may get a result like thi
 
 ```js
 // First definingy an object
-const profileData = { firstName: "Aaron", lastName: "Czichon", profile: "https://github.com/aaronczichon", website: "https://aaronczichon.de" }
+const profileData = {
+  firstName: "Aaron",
+  lastName: "Czichon",
+  profile: "https://github.com/aaronczichon",
+  website: "https://aaronczichon.de",
+};
 // Now run JSON.stringify
-const result = JSON.stringify(profileData)
+const result = JSON.stringify(profileData);
 // Result
 // "{\"firstName\":\"Aaron\",\"lastName\":\"Czichon\",\"profile\":\"https://github.com/aaronczichon\",\"website\":\"https://aaronczichon.de\"}"
 ```
@@ -45,7 +45,7 @@ So if you want to show the stringified object with a space of 2 like in VS you c
 
 ```js
 // Now run JSON.stringify
-const result = JSON.stringify(profileData, null, 2)
+const result = JSON.stringify(profileData, null, 2);
 // Result
 // "{ // \"firstName\": \"Aaron\",
 //     \"lastName\": \"Czichon\",
@@ -61,13 +61,21 @@ Next step, we may want to manipulate the object itself before we generate the ou
 Assuming that we want to remove the `htttps://github.com/` part of every profile URL.
 
 ```js
-const profileData = { firstName: "Aaron", lastName: "Czichon", profile: "https://github.com/aaronczichon", website: "https://aaronczichon.de" }
+const profileData = {
+  firstName: "Aaron",
+  lastName: "Czichon",
+  profile: "https://github.com/aaronczichon",
+  website: "https://aaronczichon.de",
+};
 // Now run JSON.stringify
-const result = JSON.stringify(profileData, (name, val) => {
-    if (name === 'profile')
-        val = val.replace('https://github.com/', '')
-    return val
-}, 2)
+const result = JSON.stringify(
+  profileData,
+  (name, val) => {
+    if (name === "profile") val = val.replace("https://github.com/", "");
+    return val;
+  },
+  2,
+);
 // Result:
 // "{ // \"firstName\": \"Aaron\",
 //    \"lastName\": \"Czichon\",
@@ -78,11 +86,15 @@ const result = JSON.stringify(profileData, (name, val) => {
 
 That's pretty awesome, that we can now replace things before transforming it into a JSON string, but we can go even further. What if we want to show only the name of the profile object and removing the other properties? It would be awesome if we can filtering properties before we create the string. As the replacer accepts an array of properties, we can use this to return only the requested properties:
 
-
 ```js
-const profileData = { firstName: "Aaron", lastName: "Czichon", profile: "https://github.com/aaronczichon", website: "https://aaronczichon.de" }
+const profileData = {
+  firstName: "Aaron",
+  lastName: "Czichon",
+  profile: "https://github.com/aaronczichon",
+  website: "https://aaronczichon.de",
+};
 // Now run JSON.stringify
-const result = JSON.stringify(profileData, ['firstName', 'lastName'], 2)
+const result = JSON.stringify(profileData, ["firstName", "lastName"], 2);
 // result
 // "{
 //    \"firstName\": \"Aaron\",

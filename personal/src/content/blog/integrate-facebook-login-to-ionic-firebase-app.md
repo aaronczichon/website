@@ -3,14 +3,7 @@ title: "Integrate Facebook Login to Ionic Firebase App"
 pubDate: 2017-08-03
 description: "Learn how to integrate the native Facebook login into your Ionic Firebase application."
 author: "Aaron Czichon"
-tags:
-  [
-    "Ionic",
-    "Firebase",
-    "Facebook",
-    "Login",
-    "Authentication"
-  ]
+tags: ["Ionic", "Firebase", "Facebook", "Login", "Authentication"]
 ---
 
 ## Metadata for this article
@@ -24,10 +17,10 @@ Time to read: 9 minutes
 
 ## What do you learn in this article?
 
-* Reusing an existing Ionic App with Firebase
-* Setup Facebook-App for using Facebook-Login
-* Connect Firebase and Facebook to use Facebook-Login
-* Extend Ionic App for using Facebook Login
+- Reusing an existing Ionic App with Firebase
+- Setup Facebook-App for using Facebook-Login
+- Connect Firebase and Facebook to use Facebook-Login
+- Extend Ionic App for using Facebook Login
 
 ## Where do I find the sample project?
 
@@ -37,9 +30,10 @@ You can find the sample project on my Github page: [Add Facebook-Login to Ionic 
 
 Before we could start we do a short recap. For this tutorial we're going to use an existing Ionic project which uses Firebase already. The project we're going to use was created in the [Ionic and Firebase Authentication](https://aaronczichon.de/2017/03/07/ionic-firebase-authentication/) tutorial which I've created earlier this year.
 So before we start I assume that you got the following things already:
-* An Ionic App which uses AngularFire2
-* An existing Firebase project which can be used for this tutorial
-* The Ionic App has E-Mail/Password authentication implemented
+
+- An Ionic App which uses AngularFire2
+- An existing Firebase project which can be used for this tutorial
+- The Ionic App has E-Mail/Password authentication implemented
 
 If you haven't these things already done, you can download the starting project from [Github](https://github.com/Inoverse/aaronczichon.de/tree/master/IGWorkshops).
 
@@ -80,29 +74,33 @@ Now your Facebook app is nearly finished. We come back to that later.
 
 ## Setup Ionic App with Facebook Login on the Web
 
-There are now two main ways we have to implement for using Facebook login.   
+There are now two main ways we have to implement for using Facebook login.  
 First, we implement the option to login using Facebook if our app is running in the browser. Second, implementing the usage of the Cordova plugin to use Facebook login on mobile devices.
 
 So let's start with the web version. At first we need to add a Facebook login button to our application and the corresponding method in our component.
 
-So in our `login.html` we add a new button: 
+So in our `login.html` we add a new button:
+
 ```html
 <button full ion-button (click)="loginFacebook()">Login with Facebook</button>
 ```
 
 And a new, empty method to our `login.ts`:
+
 ```javascript
 loginFacebook() {
-	// Login code goes here    
+	// Login code goes here
 }
 ```
 
 So far, so good. In our `login.ts` we already added the `AngularFireAuth` provider from the previous tutorial. Now we also need to import the Firebase SDK directly:
+
 ```javascript
-import * as firebase from 'firebase/app';
+import * as firebase from "firebase/app";
 ```
 
 Now we're able to implement the `loginFacebook` method by using Facebook as authentication provider:
+
 ```javascript
 loginFacebook() {
     this.afAuth.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider())
@@ -130,6 +128,7 @@ Make sure you provider the correct `APP_ID` and the correct `APP_NAME`. The App 
 `ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="1383067751814949" --variable APP_NAME="aaronczichon.de" --save`.
 
 After adding the Cordova plugin, you should now see this additional information in your `config.xml`:
+
 ```xml
 <plugin name="cordova-plugin-facebook4" spec="^1.9.1">
         <variable name="APP_ID" value="1383067751814949" />
@@ -141,34 +140,36 @@ To use this plugin now, we need to add the related `Ionic Native` plugin. You co
 `npm install --save @ionic-native/facebook`
 
 To be able to use this native plugin you have to add the Facebook provider to our `app.module.ts`. This should look like this:
+
 ```javascript
 // ...
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { Facebook } from '@ionic-native/facebook';
+import { AngularFireAuthModule } from "angularfire2/auth";
+import { Facebook } from "@ionic-native/facebook";
 
 // ...
 
 @NgModule({
   // ....
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     StatusBar,
     SplashScreen,
-    Facebook
-    ],
+    Facebook,
+  ],
 })
 export class AppModule {}
 ```
 
-For implementing this usage now, we switching to our `login.ts` and importing the Facebook provider and the `Platform` from `ionic-angular` package. 
-This are now the `import` statements in this component:  
+For implementing this usage now, we switching to our `login.ts` and importing the Facebook provider and the `Platform` from `ionic-angular` package.
+This are now the `import` statements in this component:
+
 ```javascript
-import { Component } from '@angular/core';
-import { NavController, ToastController, Platform } from 'ionic-angular';
-import { SignupPage } from '../signup/signup';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase/app';
-import { Facebook } from '@ionic-native/facebook';
+import { Component } from "@angular/core";
+import { NavController, ToastController, Platform } from "ionic-angular";
+import { SignupPage } from "../signup/signup";
+import { AngularFireAuth } from "angularfire2/auth";
+import * as firebase from "firebase/app";
+import { Facebook } from "@ionic-native/facebook";
 ```
 
 We also need to provide the provider to the component using dependency injection:
@@ -184,6 +185,7 @@ constructor(
 ```
 
 For the last code implementation we're now going to change our `loginFacebook` method. This will be extended with a platform detection and using the Facebook Cordova plugin:
+
 ```javascript
 signInWithFacebook() {
     if (this.platform.is('cordova')) {
@@ -207,7 +209,7 @@ So, switch to the Portal, select `Facebook Login` and `Quickstart`. There you sh
 
 ![Screenshot: android project information](https://directus.aaronczichon.de/assets/855ccb9d-bac1-48c5-b325-a0f52402c5d6?download)
 
-In `Download the Facebook SDK for Android` click on `Next`. Also click `Next` for `Import the Facebook SDK`. 
+In `Download the Facebook SDK for Android` click on `Next`. Also click `Next` for `Import the Facebook SDK`.
 Now, in `Tell Us about Your Android Project` enter your package name (could be found in `config.xml` as id). E.g. `com.webatlas.aaronczichon`.
 In `Default Activity Class Name` also enter this package name and extend it with the name of your application which could also be found in `config.xml`. In my case this would be:
 `com.webatlas.aaronczichon.IGWorkshops`.
@@ -220,7 +222,6 @@ Hint: If Facebook is asking you, that they have a problem verifying the package 
 
 Hint: If you enable the `iOS` platform, click `Next` on the first two steps and on `3. Add your Bundle identifier` enter the same package name which you can find in `config.xml` as `id`.
 
-
 And last but not least we have to enable our Facebook application. For this go to your Facebook app, `App Review` and set `Make aaronczichon.de public?` (but with your app name) to `Yes`. Choose a category and select `Confirm`.
 
 {images:11}
@@ -232,6 +233,7 @@ Connect your testing device and run the application on your device using `ionic 
 {images:12}
 
 Here is the full code of the `login` files:
+
 ```javascript
 // login.ts
 import { Component } from '@angular/core';

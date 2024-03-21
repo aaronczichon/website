@@ -4,18 +4,11 @@ pubDate: 2017-03-07
 description: "Learn how to implement simple OAuth authentication into a mobile app using the authentication provider of Firebase."
 author: "Aaron Czichon"
 tags:
-  [
-    "Ionic",
-    "Firebase",
-    "oauth",
-    "authentication",
-    "web",
-    "facebook",
-    "google"
-  ]
+  ["Ionic", "Firebase", "oauth", "authentication", "web", "facebook", "google"]
 ---
 
 ## Metadata for this article
+
 ```
 Ionic Version: 3.9.2
 AngularFire2 Version: 5.0.0-RC.4
@@ -26,9 +19,9 @@ Time to read: about 12 minutes
 
 ## What do you learn in this article?
 
-* Creating a new Ionic 2 app with connection and setup of firebase
-* Creating a login and signup page
-* Login and signup using firebase backend
+- Creating a new Ionic 2 app with connection and setup of firebase
+- Creating a login and signup page
+- Login and signup using firebase backend
 
 ## Where do I find the sample project?
 
@@ -116,39 +109,26 @@ ionic generate page signup
 Now you have to add these two new generated pages to the standard module of your Ionic app.
 
 ```ts
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { LoginPage } from '../pages/login/login';
-import { SignupPage } from '../pages/signup/signup';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { BrowserModule } from '@angular/platform-browser';
- 
+import { NgModule, ErrorHandler } from "@angular/core";
+import { IonicApp, IonicModule, IonicErrorHandler } from "ionic-angular";
+import { MyApp } from "./app.component";
+import { HomePage } from "../pages/home/home";
+import { LoginPage } from "../pages/login/login";
+import { SignupPage } from "../pages/signup/signup";
+import { StatusBar } from "@ionic-native/status-bar";
+import { SplashScreen } from "@ionic-native/splash-screen";
+import { BrowserModule } from "@angular/platform-browser";
+
 @NgModule({
-  declarations: [
-    MyApp,
-    HomePage,
-    LoginPage,
-    SignupPage
-  ],
-  imports: [
-    BrowserModule,
-    IonicModule.forRoot(MyApp)
-  ],
+  declarations: [MyApp, HomePage, LoginPage, SignupPage],
+  imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage,
-    LoginPage,
-    SignupPage
-  ],
+  entryComponents: [MyApp, HomePage, LoginPage, SignupPage],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     StatusBar,
-    SplashScreen
-    ]
+    SplashScreen,
+  ],
 })
 export class AppModule {}
 ```
@@ -165,51 +145,41 @@ Inside your Ionic app now import AngularFire2 into `app.module.ts` and provide t
 
 ```ts
 // app.module.ts
-import { NgModule, ErrorHandler } from '@angular/core';
-import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { LoginPage } from '../pages/login/login';
-import { SignupPage } from '../pages/signup/signup';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { BrowserModule } from '@angular/platform-browser';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
+import { NgModule, ErrorHandler } from "@angular/core";
+import { IonicApp, IonicModule, IonicErrorHandler } from "ionic-angular";
+import { MyApp } from "./app.component";
+import { HomePage } from "../pages/home/home";
+import { LoginPage } from "../pages/login/login";
+import { SignupPage } from "../pages/signup/signup";
+import { StatusBar } from "@ionic-native/status-bar";
+import { SplashScreen } from "@ionic-native/splash-screen";
+import { BrowserModule } from "@angular/platform-browser";
+import { AngularFireModule } from "angularfire2";
+import { AngularFireAuthModule } from "angularfire2/auth";
 
 var config = {
-    apiKey: "<YOUR-PERSONAL-API-KEY>",
-    authDomain: "<YOUR-PROJECT>.firebaseapp.com",
-    databaseURL: "https://<YOUR-PROJECT>.firebaseio.com",
-    storageBucket: "<YOUR-PROJECT>.appspot.com",
-    messagingSenderId: "<YOUR-MESSAGE-ID>"
-  };
- 
+  apiKey: "<YOUR-PERSONAL-API-KEY>",
+  authDomain: "<YOUR-PROJECT>.firebaseapp.com",
+  databaseURL: "https://<YOUR-PROJECT>.firebaseio.com",
+  storageBucket: "<YOUR-PROJECT>.appspot.com",
+  messagingSenderId: "<YOUR-MESSAGE-ID>",
+};
+
 @NgModule({
-  declarations: [
-    MyApp,
-    HomePage,
-    LoginPage,
-    SignupPage
-  ],
+  declarations: [MyApp, HomePage, LoginPage, SignupPage],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(config),
-    AngularFireAuthModule
+    AngularFireAuthModule,
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    HomePage,
-    LoginPage,
-    SignupPage
-  ],
+  entryComponents: [MyApp, HomePage, LoginPage, SignupPage],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     StatusBar,
-    SplashScreen
-    ]
+    SplashScreen,
+  ],
 })
 export class AppModule {}
 ```
@@ -224,27 +194,30 @@ Now you have to import AngularFire2 and the LoginPage into our `app.component.ts
 
 ```ts
 // app.component.ts
-import { Component } from '@angular/core';
-import { Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import { HomePage } from '../pages/home/home';
- 
-import { AngularFireAuth } from 'angularfire2/auth';
-import { LoginPage } from '../pages/login/login';
+import { Component } from "@angular/core";
+import { Platform } from "ionic-angular";
+import { StatusBar } from "@ionic-native/status-bar";
+import { SplashScreen } from "@ionic-native/splash-screen";
+import { HomePage } from "../pages/home/home";
+
+import { AngularFireAuth } from "angularfire2/auth";
+import { LoginPage } from "../pages/login/login";
 
 @Component({
-	templateUrl: 'app.html'
+  templateUrl: "app.html",
 })
 export class MyApp {
   rootPage: any = HomePage;
- 
-  constructor(platform: Platform, private afAuth: AngularFireAuth, private statusBar: StatusBar, private splashscreen: SplashScreen) {
-    this.afAuth.authState.subscribe(auth => {
-      if(!auth)
-        this.rootPage = LoginPage;
-      else
-        this.rootPage = HomePage;
+
+  constructor(
+    platform: Platform,
+    private afAuth: AngularFireAuth,
+    private statusBar: StatusBar,
+    private splashscreen: SplashScreen,
+  ) {
+    this.afAuth.authState.subscribe((auth) => {
+      if (!auth) this.rootPage = LoginPage;
+      else this.rootPage = HomePage;
     });
     platform.ready().then(() => {
       statusBar.styleDefault();
@@ -264,7 +237,7 @@ For the UI we will change the markup of `login.html` and implementing the corres
     <ion-title>Login</ion-title>
   </ion-navbar>
 </ion-header>
- 
+
 <ion-content padding>
   <ion-list>
     <ion-item>
@@ -283,25 +256,25 @@ For the UI we will change the markup of `login.html` and implementing the corres
 
 ```ts
 // login.ts
-import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { SignupPage } from '../signup/signup';
- 
+import { Component } from "@angular/core";
+import { NavController } from "ionic-angular";
+import { SignupPage } from "../signup/signup";
+
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html'
+  selector: "page-login",
+  templateUrl: "login.html",
 })
 export class LoginPage {
   loginData = {
-    email: '',
-    password: ''
-  }
-  constructor(public navCtrl: NavController) { }
- 
+    email: "",
+    password: "",
+  };
+  constructor(public navCtrl: NavController) {}
+
   login() {
     // Login Code here
   }
- 
+
   signup() {
     this.navCtrl.push(SignupPage, { email: this.loginData.email });
   }
@@ -333,7 +306,10 @@ The two password fields are going to be checked if the entered passwords are mat
     </ion-item>
     <ion-item>
       <ion-label floating>Re-Enter Password</ion-label>
-      <ion-input type="password" [(ngModel)]="signupData.passwordRetyped"></ion-input>
+      <ion-input
+        type="password"
+        [(ngModel)]="signupData.passwordRetyped"
+      ></ion-input>
     </ion-item>
   </ion-list>
   <button full ion-button (click)="signup()">Signup</button>
@@ -341,31 +317,36 @@ The two password fields are going to be checked if the entered passwords are mat
 ```
 
 ```ts
-signup.ts
-import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
- 
+signup.ts;
+import { Component } from "@angular/core";
+import { NavController, NavParams, AlertController } from "ionic-angular";
+
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: "page-signup",
+  templateUrl: "signup.html",
 })
 export class SignupPage {
   signupData = {
-    email: '',
-    password: '',
-    passwordRetyped: ''
+    email: "",
+    password: "",
+    passwordRetyped: "",
   };
- 
-  constructor(private navCtrl: NavController, private navParams: NavParams, private alertCtrl: AlertController) {
-    this.signupData.email = this.navParams.get('email');
+
+  constructor(
+    private navCtrl: NavController,
+    private navParams: NavParams,
+    private alertCtrl: AlertController,
+  ) {
+    this.signupData.email = this.navParams.get("email");
   }
- 
+
   signup() {
-    if(this.signupData.password !== this.signupData.passwordRetyped) {
+    if (this.signupData.password !== this.signupData.passwordRetyped) {
       let alert = this.alertCtrl.create({
-        title: 'Error',
-        message: 'Your password and your re-entered password does not match each other.',
-	buttons: ['OK']
+        title: "Error",
+        message:
+          "Your password and your re-entered password does not match each other.",
+        buttons: ["OK"],
       });
       alert.present();
       return;
@@ -378,10 +359,10 @@ export class SignupPage {
 
 Now we implements the function to signup a new user by using the already added AngularFire2 module. The user should be able to register using an email and password combination.
 If there is an error during the signup process (e.g. with a too short password), the app should show a dialog with the error message.
-So you going to implement AngularFire into `signup.ts`  first.
+So you going to implement AngularFire into `signup.ts` first.
 
 ```ts
-import { AngularFireAuth } from 'angularfire2/auth';
+import { AngularFireAuth } from "angularfire2/auth";
 ```
 
 and
@@ -399,13 +380,17 @@ constructor(
 If you want to start the signup process on button click, we need to implement the process inside the `signup` function. Inside this function we’re going to use a function of AngularFire which is called `createUser` and passing the needed parameters (email and password).
 
 ```ts
-this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
-    .then(auth => {
-      // Could do something with the Auth-Response
-    })
-    .catch(err => {
-      // Handle error
-    });
+this.afAuth.auth
+  .createUserWithEmailAndPassword(
+    this.signupData.email,
+    this.signupData.password,
+  )
+  .then((auth) => {
+    // Could do something with the Auth-Response
+  })
+  .catch((err) => {
+    // Handle error
+  });
 ```
 
 If the signup was successful and you have not configured a confirmation using email, AngularFire will automatically logon your user and returns the auth response. If the logon was successful, our previous implementation of the auth subscription is going to be triggered and redirects the user directly into the `HomePage`.
@@ -414,9 +399,9 @@ If there was an error with the signup, our code will run into the `catch` statem
 
 ```ts
 error = {
-	code: string,
-	message: string
-}
+  code: string,
+  message: string,
+};
 ```
 
 The error response from firebase always looks the same, so we have now two options to handle the error. First we could use the `message` property as message for the user and showing it directly to him. Second we could use the `code` property for getting, eg. a translation key and showing the translated value to the user.
@@ -424,11 +409,11 @@ This example is going to use the `message` property to show the message directly
 
 ```ts
 let alert = this.alertCtrl.create({
-        title: 'Error',
-        message: err.message,
-        buttons: ['OK']
-      });
-      alert.present();
+  title: "Error",
+  message: err.message,
+  buttons: ["OK"],
+});
+alert.present();
 ```
 
 ![Screenshot: Mobile app with password length error](https://directus.aaronczichon.de/assets/ddfab856-d8c9-4291-9db3-6907c9015327?download)
@@ -441,55 +426,61 @@ The `SignupPage` is finished now. Here is the complete code.
 
 ```ts
 // signup.ts
-import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController } from 'ionic-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
- 
+import { Component } from "@angular/core";
+import { NavController, NavParams, AlertController } from "ionic-angular";
+import { AngularFireAuth } from "angularfire2/auth";
+
 @Component({
-  selector: 'page-signup',
-  templateUrl: 'signup.html'
+  selector: "page-signup",
+  templateUrl: "signup.html",
 })
 export class SignupPage {
   signupData = {
-    email: '',
-    password: '',
-    passwordRetyped: ''
+    email: "",
+    password: "",
+    passwordRetyped: "",
   };
- 
+
   constructor(
     private navCtrl: NavController,
     private navParams: NavParams,
     private alertCtrl: AlertController,
-    private afAuth: AngularFireAuth) {
-    this.signupData.email = this.navParams.get('email');
+    private afAuth: AngularFireAuth,
+  ) {
+    this.signupData.email = this.navParams.get("email");
   }
- 
+
   signup() {
-    if(this.signupData.password !== this.signupData.passwordRetyped) {
+    if (this.signupData.password !== this.signupData.passwordRetyped) {
       let alert = this.alertCtrl.create({
-        title: 'Error',
-        message: 'Your password and your re-entered password does not match each other.',
-        buttons: ['OK']
+        title: "Error",
+        message:
+          "Your password and your re-entered password does not match each other.",
+        buttons: ["OK"],
       });
       alert.present();
       return;
     }
- 
-     // Firebase Signup Code
-     this.afAuth.auth.createUserWithEmailAndPassword(this.signupData.email, this.signupData.password)
-    .then(auth => {
-      // Could do something with the Auth-Response
-      console.log(auth);
-    })
-    .catch(err => {
-      // Handle error
-      let alert = this.alertCtrl.create({
-        title: 'Error',
-        message: err.message,
-        buttons: ['OK']
+
+    // Firebase Signup Code
+    this.afAuth.auth
+      .createUserWithEmailAndPassword(
+        this.signupData.email,
+        this.signupData.password,
+      )
+      .then((auth) => {
+        // Could do something with the Auth-Response
+        console.log(auth);
+      })
+      .catch((err) => {
+        // Handle error
+        let alert = this.alertCtrl.create({
+          title: "Error",
+          message: err.message,
+          buttons: ["OK"],
+        });
+        alert.present();
       });
-      alert.present();
-    });
   }
 }
 ```
@@ -506,13 +497,14 @@ constructor(private navCtrl: NavController, private afAuth: AngularFireAuth) { }
 Now we implement the authentication process of Firebase.
 
 ```ts
-this.afAuth.auth.signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
-    .then(auth => {
-      // Do custom things with auth
-    })
-    .catch(err => {
-      // Handle error
-    });
+this.afAuth.auth
+  .signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
+  .then((auth) => {
+    // Do custom things with auth
+  })
+  .catch((err) => {
+    // Handle error
+  });
 ```
 
 For logon at Firebase we have multiple options and provider possibilties. For each posibility there is a dedicated method.
@@ -530,10 +522,10 @@ Inside the catch block of the authentication process we’re now creating a new 
 
 ```ts
 let toast = this.toastCtrl.create({
-        message: err.message,
-        duration: 1000
-      });
-      toast.present();
+  message: err.message,
+  duration: 1000,
+});
+toast.present();
 ```
 
 If something went wrong during the authentication process, the user gets notified by the toast.
@@ -544,35 +536,40 @@ This is how the code for `LoginPage` looks like.
 
 ```ts
 // login.ts
-import { Component } from '@angular/core';
-import { NavController, ToastController } from 'ionic-angular';
-import { SignupPage } from '../signup/signup';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { Component } from "@angular/core";
+import { NavController, ToastController } from "ionic-angular";
+import { SignupPage } from "../signup/signup";
+import { AngularFireAuth } from "angularfire2/auth";
 
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html'
+  selector: "page-login",
+  templateUrl: "login.html",
 })
 export class LoginPage {
   loginData = {
-    email: '',
-    password: ''
-  }
-  constructor(private navCtrl: NavController, private afAuth: AngularFireAuth, private toastCtrl: ToastController) { }
+    email: "",
+    password: "",
+  };
+  constructor(
+    private navCtrl: NavController,
+    private afAuth: AngularFireAuth,
+    private toastCtrl: ToastController,
+  ) {}
 
   login() {
-    this.afAuth.auth.signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
-    .then(auth => {
-      // Do custom things with auth
-    })
-    .catch(err => {
-      // Handle error
-      let toast = this.toastCtrl.create({
-        message: err.message,
-        duration: 1000
+    this.afAuth.auth
+      .signInWithEmailAndPassword(this.loginData.email, this.loginData.password)
+      .then((auth) => {
+        // Do custom things with auth
+      })
+      .catch((err) => {
+        // Handle error
+        let toast = this.toastCtrl.create({
+          message: err.message,
+          duration: 1000,
+        });
+        toast.present();
       });
-      toast.present();
-    });
   }
 
   signup() {
@@ -586,12 +583,26 @@ For this we only have to change a few things inside our HTML templates of the pa
 
 ```html
 <!-- login.html -->
-<button full ion-button (click)="login()" [disabled]="!loginData.email || !loginData.password">Login</button>
+<button
+  full
+  ion-button
+  (click)="login()"
+  [disabled]="!loginData.email || !loginData.password"
+>
+  Login
+</button>
 ```
 
 ```html
 <!-- signup.html -->
-<button full ion-button (click)="signup()" [disabled]="!signupData.email || !signupData.password || !signupData.passwordRetyped">Signup</button>
+<button
+  full
+  ion-button
+  (click)="signup()"
+  [disabled]="!signupData.email || !signupData.password || !signupData.passwordRetyped"
+>
+  Signup
+</button>
 ```
 
 ## Adding sign out function (Update of July 2017)
@@ -603,9 +614,7 @@ For implementing a logout you have to update your home template and component (p
 <!-- home.html -->
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title> Ionic Blank </ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="signOut()">
         <ion-icon name="power"></ion-icon>
@@ -617,7 +626,8 @@ For implementing a logout you have to update your home template and component (p
 <ion-content padding>
   The world is your oyster.
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    If you get lost, the
+    <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
 </ion-content>
 ```
@@ -626,20 +636,20 @@ Now we have to implement the `signOut` function inside our page which is called 
 
 ```ts
 // home.ts
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
-import { NavController } from 'ionic-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
+import { NavController } from "ionic-angular";
+import { AngularFireAuth } from "angularfire2/auth";
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: "page-home",
+  templateUrl: "home.html",
 })
 export class HomePage {
-
   constructor(
     private navCtrl: NavController,
-    private auth: AngularFireAuth) { }
+    private auth: AngularFireAuth,
+  ) {}
 
   signOut() {
     this.auth.auth.signOut();
@@ -659,14 +669,16 @@ Aaron
 ## Changes on AngularFire2 Version 4.0.0-RC.1
 
 As you may noticed, in the latest release of AngularFire2 we have to change a few things. I want to conclude some of the mayor changes:
+
 1. We no longer have only one Angular module for AngularFire2. Instead, if we want to use authentication, we also have to add the `AngularFireAuthModule` to our `AppModule`.
 2. There is now a new provider for authentication called `AngularFireAuth`.
 3. Methods of the AngularFire authentication has changed. So no longer have a `login` function and the options to pass the authentication method and provider into it. There is now a `signIn` function for each authentication method. In our case this has changed to `signInWithEmailAndPassword`. This method name changes also concerns the `signUp` functions as you can see in our `signUp` page.
 
 ## Updated
 
-Update from 17. December 2017:  
-* I updated the article to Ionic 3.9.2, Anuglar 5 and AngularFire2 5 RC4.
-* Also in header you can now find all important version informations. (Ionic, Angular, AngularFire2, Firebase)
-* Updated Conclusion section
-* If you updating your project, check the packages for upgrade instructions (like [Ionic](https://github.com/ionic-team/ionic/CHANGELOG.md))
+Update from 17. December 2017:
+
+- I updated the article to Ionic 3.9.2, Anuglar 5 and AngularFire2 5 RC4.
+- Also in header you can now find all important version informations. (Ionic, Angular, AngularFire2, Firebase)
+- Updated Conclusion section
+- If you updating your project, check the packages for upgrade instructions (like [Ionic](https://github.com/ionic-team/ionic/CHANGELOG.md))
