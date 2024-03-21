@@ -26,7 +26,7 @@ This article describes on how to build an Azure HTTP Function which will be trig
 For this tutorial I need to provide some background information. In our startup we’re using [Toggl](https://toggl.com) for time tracking. Privately I’m using the App [Geofency](http://www.geofency.com/) for tracking location times for spot I’m visiting often. So now I had the problem that I often forgot to stop my Toggl timer after a day of work. 
 The good thing about that is, that Toggl provides an REST API and Geofency supports web hook triggers.
 
-{images:1}
+![Screenshot: Microsoft Azure Dashboard](https://directus.aaronczichon.de/assets/374e0df3-96dc-4d63-b097-3080c5b6a567?download)
 
 The problem with the Toggl API is, that you have to make 2 calls for stopping the timer:
 1. You need to check if there is currently a timer running. If so, the API will return the time entry in the results. 
@@ -41,17 +41,17 @@ If you don’t have an Azure Account, you can create one here: [Microsoft Azure]
 
 For  create a new Azure Function App, click on the `Create a resource` , `Compute` and on `Function App`:
 
-{images:2}
+![Screenshot: Creating azure function app](https://directus.aaronczichon.de/assets/ec518f97-fbb6-4ecd-8f83-5822c4bfc1e1?download)
 
 Now you need to define an app name. Let’s call it `GeofencyTrigger` for example. Select your subscription, create a new resource group (`GeofencyTriggerGroup`), maybe change the server location under `Location` to a place which is nearer to you.
 Hit `Create` if you’re all set:
 
-{images:3}
+![Screenshot: Azure function app configuration](https://directus.aaronczichon.de/assets/b4654ba3-afb4-43e9-b279-e2bcc95e1387?download)
 
 The deployment process could take a while. 
 After it was successfully deployed on Azure you can access your Azure Function App:
 
-{images:4}
+![Screenshot: Adding new trigger to azure function](https://directus.aaronczichon.de/assets/ea6f9d7e-f38d-4cf6-947e-a351720237e0?download)
 
 At the last step for programming preparations we want to create the HTTP trigger for our app. So click on `Functions` and on the blue plus symbol for adding a new function.
 Select `Webhook + API` and choose `Javascript` as the function language:
@@ -233,7 +233,7 @@ function stopToggl(context, req) {
 ## Run the function
 At the last point we should now `deploy` the function to Azure Function. You could at least upload the `index.js` file or copy the code into the online editor and save it there. I’ll just copy it now for this tutorial:
 
-{images:6}
+![Screenshot: program code of index.js](https://directus.aaronczichon.de/assets/2db8446a-b9ea-4e0c-9412-1cc4308439e2?download)
 
 Also click on the plus to add a new file called `package.json`. Copy your `package.json` content here and hit save.
 
