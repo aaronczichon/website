@@ -38,7 +38,7 @@ To add Trapeze to your existing project it's easy as everything in the Ionic uni
 
 With Trapeze there are 2 ways to configure your project: With `YAML` configuration files or using the Javascript/Typescript API which is provided by the `@trapezedev/project`.
 
-{images:3}
+![Red and blue pill image from The Matrix](https://directus.aaronczichon.de/assets/92d70441-56ce-4ac1-aef8-5190ec2bdd5a?download)
 
 To get now started with a configuration a `config.yaml` file needs to be created inside the project.
 
@@ -54,7 +54,7 @@ In this example the Android version name and the iOS version are getting updated
 
 As you can see my current application has a version called `1.3.0`.
 
-{images:1}
+![Screenshot: Apple XCode](https://directus.aaronczichon.de/assets/486823cb-a031-4e27-80a6-49758269f76e?download)
 
 For taking the Trapeze configuration to action I'll run:
 ```bash
@@ -248,7 +248,7 @@ platforms:
 
 If we now running the pipeline on Github it will inject the workflow number into our packages, update the bundle identifier / package name and add them as output to the workflow run:
 
-{images:2}
+![Screenshot: Github Artifacts](https://directus.aaronczichon.de/assets/b2139c1e-13a3-457b-8b0d-510f8807e5e8?download)
 
 This was it for part 1!
 
