@@ -33,7 +33,10 @@ const dateOptions: object = {
         You can also take a look at my public <a
           target="_blank"
           href="https://github.com/aaronczichon">Github</a
-        > profile or let me hear something from you on [Twitter](https://twitter.com/aaronczichon).
+        > profile or let me hear something from you on <a
+          target="_blank"
+          href="https://mastodon.social/@czichon">Mastodon</a
+        >.
       </p>
       <p>
         Need a conversation starter? <br /> I like motorcycling, volleyball and Formula
@@ -54,6 +57,7 @@ const dateOptions: object = {
           .sort((a, b) => {
             return a.data.pubDate > b.data.pubDate ? -1 : 1;
           })
+          .slice(0, 5)
           .map((post) => (
             <a href={"/blog/" + post.slug} class="entry">
               {post.data.image ? (
@@ -79,5 +83,6 @@ const dateOptions: object = {
           ))
       }
     </div>
+    <a href="/blog" style="padding-bottom: 32px">read more...</a>
   </main>
 </Layout>
