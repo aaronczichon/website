@@ -24,7 +24,8 @@ public observer = merge([this.form.valueChanges, this.picker.valuesUpdated$]);
 ```
 
 My expectations where: The merge observer should emit every value after each other from the `this.form.valueChanges` and `this.picker.valuesUpdates$` observer.
-{images:1}
+
+![Diagram of rx marbles](https://directus.aaronczichon.de/assets/b0d8d555-4f4e-4f4c-9ef0-9f7e50576c67?download)
 
 The thing is, it never emits any value.
 
