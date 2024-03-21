@@ -15,10 +15,10 @@ I took the day completely off from technology prepared some more stuff for the m
 
 I want to share them with you!
 
-{images:1}
-{images:2}
-{images:3}
-{images:4}
+![Cold days with a view over landscape and a road](https://directus.aaronczichon.de/assets/0b1983cf-0279-4441-8812-7cf3ade4129c?download)
+![Cold days with a view over landscape](https://directus.aaronczichon.de/assets/7193ea54-c084-4442-972a-fd7f955fde21?download)
+![Cold days with a view over landscape](https://directus.aaronczichon.de/assets/bbebbc3c-535d-4ffb-a248-3519fbb723a1?download)
+![Cold days with a view over landscape](https://directus.aaronczichon.de/assets/c38040b9-1656-4668-9594-d4b0361eec70?download)
 
 All photos where taken with an iPhone 15 Pro Max.
 
