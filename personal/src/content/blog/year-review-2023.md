@@ -98,9 +98,9 @@ After 2 (or 3) years of pause we had this year again our family get-together fro
 There where actually so much more so I added some here:
 We played a lot of Volleyball and also had some really great days gathering with friends. We had many birthday parties, went waterskiing and wakeboarding on the river again, I participated for the first time in person at a Formula 1 race in Austria (thanks to [PlanB.](https://planb.net)), I went on 2 holidays with friends (Croatia and [Slovakia](https://xalpaka.de)) and just before Christmas we went to Dresden for a 3 day trip.
 
-![Man standing on the roof top of a firefighting car taking a photograf of the landscape with a phone](https://directus.aaronczichon.de/assets/6a1baeaf-b67a-4cb7-a115-30bdecf126da?download)
+![Man standing on the roof top of a firefighting car taking a photograf of the landscape with a phone](https://directus.aaronczichon.de/assets/6a1baeaf-b67a-4cb7-a115-30bdecf126da?download&width=750)
 
-![A picture of the ocean with a great weather. View down to the ocean between trees](https://directus.aaronczichon.de/assets/37a7e645-c8f6-4cc0-8b1f-919fe8899d9f?download)
+![A picture of the ocean with a great weather. View down to the ocean between trees](https://directus.aaronczichon.de/assets/37a7e645-c8f6-4cc0-8b1f-919fe8899d9f?download&width=750)
 
 ## Work Life
 
@@ -115,7 +115,7 @@ In February I integrated a new habit / tool into my (work) life. I cannot handle
 This helped my to keep track of what I'm currently working on and what I achieved in a week/month.
 I also started to document every meeting I'm participating to have these information later available for myself and all the others if I search for something we talked about. It's actually also the app where I prepare my workshops and articles (like this one right know). I even started to develop my own plugin which adds me a mapbox map from a coordinates block.
 
-![Image of the race track at austria. View from the grand stand](https://directus.aaronczichon.de/assets/6fe71209-3963-4eed-99ab-4ad5cf5095a6?download)
+![Image of the race track at austria. View from the grand stand](https://directus.aaronczichon.de/assets/6fe71209-3963-4eed-99ab-4ad5cf5095a6?download&width=750)
 
 ### Side projects
 
