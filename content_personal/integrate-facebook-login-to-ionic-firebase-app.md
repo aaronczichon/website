@@ -50,11 +50,11 @@ To create a new Facebook App you should be registered with your Facebook Account
 
 If you're logged in, select "Add a new App".
 
-{images:1}
+![Screenshot: create new facebook app](https://directus.aaronczichon.de/assets/9cdd005f-d040-4ed4-8951-f245b0df4e2c?download)
 
 In the Facebook popup enter a display name (mostly the name of your app) and a contact email address:
 
-{images:2}
+![Screenshot: facebook app dashboard](https://directus.aaronczichon.de/assets/d495a3ca-f5b6-4ac3-926a-9cd48c1262a2?download)
 
 In the security popup you need to resolve the captcha and it creates your app.
 If your app was created and Facebook redirected you to your app, you have to select "Facebook Login" to add the login functionality to your app.
@@ -62,20 +62,19 @@ Now you need to switch to your Firebase console, into our project and add Facebo
 
 Enable Facebook als authentication provider. You need to enter your Facebook `App ID` and `App` secret here to Firebase. These two keys can be found in your Facebook app under `settings`:
 
-{images:3}
+![Screenshot: facebook app dashboard](https://directus.aaronczichon.de/assets/2a43b236-3cc9-49ee-a86c-32b9ef1a36a2?download)
 
 After entering the `App ID` and the `App secret` you need to copy the Firebase redirect URL and hit `save`.
 
-{images:4}
-
+![Screenshot: facebook app dashboard](https://directus.aaronczichon.de/assets/089c3a52-36e1-407c-b937-6c17f9fb47a9?download)
 
 The redirect URL from Firebase should now be entered into your Facebook app. So switch back to the Facebook Developer Portal, click on `Facebook Login` under `Products` and enter the redirect URL into the `Valid OAuth redirect URIs` field. After this hit `Save Changes`.
 
-{images:5}
+![Screenshot: facebook redirect url](https://directus.aaronczichon.de/assets/ea06b43d-bebd-42fa-b9f4-85e0c5707cb3?download)
 
 Also we need to add this redirect URL to the Facebook app platform. For this, select `Quickstart` on the left side menu and select `Web` as platform. Enter your redirect URL and hit `Save`.
 
-{images:6}
+![Screenshot: facebook account linking](https://directus.aaronczichon.de/assets/e031182e-1dab-4b93-aab3-7dfc0023139e?download)
 
 Now your Facebook app is nearly finished. We come back to that later.
 
@@ -113,11 +112,11 @@ loginFacebook() {
 
 If you now start your app locally with `ionic serve` and hit the `Login with Facebook` button, you should be redirected to Facebook, submit the OAuth and redirected back to your application:
 
-{images:7}
+![Screenshot: Web browser Ionic app mit console statement](https://directus.aaronczichon.de/assets/50e1e924-312a-4807-86f2-136d3b4b65c2?download)
 
 After successful sign in, you should see the credentials in the debugging console:
 
-{images:8}
+![Screenshot: facebook make public](https://directus.aaronczichon.de/assets/3fdd6fa7-6a23-4221-acf8-c5d7275a6132?download)
 
 That's it for now. Next is implementing the mobile Cordova plugin.
 
@@ -206,7 +205,7 @@ For using the Facebook Cordova plugin we need to switch to the Facebook Develope
 
 So, switch to the Portal, select `Facebook Login` and `Quickstart`. There you should select the platform `Android`.
 
-{images:9}
+![Screenshot: android project information](https://directus.aaronczichon.de/assets/855ccb9d-bac1-48c5-b325-a0f52402c5d6?download)
 
 In `Download the Facebook SDK for Android` click on `Next`. Also click `Next` for `Import the Facebook SDK`. 
 Now, in `Tell Us about Your Android Project` enter your package name (could be found in `config.xml` as id). E.g. `com.webatlas.aaronczichon`.
@@ -215,7 +214,7 @@ In `Default Activity Class Name` also enter this package name and extend it with
 
 Hint: If your app has spaces in it's name just remove them for the `Default Activity Class Name`.
 
-{images:10}
+![Bild von einem smartphone mit einem facebook login](https://directus.aaronczichon.de/assets/2e6810cf-54ae-44ab-a3a0-e26392ed7ba7?download)
 
 Hint: If Facebook is asking you, that they have a problem verifying the package name with Google just click `Use this package name`.
 
