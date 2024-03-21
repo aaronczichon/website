@@ -22,7 +22,7 @@ Luckily the display has two input connection possibilities with DisplayPort. One
 The speakers are connected to the display's headphone jack and I can use audio transport via DisplayPort to listening to music.   
 For the keyboard I'm using a Keychron K8 with German ISO layout as it's supports macOS and Windows and allows me to save 3 bluetooth connections.   
 
-{images:1}
+![Bild von einem schreibtisch mit monitor, MacBook und iPad](https://directus.aaronczichon.de/assets/91469baa-3983-4194-a355-04004aa0c038?download)
 
 One cool thing is, that I extended my lightings with 2 crystal lightning balls which can be controlled using HomeKit to make it cozy or focused.   
 Also, one of the important things to me, is the large wood desk plate with an EC3 Flexispot adjustable standing desk.    
