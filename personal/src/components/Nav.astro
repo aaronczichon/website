@@ -3,7 +3,7 @@ import MenuIcon from "./MenuIcon.astro";
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
-import mainImage from "./main.jpg";
+import mainImage from "../resources/refresh_squared.jpg";
 import { Image } from "astro:assets";
 ---
 
@@ -12,7 +12,7 @@ import { Image } from "astro:assets";
     <a href="/" class={currentPath === "" ? "active" : ""}>
       <Image
         src={mainImage}
-        alt="Aaron Czichon & Lea Gräß"
+        alt="Aaron Czichon"
         class="img-profile"
         widths={[30]}
         sizes={`30px`}
