@@ -21,11 +21,11 @@ Doesn't matter if it's ToDos, things I need to remember or storing interesting l
 As many users I often have many opened safari tabs on iOS with things I need to remember and/or I find interesting to check back later.
 But often I also forget about these tabs and always creating new ones but never check back on these links.
 
-{images:2}
+![Screenshot: Apple Safari on iOS](https://directus.aaronczichon.de/assets/366884f8-746a-4fe0-861f-899c9aa1115a?download)
 
 And this is where Apple Shortcuts comes to the party. I created a shortcut which simply get's all opened tabs from safari, creating a ToDo in Things for it with a specific `imported` tag and closes them on the browser.
 With this use case I can simply import safari tabs into my daily driver Things and check back onto them or plan to check them in my weekly "link reading session" on Sundays.
 
-{images:1}
+![Screenshot: Apple Shortcuts app](https://directus.aaronczichon.de/assets/fc9fbdf4-e515-4a26-ae7d-830058e586e2?download)
 
 Do you use Apple Shortcuts for some cool use case? Let me know!
