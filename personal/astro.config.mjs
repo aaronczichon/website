@@ -6,7 +6,7 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   integrations: [mdx(), preact()],
-  site: 'https://canada.aaronczichon.de',
+  site: 'https://aaronczichon.de',
   image: {
     domains: ['api.mapbox.com', 'directus.aaronczichon.de']
   }
