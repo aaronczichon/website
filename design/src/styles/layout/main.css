@@ -8,6 +8,11 @@ body {
 	font-family: 'Mona Sans';
 }
 
+a {
+	color: var(--link-color);
+	font-weight: 700;
+}
+
 .container {
 	width: calc(100%-16px);
 	/* height: 100vh; */

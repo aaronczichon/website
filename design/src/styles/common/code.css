@@ -7,3 +7,7 @@ pre.astro-code {
 code > span {
   padding-left: 8px;
 }
+
+p > code {
+  background-color: var(--bg-color-simple-code);
+}

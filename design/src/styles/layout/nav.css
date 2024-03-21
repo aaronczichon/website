@@ -15,7 +15,7 @@
 .topnav a {
 	float: left;
 	display: block;
-	color: var(--primary-color);
+	color: var(--primary-font-color);
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
