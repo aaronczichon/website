@@ -1,0 +1,30 @@
+name: Build and Deploy Aaron Czichon
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'personal/*/**'
+
+env:
+  MAPBOX_TOKEN: ''
+
+jobs:
+  run-build:
+    name: Build Assets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: cd personal && npm i
+      - run: cd personal && npm run build
+      - name: Sync to FTP
+        uses: airvzxf/ftp-deployment-action@latest
+        with:
+          server: ${{ secrets.FTP_SERVER_AC }}
+          user: ${{ secrets.FTP_USER_AC }}
+          password: ${{ secrets.FTP_PW_AC }}
+          local_dir: "./personal/dist"
