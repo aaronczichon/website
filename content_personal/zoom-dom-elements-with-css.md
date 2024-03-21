@@ -70,7 +70,8 @@ Building the case. Let's create our app. In our case it's a simple website with 
 }
 ```
 The `main.js` is empty for now. It now a simple page with a CSS grid that has two `div`s inside which are rendered side-by-side:
-{images:1}
+
+![Screenshot: Empty browser with two panels side-by-side](https://directus.aaronczichon.de/assets/3387655d-b1c6-46d3-b5b6-9c8438140060?download)
 
 So that's status quo. Now let's add our HTML document from the API. To simplify the case, I will write some HTML Elements inside the `div` where using to zoom it.   
 Let's say we have some table with contents, like an invoice for example. I'll also add some border to the CSS grid to make it more visible.
@@ -110,7 +111,8 @@ and adding a table with sample invoice data to the `index.html`:
 ```
 
 Now our table looks like this:
-{images:2}
+
+![Screenshot: table on the left side](https://directus.aaronczichon.de/assets/b7b2f634-c717-4032-a6db-696ee797c397?download)
 
 Asuming now we want to zoom the table without chaning it's layout fitting to the CSS grid. And here starts the cool part:   
 You can actually scale an element without chaning it's initial layout with a simple CSS extension:
@@ -127,7 +129,8 @@ You can actually scale an element without chaning it's initial layout with a sim
 ```
 For Firefox we need to make a little workaround using the transform function as they not supporting `zoom` out of the box (see also on [Can I Use](https://caniuse.com/?search=zoom)).
 If we now add this class `zoom-to-50` to our table `<table class="zoom-to-50">` we are able to zoom our table element without changing it's layout:
-{images:3}
+
+![Screenshot: Table with open dev tools](https://directus.aaronczichon.de/assets/d671925f-4ff4-4e49-b9cd-8899a9e12632?download)
 
 So here the possibilities of this trick:
 If you're using some frontend framework like React, VueJS, Angular or something else you mostly have binding options to the markup. In Angular for example you have RxJS where you can build an Observable which can you provide the zooming CSS depending on which zoom button (`+` or `-`) the user has clicked.   
