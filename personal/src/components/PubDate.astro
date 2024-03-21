@@ -1,0 +1,14 @@
+---
+const { date } = Astro.props;
+---
+
+<p>
+  Published on {
+    new Date(date).toLocaleDateString("en-CA", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    })
+  }
+  <slot />
+</p>

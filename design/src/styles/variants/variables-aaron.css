@@ -1,14 +1,16 @@
 :root {
-	--primary-color: #0b1733;
-	--primary-color-dark: #4f627f;
+	--primary-color: #4f627f;
+	--primary-color-dark:#0b1733;
 	--primary-color-light: #c9d7dd;
 	--secondary-color: #e8c872;
 	--secondary-color-light: #fff3cf;
 	--secondary-color-ultra-light: #ffffff;
 
 	--background-color: var(--secondary-color-ultra-light);
-	--heading-color: var(--primary-color);
+	--heading-color: var(--primary-color-dark);
 	--primary-font-color: var(--primary-color-dark);
+	--bg-color-simple-code: var(--secondary-color-light);
+	--link-color: var(--primary-font-color);
 
 	--nav-margin: 1rem 0 1rem 0;
 	--nav-border: 1px solid var(--primary-color-dark);
@@ -24,5 +26,7 @@
 
 		--background-color: var(--secondary-color);
 		--heading-color: var(--primary-color);
+		--primary-font-color: var(--primary-color-dark);
+		--bg-color-simple-code: #172f69;
 	}
 }

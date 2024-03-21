@@ -1,0 +1,72 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
+const allPosts = await getCollection("blog");
+
+import rssIcon from "../resources/rss.svg";
+---
+
+<Layout title="Aaron Czichon - Blog">
+  <main class="container">
+    <article>
+      <h1>
+        Blog <a href="/rss.xml"
+          ><Image
+            style="width: 25px; height: 25px"
+            src={rssIcon}
+            alt="RSS Icon for subscribe to RSS feed."
+            widths={[30]}
+            sizes={`30px`}
+          /></a
+        >
+      </h1>
+      <p>
+        My blog represents my own opinions and does not represent any other
+        (except if explicit mentioned). It contains articles and tiny thoughts
+        about my daily life, software development and a lot of other things. <br
+        />
+        I trying my best to everyone feel comfortable to read my content and don't
+        want to offend anyone. <br />
+        But I'm also only a human being. So if there is anything you don't like or
+        you feel offended by, please let me knw. <br />
+      </p>
+    </article>
+    <div class="entry-grid">
+      {
+        allPosts
+          .sort((a, b) => {
+            return a.data.pubDate > b.data.pubDate ? -1 : 1;
+          })
+          .map((post) => (
+            <a href={"/blog/" + post.slug} class="entry">
+              {post.data.image ? (
+                <Image
+                  src={post.data.image.url}
+                  alt={post.data.image.alt}
+                  style="max-height: 350px; width: 100%; object-fit: cover;"
+                />
+              ) : null}
+              <h3>
+                {post.data.title}
+                <span class="entry--date">
+                  {new Date(post.data.pubDate).toLocaleDateString(
+                    "en-CA",
+                    dateOptions,
+                  )}
+                </span>
+              </h3>
+              <p>{post.data.description}</p>
+            </a>
+          ))
+      }
+    </div>
+  </main>
+</Layout>

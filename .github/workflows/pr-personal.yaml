@@ -1,11 +1,11 @@
-name: PR Builds
+name: PR Builds Aaron Czichon
 
 on:
   pull_request:
     branches:
       - main
     paths:
-      - 'canada/*/**'
+      - 'personal/*/**'
 
 env:
   MAPBOX_TOKEN: ''
@@ -19,5 +19,5 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: cd canada && npm i
-      - run: cd canada && npm run build
+      - run: cd personal && npm i
+      - run: cd personal && npm run build
