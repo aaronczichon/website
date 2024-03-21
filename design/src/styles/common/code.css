@@ -1,0 +1,7 @@
+pre.astro-code {
+  line-height: 1.3em;
+}
+
+code > span {
+  padding-left: 8px;
+}
