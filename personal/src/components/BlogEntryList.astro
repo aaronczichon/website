@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+const allPosts = await getCollection("blog");
+
+const dateOptions: object = {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+};
+
+const { limit } = Astro.props;
+---
+
+<div class="entry-grid">
+  {
+    allPosts
+      .sort((a, b) => {
+        return a.data.pubDate > b.data.pubDate ? -1 : 1;
+      })
+      .slice(0, limit)
+      .map((post) => (
+        <a href={"/blog/" + post.slug} class="entry">
+          {post.data.image ? (
+            <Image
+              widths={[700]}
+              sizes={`700px`}
+              src={post.data.image.url}
+              alt={post.data.image.alt}
+              style="max-height: 350px; width: 100%; object-fit: cover;"
+            />
+          ) : null}
+          <h3>
+            {post.data.title} <br />
+            <span class="entry--date">
+              {new Date(post.data.pubDate).toLocaleDateString(
+                "en-CA",
+                dateOptions,
+              )}
+            </span>
+          </h3>
+          <p>{post.data.description}</p>
+        </a>
+      ))
+  }
+</div>

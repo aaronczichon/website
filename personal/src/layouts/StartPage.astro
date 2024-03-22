@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import BlogEntryList from "../components/BlogEntryList.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title={"Aaron Czichon - " + frontmatter.title}>
+  {
+    frontmatter.image ? (
+      <Hero url={frontmatter.image.url} alt={frontmatter.image.alt} />
+    ) : (
+      ""
+    )
+  }
+  <main class="container">
+    <article>
+      <slot />
+    </article>
+    <h2 style="padding-top: 32px">My latest blog entries</h2>
+    <BlogEntryList limit="5" />
+    <a href="/blog" style="padding-bottom: 32px">read more...</a>
+  </main>
+</Layout>

@@ -1,14 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
-const allPosts = await getCollection("blog");
-
-const dateOptions: object = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-};
+import BlogEntryList from "../components/BlogEntryList.astro";
 ---
 
 <Layout title="Aaron Czichon - Home">
@@ -51,38 +43,7 @@ const dateOptions: object = {
       </p>
     </article>
     <h2 style="padding-top: 32px">My latest blog entries</h2>
-    <div class="entry-grid">
-      {
-        allPosts
-          .sort((a, b) => {
-            return a.data.pubDate > b.data.pubDate ? -1 : 1;
-          })
-          .slice(0, 5)
-          .map((post) => (
-            <a href={"/blog/" + post.slug} class="entry">
-              {post.data.image ? (
-                <Image
-                  widths={[700]}
-                  sizes={`700px`}
-                  src={post.data.image.url}
-                  alt={post.data.image.alt}
-                  style="max-height: 350px; width: 100%; object-fit: cover;"
-                />
-              ) : null}
-              <h3>
-                {post.data.title} <br />
-                <span class="entry--date">
-                  {new Date(post.data.pubDate).toLocaleDateString(
-                    "en-CA",
-                    dateOptions,
-                  )}
-                </span>
-              </h3>
-              <p>{post.data.description}</p>
-            </a>
-          ))
-      }
-    </div>
+    <BlogEntryList limit="5" />
     <a href="/blog" style="padding-bottom: 32px">read more...</a>
   </main>
 </Layout>
