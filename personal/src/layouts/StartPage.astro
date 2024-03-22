@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import BlogEntryList from "../components/BlogEntryList.astro";
 import Divider from "../components/Divider.astro";
+
 import HeroImage from "../resources/hero.jpeg";
+import rssIcon from "../resources/rss.svg";
 
 const { frontmatter } = Astro.props;
 ---
@@ -18,7 +21,16 @@ const { frontmatter } = Astro.props;
       <slot />
     </article>
     <Divider margin="32px 0 32px 0" />
-    <h2>My latest blog entries</h2>
+    <h2>
+      My latest blog entries <a title="Yeah RSS is still cool!" href="/rss.xml"
+        ><Image
+          style="width: 25px; height: 25px"
+          src={rssIcon}
+          alt="RSS Icon for subscribe to RSS feed."
+          widths={[30]}
+          sizes={`30px`}
+        /></a>
+    </h2>
     <BlogEntryList limit="4" />
     <a href="/blog" style="padding-bottom: 32px">read more...</a>
   </main>
