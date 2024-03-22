@@ -6,6 +6,7 @@ body {
 	background-color: var(--background-color);
 	color: var(--primary-font-color);
 	font-family: 'Mona Sans';
+	font-size: 1.1rem;
 }
 
 a {
