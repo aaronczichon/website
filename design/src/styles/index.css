@@ -6,6 +6,7 @@
 @import './common/fun.css';
 @import './common/utils.css';
 @import './common/code.css';
+@import './common/divider.css';
 
 @import './layout/main.css';
 @import './layout/hero.css';
