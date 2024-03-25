@@ -4,8 +4,20 @@
 
 .blog-entry img {
 	width: 100%;
-	max-height: 450px;
+	max-height: 250px;
 	object-fit: contain;
+}
+
+@media only screen and (min-width: 30em) {
+	.blog-entry img {
+		max-height: 350px;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+	.blog-entry img {
+		max-height: 450px;
+	}
 }
 
 .blog-entry blockquote {
