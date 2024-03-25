@@ -10,6 +10,12 @@
 
 .blog-entry blockquote {
 	text-align: center;
+	font-style: italic;
+	margin-top: 0;
+}
+
+.blog-entry blockquote p {
+	margin-top: 0;
 }
 
 th,
