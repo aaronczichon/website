@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'personal/*/**'
+      - 'design/*/**'
 
 env:
   MAPBOX_TOKEN: ''
