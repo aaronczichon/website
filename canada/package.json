@@ -4,14 +4,15 @@
 	"version": "1.0.0",
 	"scripts": {
 		"dev": "astro dev",
-		"start": "npm run copy:styles && npm run dev",
+		"start": "npm run rm:styles && npm run copy:styles && npm run dev",
 		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro}\"",
 		"copy:canada-variables": "cp ../design/src/styles/variants/variables-canada.css ./src/styles/common/variables.css",
 		"copy:styles": "cp -R ../design/src/styles ./src/styles && npm run copy:canada-variables",
-		"copy:assets": "cp -R ../design/src/assets ./public/assets"
+		"copy:assets": "cp -R ../design/src/assets ./public/assets",
+		"rm:styles": "rm -rf ./src/styles"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.5.6",
