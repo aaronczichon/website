@@ -80,8 +80,8 @@ It got really good in recent years!
 I actually hate eBooks and love to buy physical books. But as I'm currently travelling through Canada I can't take real books with me so I bought a eReader called Tolino Shine 4. It does the thing.
 I track progress and what I want to read with the Goodreads service.
 
-**✍️ Blogging: [Processwire](https://processwire.com/) and soon [Astro](https://astro.build/) + Markdown**  
-My personal website is still on Processwire but I'm working on a new one with Astro.
+**✍️ Blogging: [Astro](https://astro.build/) + Markdown**  
+Created my new website using the Astro framework. Content is written using simple markdown files.
 
 **📊 Presentations: Powerpoint, sometimes Keynote**  
 For work mostly Powerpoint as the integration into Teams sharing is quite good. Sometimes I use Keynote also.
