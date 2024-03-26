@@ -14,7 +14,7 @@ const { url, alt, image } = Astro.props;
         style="height: 100%; width: 100%; object-fit: cover;"
       />
     ) : (
-      <img src={url} alt={alt} decoding="async" loading="lazy" />
+      <img src={url} alt={alt} decoding="async" />
     )
   }
 </div>
