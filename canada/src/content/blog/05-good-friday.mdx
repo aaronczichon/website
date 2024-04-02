@@ -10,6 +10,7 @@ tags: ["Kanada", "Yarmouth", "Lake Duchette", "Nova Scotia", "Eastern", "Acadian
 ---
 
 import ContentImage from "../../components/ContentImage.astro";
+import PathMap from "../../components/dynamic/PathMap";
 
 import IMG_9085 from "./images/05/IMG_9085.jpg";
 import IMG_9096 from "./images/05/IMG_9096.jpg";
@@ -38,9 +39,17 @@ Dazu ist wohl alles gesagt.
 
 Wir ließen uns aber den Freitag nicht von dem Wetter verderben und sind zunächst nach Cape Forchu und die Bear Island gefahren. Dort haben wir einen kleinen Rundgang um das dortige Lighthouse gemacht 
 Der hauptsächliche Anlaufpunkt an diesem Tag war Yarmouth die einzigste "Stadt" im Süden von Nova Scotia (etwa 7000 Einwohner\*innen).   
-Von Yarmouth ausgehend sind wir noch an den Strand von Comeaus Hill gefahren am Abend dann in der Nähe unserer Unterkunft, in Meteghan, essen gewesen.
 
 <ContentImage src={IMG_3610} alt="Im Vordergrund eine Straße welche vom Regen durchnäßt ist. Im Fokus mehrere Reihenhäuser in grellem Blau." />
+
+Von Yarmouth ausgehend sind wir noch an den Strand von Comeaus Hill gefahren am Abend dann in der Nähe unserer Unterkunft, in Meteghan, essen gewesen.
+
+<PathMap
+  client:visible
+  gpxUrl="/assets/routes/05-good-friday.gpx"
+  zoom="9.5"
+  tooltip="Unsere Route am Karfreitag. Zuerst nach Cape Forchu, dann nach Yarmouth und Comeaus Hill und zum Schluss nach Meteghan zum Essen."
+/>
 
 ## Canada 🇨🇦 Facts  ✔️
 **Heute: Acadian French 🇫🇷**   
