@@ -8,6 +8,6 @@ export default defineConfig({
   integrations: [mdx(), preact()],
   site: 'https://canada.aaronczichon.de',
   image: {
-    domains: ['api.mapbox.com']
+    domains: ['api.mapbox.com', 'directus.aaronczichon.de']
   }
 });

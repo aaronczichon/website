@@ -22,13 +22,8 @@ tags:
   ]
 ---
 
-import ContentImage from "../../components/ContentImage.astro";
+import DirectusImage from "../../components/DirectusImage.astro";
 import PathMap from "../../components/dynamic/PathMap";
-
-import IMG_3531 from "./images/03/IMG_3531.jpg";
-import IMG_8891 from "./images/03/IMG_8891.jpg";
-import IMG_8896 from "./images/03/IMG_8896.jpg";
-import IMG_8900 from "./images/03/IMG_8900.jpg";
 
 Am vergangenen Wochenende, genauer gesagt am Samstag, nutzen wir das gute Wetter um den Govenors Brook District Park zu besuchen.
 
@@ -38,30 +33,23 @@ Das tolle ist ja weiterhin, dass alle Halifax Transit Verkehrsmittel für 2,5 St
 
 <PathMap
   client:visible
-  gpxUrl="/assets/routes/03-govenors-brook-district-park.gpx"
+  gpxInfo={[
+    {
+      url: "/assets/routes/03-govenors-brook-district-park.gpx",
+      tooltip:
+        "Unsere Route entlang des Colpitt Lake und Flat Lake im Govenors Brook District Park.",
+    },
+  ]}
   zoom="13"
-  tooltip="Unsere Route entlang des Colpitt Lake und Flat Lake im Govenors Brook District Park."
 />
 
 Der Park selbst besteht zu 90% aus Felsen und einem ehemaligen Wald der vermutlich vor ein paar Jahren mal durch einen Waldbrand vernichtet wurde.  
 Langsam zeichnet sich dort jedoch ein neues Leben ab und viele der Trail Routen innerhalb des Parks werden von Mountainbiker\*innen genutzt.
 
-<ContentImage
-  src={IMG_3531}
-  alt="Flat Lake bei strahlend blauem Himmel welcher sich im See spiegelte."
-/>
+<DirectusImage assetId="0781e495-1353-456f-bd60-fdc1dec7bcbe" />
 
-<ContentImage
-  src={IMG_8891}
-  alt="Ausicht auf den Colpitt Lake bei schönem, sonnigen Wetter. Blickrichtung Osten nach Halifax."
-/>
+<DirectusImage assetId="37354181-cea7-4df8-bf0e-1e95b5c6dd21" />
 
-<ContentImage
-  src={IMG_8896}
-  alt="Felsiger Weg durch den Govenors Brook District Park. Rechts und links kleine Tannen. Sonniges Wetter."
-/>
+<DirectusImage assetId="cbcafdec-f174-42ff-a2c9-a8d7e4040698" />
 
-<ContentImage
-  src={IMG_8900}
-  alt="Mann rechts auf einem Fels stehend mit dem Rücken zur Kamera. Ausblick auf die felsige Landschaft des Govenors Brook District Park."
-/>
+<DirectusImage assetId="937f5411-fef4-4508-b704-b20127a64b4d" />
