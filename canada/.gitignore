@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # Ignore styles and assets as they come from design folder
 styles/
+
+# Ignore changes to basic map
+src/components/dynamic/BasicMap.jsx
