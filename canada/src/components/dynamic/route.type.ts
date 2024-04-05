@@ -3,4 +3,4 @@ export type RouteData = {
   routeCoordinates?: number[][];
   color?: string;
   tooltip?: string;
-}
+};

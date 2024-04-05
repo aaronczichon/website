@@ -8,7 +8,7 @@
 		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro}\"",
+		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro,.tsx,.ts}\"",
 		"copy:canada-variables": "cp ../design/src/styles/variants/variables-canada.css ./src/styles/common/variables.css",
 		"copy:styles": "cp -R ../design/src/styles ./src/styles && npm run copy:canada-variables",
 		"copy:assets": "cp -R ../design/src/assets ./public/assets",
