@@ -39,3 +39,8 @@ th,
 td {
 	padding: 0 8px;
 }
+
+details {
+	font-style: italic;
+	background-color: var(--blog-entry-details);
+}
