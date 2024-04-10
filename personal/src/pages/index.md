@@ -14,8 +14,6 @@ As a freelance trainer I provide workshops for NodeJS, Ionic, Angular and Javasc
 
 On my more than 11 years experience in the software development industry I worked with small and large teams in various roles.
 
-But hey, life's not just about coding (though I do love it!). I'm all about the balance, whether it's spiking volleyballs on the court (or beach), pounding the pavement on a run, or catching the Formula 1 action (with a hopeful eye on Mercedes). And when the weather's fine, you'll likely find me cruising on my motorcycle, soaking in the sun and the breeze.
-
 In my free time I love to play volleyball or go out for running and sometimes athletics. I'm a huge fan of Formula 1 (yes Mercedes is still my favourite team) and on good, sunny days I like to drive my motorcycle.
 Over the past years I also had different roles for volunteering in my hometown community and the local sports club from being responsible for the financial parts of the Volleyball branch, being a chairman of the whole club from 2020 until 2024 and now in the responsible for IT and official communications. I always got my hands in something worthwhile.
 
