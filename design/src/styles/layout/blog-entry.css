@@ -43,4 +43,5 @@ td {
 details {
 	font-style: italic;
 	background-color: var(--blog-entry-details);
+	padding: 0 4px 0 4px;
 }
