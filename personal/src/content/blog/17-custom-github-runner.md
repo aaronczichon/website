@@ -1,6 +1,6 @@
 ---
 title: "Raspberry Pi as a Github Runner"
-pubDate: 2024-04-13
+pubDate: 2024-04-12
 description: "You can use a Raspberry Pi as a plug and play Github runner easily"
 author: "Aaron Czichon"
 tags: ["Work", "Raspberry Pi", "Development", "Github"]
