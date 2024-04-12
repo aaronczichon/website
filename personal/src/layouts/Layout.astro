@@ -1,9 +1,10 @@
 ---
 interface Props {
   title: string;
+  imgUrl?: string;
 }
 
-const { title } = Astro.props;
+const { title, imgUrl } = Astro.props;
 
 import "../styles/index.css";
 import "../styles/fonts/mona-sans.css";
@@ -40,6 +41,7 @@ import MatomoTracking from "../components/MatomoTracking.astro";
       title="Aaron Czichon Blog - RSS Feed"
       href={`${Astro.site}rss.xml`}
     />
+    {imgUrl ? <meta property="og:image" content={imgUrl} /> : ""}
     <title>{title}</title>
   </head>
   <body>

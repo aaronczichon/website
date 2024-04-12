@@ -5,7 +5,10 @@ import Hero from "../components/Hero.astro";
 const { frontmatter } = Astro.props;
 ---
 
-<Layout title={"Aaron Czichon - Blog - " + frontmatter.title}>
+<Layout
+  title={"Aaron Czichon - Blog - " + frontmatter.title}
+  imgUrl={frontmatter.image?.src || ""}
+>
   {
     frontmatter.image ? (
       frontmatter.image.src ? (
