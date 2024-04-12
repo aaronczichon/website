@@ -4,13 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - '.github/workflows/*-personal.yaml'
-      - 'personal/*/**'
-      - 'design/*/**'
-
-env:
-  MAPBOX_TOKEN: ''
 
 jobs:
   run-build:

@@ -5,12 +5,14 @@
 	--secondary-color: #e8c872;
 	--secondary-color-light: #fff3cf;
 	--secondary-color-ultra-light: #ffffff;
+	--secondary-color-ultra-light-shade: #f2f2f2;
 
 	--background-color: var(--secondary-color-ultra-light);
 	--heading-color: var(--primary-color-dark);
 	--primary-font-color: var(--primary-color-dark);
 	--bg-color-simple-code: var(--secondary-color-light);
 	--link-color: var(--primary-font-color);
+	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 
 	/**
 	* Dark color specifications
@@ -21,6 +23,7 @@
 	--dark-secondary-color: #0b1733;
 	--dark-secondary-color-light: #637a9f;
 	--dark-secondary-color-ultra-light: #c9d7dd;
+	--secondary-color-ultra-light-shade: #f2f2f2;
 	--dark-background-color: var(--dark-secondary-color);
 	--dark-heading-color: var(--dark-primary-color);
 	--dark-primary-font-color: var(--dark-primary-color-dark);
@@ -53,6 +56,7 @@
 	--heading-color: var(--dark-primary-color);
 	--primary-font-color: var(--dark-primary-color-dark);
 	--bg-color-simple-code: var(--dark-bg-color-simple-code);
+	--blog-entry-details: var(--dark-bg-color-simple-code);
 
 	--link-color: var(--primary-font-color);
 	--nav-margin: 1rem 0 1rem 0;

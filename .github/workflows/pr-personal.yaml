@@ -4,12 +4,6 @@ on:
   pull_request:
     branches:
       - main
-    paths:
-      - 'personal/*/**'
-      - 'design/*/**'
-
-env:
-  MAPBOX_TOKEN: ''
 
 jobs:
   run-build:

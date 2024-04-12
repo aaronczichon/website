@@ -14,7 +14,7 @@
 		"blog",
 		"website"
 	],
-	"author": "Aaron Czichon <aaronczichon@plan-b-gmbh.com>",
+	"author": "Aaron Czichon <mail@aaronczichon.de>",
 	"license": "ISC",
 	"devDependencies": {
 		"parcel": "^2.11.0",

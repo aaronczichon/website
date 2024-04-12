@@ -10,8 +10,7 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro}\"",
-		"copy:aaron-variables": "cp ../design/src/styles/variants/variables-aaron.css ./src/styles/common/variables.css",
-		"copy:styles": "cp -R ../design/src/styles ./src/styles && npm run copy:aaron-variables",
+		"copy:styles": "cp -R ../design/src/styles ./src/styles",
 		"rm:styles": "rm -rf ./src/styles",
 		"copy:assets": "cp -R ../design/src/assets ./public/assets"
 	},
