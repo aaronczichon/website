@@ -20,7 +20,10 @@ const averageWPM = 200; // Adjust according to your audience's reading speed
 const readingTime = Math.ceil(wordCount / averageWPM);
 ---
 
-<Layout title={"Aaron Czichon - Blog - " + entry.data.title}>
+<Layout
+  title={"Aaron Czichon - Blog - " + entry.data.title}
+  imgUrl={entry.data.image?.src || ""}
+>
   {
     entry.data.image ? (
       entry.data.image.src ? (
