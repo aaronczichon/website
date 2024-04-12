@@ -23,7 +23,11 @@ const readingTime = Math.ceil(wordCount / averageWPM);
 <Layout title={"Aaron Czichon - Blog - " + entry.data.title}>
   {
     entry.data.image ? (
-      <Hero image={entry.data.image.url} alt={entry.data.image.alt} />
+      entry.data.image.src ? (
+        <Hero url={entry.data.image.src} alt={entry.data.image.alt} />
+      ) : (
+        <Hero image={entry.data.image.url} alt={entry.data.image.alt} />
+      )
     ) : (
       ""
     )

@@ -21,15 +21,6 @@ const { limit } = Astro.props;
       .slice(0, limit)
       .map((post) => (
         <a href={"/blog/" + post.slug} class="entry">
-          {post.data.image ? (
-            <Image
-              widths={[700]}
-              sizes={`700px`}
-              src={post.data.image.url}
-              alt={post.data.image.alt}
-              style="max-height: 350px; width: 100%; object-fit: cover;"
-            />
-          ) : null}
           <h3>
             {post.data.title} <br />
             <span class="entry--date">

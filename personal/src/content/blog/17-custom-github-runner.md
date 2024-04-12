@@ -3,6 +3,9 @@ title: "Raspberry Pi as a Github Runner"
 pubDate: 2024-04-12
 description: "You can use a Raspberry Pi as a plug and play Github runner easily"
 author: "Aaron Czichon"
+image:
+  src: "https://directus.aaronczichon.de/assets/fcff64aa-1ddd-445e-a5fc-531a5dde6b12.jpg?quality=70&width=2000"
+  alt: "Shows a Raspberry Pi Model 3 on top of an Apple TV 4"
 tags: ["Work", "Raspberry Pi", "Development", "Github"]
 ---
 

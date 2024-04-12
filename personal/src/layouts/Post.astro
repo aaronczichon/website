@@ -8,7 +8,11 @@ const { frontmatter } = Astro.props;
 <Layout title={"Aaron Czichon - Blog - " + frontmatter.title}>
   {
     frontmatter.image ? (
-      <Hero url={frontmatter.image.url} alt={frontmatter.image.alt} />
+      frontmatter.image.src ? (
+        <Hero url={frontmatter.image.src} alt={frontmatter.image.alt} />
+      ) : (
+        <Hero image={frontmatter.image.url} alt={frontmatter.image.alt} />
+      )
     ) : (
       ""
     )
