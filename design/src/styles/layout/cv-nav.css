@@ -1,0 +1,35 @@
+.cv-switcher {
+	list-style-type: none; /* Remove list indicators */
+	display: flex; /* Use flexbox to layout items horizontally */
+	padding: 0;
+	justify-content: center;
+}
+
+.cv-switcher li {
+	margin-right: 10px; /* Add some space between the links */
+	border: 1px solid var(--link-color);
+	border-radius: var(--border-radius);
+}
+
+.cv-switcher li > a.active {
+	background-color: var(--link-color);
+	color: var(--background-color);
+}
+
+.cv-switcher li a {
+	display: block;
+	text-decoration: none;
+	padding: 8px 8px 8px 8px;
+}
+
+.cv-switcher li a.active {
+	text-decoration: underline;
+}
+
+.cv-list {
+	display: none;
+}
+
+.cv-list.active {
+	display: initial;
+}

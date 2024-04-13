@@ -1,6 +1,6 @@
 :root {
 	--primary-color: #4f627f;
-	--primary-color-dark:#0b1733;
+	--primary-color-dark: #0b1733;
 	--primary-color-light: #c9d7dd;
 	--secondary-color: #e8c872;
 	--secondary-color-light: #fff3cf;
@@ -67,7 +67,7 @@
 
 .light-mode {
 	--primary-color: #4f627f;
-	--primary-color-dark:#0b1733;
+	--primary-color-dark: #0b1733;
 	--primary-color-light: #c9d7dd;
 	--secondary-color: #e8c872;
 	--secondary-color-light: #fff3cf;

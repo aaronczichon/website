@@ -2,7 +2,7 @@
 	"name": "personal_website_design",
 	"version": "1.0.0",
 	"description": "HTML and CSS Elements for new personal website. Design only.",
-	"source": "src/index-aaron.html",
+	"source": "src/index.html",
 	"scripts": {
 		"start": "parcel",
 		"build": "parcel build",
