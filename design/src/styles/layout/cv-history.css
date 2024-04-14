@@ -1,0 +1,43 @@
+.cv-history {
+	grid-template-columns: minmax(0, 150px) 1fr; /* Two columns */
+	gap: 20px; /* Gap between grid items */
+}
+
+.cv-item {
+	padding: 20px;
+}
+
+article.cv-item h1 {
+	margin: 0;
+}
+
+article.cv-item h2 {
+	color: var(--primary-color);
+	font-size: 1em;
+	margin: 0;
+}
+
+article.cv-item h3 {
+	margin-top: 0;
+	font-size: 0.9em;
+	color: var(--primary-color);
+	font-style: italic;
+}
+
+.cv-item img {
+	width: 100%;
+	object-fit: contain;
+	border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 768px) {
+	/* On mobile, switch to single column layout */
+	.cv-history {
+		grid-template-columns: 1fr; /* Single column */
+	}
+
+	.cv-item img {
+		max-height: 150px;
+		object-fit: contain;
+	}
+}

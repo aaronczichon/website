@@ -31,5 +31,5 @@
 }
 
 .cv-list.active {
-	display: initial;
+	display: grid;
 }
