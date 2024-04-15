@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CVList from "../components/CVList.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Layout title="Aaron Czichon - CV">
+  <main class="container">
+    <article>
+      <h1>My Journey</h1>
+      <p>
+        I started my career after school in 2010. I collected over 11 years of
+        experience in software development, building a development team,
+        speaking at conferences, writing articles and training people to become
+        familiar with several web development related topics in workshops.
+      </p>
+      <p>
+        It's splitted into a list of what am I doing currently and what I've
+        done in the past. You can also download the full CV as a PDF <a
+          href="https://directus.aaronczichon.de/assets/073083ac-df38-4a56-b268-c1f045e9cef2"
+          target="_blank">here</a
+        >.
+      </p>
+    </article>
+    <ol class="cv-switcher">
+      <li><a class="active" href="?section=current">Current</a></li>
+      <li><a href="?section=past">Past</a></li>
+    </ol>
+    <CVList />
+  </main>
+</Layout>
+<script is:inline>
+  // toggles between the two states of the button
+  const cvSwitcher = document.querySelector(".cv-switcher");
+  cvSwitcher.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      cvSwitcher.querySelector(".active").classList.remove("active");
+      e.target.classList.add("active");
+    }
+  });
+
+  //reads the query string parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  const section = urlParams.get("section");
+  if (!section || section === "current") {
+    cvSwitcher.querySelector(".active").classList.remove("active");
+    cvSwitcher.querySelector("a").classList.add("active");
+    document.getElementById("current-section").classList.add("active");
+    document.getElementById("past-section").classList.remove("active");
+  } else {
+    cvSwitcher.querySelector(".active").classList.remove("active");
+    cvSwitcher
+      .querySelector("li:last-child")
+      .firstChild.classList.add("active");
+    document.getElementById("current-section").classList.remove("active");
+    document.getElementById("past-section").classList.add("active");
+  }
+</script>

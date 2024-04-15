@@ -1,141 +1,122 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Aaron Czichon</title>
-		<link rel="stylesheet" href="./styles/index.css" />
-		<link
-			rel="preload"
-			href="./assets/fonts/Mona-Sans.woff2"
-			as="font"
-			type="font/woff2"
-			crossorigin
-		/>
-		<link rel="stylesheet" href="./styles/fonts/mona-sans.css" />
-		<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
-	</head>
 
-	<body class="container">
-		<div class="topnav" id="myTopnav">
-			<a href="index.html">
-				<img src="./assets/images/profile.jpg" alt="Aaron Czichon" class="img-profile" />
-			</a>
-			<a href="#contact">Canada</a>
-			<a href="blog.html">Blog</a>
-			<a href="images.html">Images</a>
-			<a href="map.html">Map</a>
-			<a href="cv.html" class="active">CV</a>
-			<a href="#about">About</a>
-			<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
-				<?xml version="1.0" encoding="utf-8"?>
-				<div class="icon-menu">
-					<svg
-						width="25px"
-						height="25px"
-						viewBox="0 0 24 24"
-						fill="none"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
-							fill="#0F0F0F"
-						/>
-						<path
-							d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
-							fill="#0F0F0F"
-						/>
-						<path
-							d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
-							fill="#0F0F0F"
-						/>
-					</svg>
-				</div>
-			</a>
-		</div>
-		<main>
-			<article>
-				<h1>My Journey</h1>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Aaron Czichon</title>
+	<link rel="stylesheet" href="./styles/index.css" />
+	<link rel="preload" href="./assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+	<link rel="stylesheet" href="./styles/fonts/mona-sans.css" />
+	<!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body class="container">
+	<div class="topnav" id="myTopnav">
+		<a href="index.html">
+			<img src="./assets/images/profile.jpg" alt="Aaron Czichon" class="img-profile" />
+		</a>
+		<a href="#contact">Canada</a>
+		<a href="blog.html">Blog</a>
+		<a href="images.html">Images</a>
+		<a href="map.html">Map</a>
+		<a href="cv.html" class="active">CV</a>
+		<a href="#about">About</a>
+		<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+			<?xml version="1.0" encoding="utf-8"?>
+			<div class="icon-menu">
+				<svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
+						fill="#0F0F0F" />
+					<path
+						d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
+						fill="#0F0F0F" />
+					<path
+						d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
+						fill="#0F0F0F" />
+				</svg>
+			</div>
+		</a>
+	</div>
+	<main>
+		<article>
+			<h1>My Journey</h1>
+			<p>
+				I started my career after school in 2010. I collected over 11 years of experience in
+				software development, building a development team, speaking at conferences, writing
+				articles and training people to become familiar with several web development related
+				topics in workshops.
+			</p>
+			<p>
+				It's splitted into a list of what am I doing currently and what I've done in the past. You
+				can also download the CV as a PDF as well.
+			</p>
+		</article>
+		<ol class="cv-switcher">
+			<li><a class="active" href="?section=current">Current</a></li>
+			<li><a href="?section=past">Past</a></li>
+		</ol>
+		<div class="cv-list cv-history" id="current-section">
+			<div class="cv-item">
+				<img src="https://directus.aaronczichon.de/assets/f42b2301-fca7-4d98-9d0e-e0fc145943bf.png" alt="Image 1" />
+			</div>
+			<article class="cv-item">
+				<h1>PlanB. GmbH</h1>
+				<h2>Senior Javascript Engineer, 08-2020 - Present</h2>
+				<h3>Hüttlingen, Germany / Remote</h3>
 				<p>
-					I started my career after school in 2010. I collected over 11 years of experience in
-					software development, building a development team, speaking at conferences, writing
-					articles and training people to become familiar with several web development related
-					topics in workshops.
-				</p>
-				<p>
-					It's splitted into a list of what am I doing currently and what I've done in the past. You
-					can also download the CV as a PDF as well.
+					With focus on bringing web technologies into the PlanB. Company and provide know-how and
+					knowledge on the Javascript topic for colleagues and customers I help them to achieve
+					more in their daily life. Building software products with our customers which are use
+					the could platform Azure from Microsoft I building applications on top of it using
+					modern Javascript and web technologies.
 				</p>
 			</article>
-			<ol class="cv-switcher">
-				<li><a class="active" href="?section=current">Current</a></li>
-				<li><a href="?section=past">Past</a></li>
-			</ol>
-			<div class="cv-list cv-history" id="current-section">
-				<div class="cv-item">
-					<img
-						src="https://directus.aaronczichon.de/assets/f42b2301-fca7-4d98-9d0e-e0fc145943bf.png"
-						alt="Image 1"
-					/>
-				</div>
-				<article class="cv-item">
-					<h1>PlanB. GmbH</h1>
-					<h2>Senior Javascript Engineer, 08-2020 - Present</h2>
-					<h3>Hüttlingen, Germany / Remote</h3>
-					<p>
-						With focus on bringing web technologies into the PlanB. Company and provide know-how and
-						knowledge on the Javascript topic for colleagues and customers I help them to achieve
-						more in their daily life. Building software products with our customers which are use
-						the could platform Azure from Microsoft I building applications on top of it using
-						modern Javascript and web technologies.
-					</p>
-				</article>
-				<div class="cv-item">
-					<img
-						src="https://directus.aaronczichon.de/assets/f42b2301-fca7-4d98-9d0e-e0fc145943bf.png"
-						alt="Image 1"
-					/>
-				</div>
-				<article class="cv-item">
-					<h1>PlanB. GmbH</h1>
-					<h2>Senior Javascript Engineer, 08-2020 - Present</h2>
-					<h3>Hüttlingen, Germany / Remote</h3>
-					<p>
-						With focus on bringing web technologies into the PlanB. Company and provide know-how and
-						knowledge on the Javascript topic for colleagues and customers I help them to achieve
-						more in their daily life. Building software products with our customers which are use
-						the could platform Azure from Microsoft I building applications on top of it using
-						modern Javascript and web technologies.
-					</p>
-				</article>
+			<div class="cv-item">
+				<img src="https://directus.aaronczichon.de/assets/f42b2301-fca7-4d98-9d0e-e0fc145943bf.png" alt="Image 1" />
 			</div>
-			<div class="cv-list cv-history" id="past-section">Past</div>
-		</main>
-	</body>
-	<script>
-		// toggles between the two states of the button
-		const cvSwitcher = document.querySelector('.cv-switcher');
-		cvSwitcher.addEventListener('click', (e) => {
-			if (e.target.tagName === 'A') {
-				cvSwitcher.querySelector('.active').classList.remove('active');
-				e.target.classList.add('active');
-			}
-		});
-
-		//reads the query string parameter
-		const urlParams = new URLSearchParams(window.location.search);
-		const section = urlParams.get('section');
-		if (!section || section === 'current') {
+			<article class="cv-item">
+				<h1>PlanB. GmbH</h1>
+				<h2>Senior Javascript Engineer, 08-2020 - Present</h2>
+				<h3>Hüttlingen, Germany / Remote</h3>
+				<p>
+					With focus on bringing web technologies into the PlanB. Company and provide know-how and
+					knowledge on the Javascript topic for colleagues and customers I help them to achieve
+					more in their daily life. Building software products with our customers which are use
+					the could platform Azure from Microsoft I building applications on top of it using
+					modern Javascript and web technologies.
+				</p>
+			</article>
+		</div>
+		<div class="cv-list cv-history" id="past-section"></div>
+	</main>
+</body>
+<script>
+	// toggles between the two states of the button
+	const cvSwitcher = document.querySelector('.cv-switcher');
+	cvSwitcher.addEventListener('click', (e) => {
+		if (e.target.tagName === 'A') {
 			cvSwitcher.querySelector('.active').classList.remove('active');
-			cvSwitcher.querySelector('a').classList.add('active');
-			document.getElementById('current-section').classList.add('active');
-			document.getElementById('past-section').classList.remove('active');
-		} else {
-			cvSwitcher.querySelector('.active').classList.remove('active');
-			cvSwitcher.querySelector('li:last-child').firstChild.classList.add('active');
-			document.getElementById('current-section').classList.remove('active');
-			document.getElementById('past-section').classList.add('active');
+			e.target.classList.add('active');
 		}
-	</script>
+	});
+
+	//reads the query string parameter
+	const urlParams = new URLSearchParams(window.location.search);
+	const section = urlParams.get('section');
+	if (!section || section === 'current') {
+		cvSwitcher.querySelector('.active').classList.remove('active');
+		cvSwitcher.querySelector('a').classList.add('active');
+		document.getElementById('current-section').classList.add('active');
+		document.getElementById('past-section').classList.remove('active');
+	} else {
+		cvSwitcher.querySelector('.active').classList.remove('active');
+		cvSwitcher.querySelector('li:last-child').firstChild.classList.add('active');
+		document.getElementById('current-section').classList.remove('active');
+		document.getElementById('past-section').classList.add('active');
+	}
+</script>
+
 </html>
