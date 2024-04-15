@@ -21,7 +21,7 @@ const pastEntries = allCvEntries
         <div class="cv-item">
           <img
             src={`https://directus.aaronczichon.de/assets/${entry.data.image.assetId}?w=150`}
-            alt="Logo"
+            alt={entry.data.image.alt}
           />
         </div>
         <article class="cv-item">

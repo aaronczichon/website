@@ -34,7 +34,6 @@ const cvCollection = defineCollection({
 					assetId: z.string(),
 					alt: z.string(),
 				})
-				.optional()
 		}),
 });
 // 3. Export a single `collections` object to register your collection(s)
