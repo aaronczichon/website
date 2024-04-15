@@ -1,0 +1,36 @@
+.waterfall-container {
+	list-style: none;
+	column-gap: 4px;
+	padding: 0;
+	column-count: 1;
+}
+
+.waterfall-container img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	break-inside: avoid;
+	object-fit: contain;
+}
+
+@media (min-width: 320px) {
+	.waterfall-container {
+		column-count: 2;
+	}
+}
+@media (min-width: 760px) {
+	.waterfall-container {
+		column-count: 3;
+	}
+}
+@media (min-width: 980px) {
+	.waterfall-container {
+		column-count: 4;
+	}
+}
+/* @media (min-width: 1024px) {
+  .waterfall-container {
+    column-count: 5;
+  }
+} */
