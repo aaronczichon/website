@@ -3,7 +3,7 @@ title: "Kontrollfeld GmbH"
 position: "Freelancer"
 timeframe: "08-2015 - present"
 location: "Remote"
-order: 3
+order: 4
 type: "current"
 image:
   assetId: "9f3513cf-3c26-4610-ac68-6e5c48fdd9cd.png"

@@ -3,7 +3,7 @@ title: "cellent AG / cellent GmbH"
 position: "Junior Consultant / Developer"
 timeframe: "07-2013 - 03-2016"
 location: "Aalen, Germany"
-order: 3
+order: 8
 type: "past"
 image:
   assetId: "18cc81d4-8120-4c7a-8dac-26394dabc708.svg"

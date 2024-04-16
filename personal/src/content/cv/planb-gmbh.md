@@ -15,6 +15,7 @@ techSkills:
     "HTML",
     "CSS",
     "Angular",
+    "React",
     "NodeJS",
     "Azure",
     "MSSQL",

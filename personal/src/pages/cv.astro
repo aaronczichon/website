@@ -23,37 +23,6 @@ const { frontmatter } = Astro.props;
         >.
       </p>
     </article>
-    <ol class="cv-switcher">
-      <li><a class="active" href="?section=current">Current</a></li>
-      <li><a href="?section=past">Past</a></li>
-    </ol>
     <CVList />
   </main>
 </Layout>
-<script is:inline>
-  // toggles between the two states of the button
-  const cvSwitcher = document.querySelector(".cv-switcher");
-  cvSwitcher.addEventListener("click", (e) => {
-    if (e.target.tagName === "A") {
-      cvSwitcher.querySelector(".active").classList.remove("active");
-      e.target.classList.add("active");
-    }
-  });
-
-  //reads the query string parameter
-  const urlParams = new URLSearchParams(window.location.search);
-  const section = urlParams.get("section");
-  if (!section || section === "current") {
-    cvSwitcher.querySelector(".active").classList.remove("active");
-    cvSwitcher.querySelector("a").classList.add("active");
-    document.getElementById("current-section").classList.add("active");
-    document.getElementById("past-section").classList.remove("active");
-  } else {
-    cvSwitcher.querySelector(".active").classList.remove("active");
-    cvSwitcher
-      .querySelector("li:last-child")
-      .firstChild.classList.add("active");
-    document.getElementById("current-section").classList.remove("active");
-    document.getElementById("past-section").classList.add("active");
-  }
-</script>

@@ -3,7 +3,7 @@ title: "Conclurer GmbH"
 position: "Head of Software Development & Engineering Manager"
 timeframe: "10-2017 - 08-2020"
 location: "Heidenheim, Germany"
-order: 0
+order: 2
 type: "past"
 image:
   assetId: "b6958878-6541-4b38-8d76-2fe6f12a2f5a.svg"

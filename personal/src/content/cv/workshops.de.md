@@ -3,7 +3,7 @@ title: "Workshops.de / Symetics GmbH"
 position: "Trainer for Workshops - Angular"
 timeframe: "11-2015 - 08-2020"
 location: "Germany"
-order: 1
+order: 6
 type: "past"
 image:
   assetId: "c5ed2e2e-75f7-4eaf-8c34-58991bb3d900.svg"

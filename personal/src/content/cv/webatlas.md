@@ -3,7 +3,7 @@ title: "WebAtlas GbR"
 position: "Founder"
 timeframe: "08-2015 - 08-2018"
 location: "Germany / Remote"
-order: 2
+order: 7
 type: "past"
 image:
   assetId: "9056e10d-c7dc-46d5-a1be-db8970a09786.png"

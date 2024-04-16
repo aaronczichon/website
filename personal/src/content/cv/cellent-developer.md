@@ -3,7 +3,7 @@ title: "cellent AG / cellent GmbH"
 position: "Developer"
 timeframe: "03-2016 - 09-2017"
 location: "Aalen, Germany"
-order: 2
+order: 5
 type: "past"
 image:
   assetId: "18cc81d4-8120-4c7a-8dac-26394dabc708.svg"
