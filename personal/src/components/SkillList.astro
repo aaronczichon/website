@@ -1,0 +1,9 @@
+---
+const { skills, title } = Astro.props;
+---
+
+<span>{title}:</span>
+<ul>
+  {skills.map((skill: string) => <li>{skill}</li>)}
+  <li>...and more</li>
+</ul>

@@ -3,7 +3,7 @@ title: "cellent AG / cellent GmbH"
 position: "Apprenticeship"
 timeframe: "09-2010 - 07-2013"
 location: "Aalen, Germany"
-order: 4
+order: 9
 type: "past"
 image:
   assetId: "18cc81d4-8120-4c7a-8dac-26394dabc708.svg"
