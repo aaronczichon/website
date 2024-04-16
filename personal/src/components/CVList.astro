@@ -1,5 +1,7 @@
 ---
 import { getCollection } from "astro:content";
+import SkillList from "./SkillList.astro";
+import SkillBand from "./SkillBand.astro";
 const allCvEntries = await getCollection("cv");
 
 const currentEntries = allCvEntries
@@ -30,7 +32,15 @@ const pastEntries = allCvEntries
             {entry.data.position}, {entry.data.timeframe}
           </h2>
           <h3>{entry.data.location}</h3>
-          {entry.body}
+          {entry.data.techSkills ? (
+            <SkillBand
+              skills={entry.data.techSkills}
+              title="Technical skills"
+            />
+          ) : null}
+          {entry.data.generalSkills ? (
+            <SkillBand skills={entry.data.generalSkills} title="Skills" />
+          ) : null}
         </article>
       </>
     ))
@@ -52,7 +62,15 @@ const pastEntries = allCvEntries
             {entry.data.position}, {entry.data.timeframe}
           </h2>
           <h3>{entry.data.location}</h3>
-          {entry.body}
+          {entry.data.techSkills ? (
+            <SkillBand
+              skills={entry.data.techSkills}
+              title="Technical skills"
+            />
+          ) : null}
+          {entry.data.generalSkills ? (
+            <SkillBand skills={entry.data.generalSkills} title="Skills" />
+          ) : null}
         </article>
       </>
     ))
