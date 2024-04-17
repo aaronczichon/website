@@ -1,20 +1,15 @@
 ---
 import { getCollection } from "astro:content";
+import SkillList from "./SkillList.astro";
+import SkillBand from "./SkillBand.astro";
 const allCvEntries = await getCollection("cv");
 
-const currentEntries = allCvEntries
-  .filter((entry) => entry.data.type === "current")
-  .sort((a, b) => {
-    return a.data.order > b.data.order ? 1 : -1;
-  });
-const pastEntries = allCvEntries
-  .filter((entry) => entry.data.type === "past")
-  .sort((a, b) => {
-    return a.data.order > b.data.order ? 1 : -1;
-  });
+const currentEntries = allCvEntries.sort((a, b) => {
+  return a.data.order > b.data.order ? 1 : -1;
+});
 ---
 
-<div class="cv-list cv-history" id="current-section">
+<div class="cv-list cv-history active">
   {
     currentEntries.map((entry) => (
       <>
@@ -30,29 +25,15 @@ const pastEntries = allCvEntries
             {entry.data.position}, {entry.data.timeframe}
           </h2>
           <h3>{entry.data.location}</h3>
-          {entry.body}
-        </article>
-      </>
-    ))
-  }
-</div>
-<div class="cv-list cv-history" id="past-section">
-  {
-    pastEntries.map((entry) => (
-      <>
-        <div class="cv-item">
-          <img
-            src={`https://directus.aaronczichon.de/assets/${entry.data.image.assetId}?w=150`}
-            alt="Logo"
-          />
-        </div>
-        <article class="cv-item">
-          <h1>{entry.data.title}</h1>
-          <h2>
-            {entry.data.position}, {entry.data.timeframe}
-          </h2>
-          <h3>{entry.data.location}</h3>
-          {entry.body}
+          {entry.data.techSkills ? (
+            <SkillBand
+              skills={entry.data.techSkills}
+              title="Technical skills"
+            />
+          ) : null}
+          {entry.data.generalSkills ? (
+            <SkillBand skills={entry.data.generalSkills} title="Skills" />
+          ) : null}
         </article>
       </>
     ))

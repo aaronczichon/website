@@ -3,11 +3,26 @@ title: "Kontrollfeld GmbH"
 position: "Freelancer"
 timeframe: "08-2015 - present"
 location: "Remote"
-order: 3
+order: 4
 type: "current"
 image:
   assetId: "9f3513cf-3c26-4610-ac68-6e5c48fdd9cd.png"
   alt: "Kontrollfeld GmbH Logo"
+techSkills:
+  [
+    "Ionic",
+    "Capacitor",
+    "Cordova",
+    "NodeJS",
+    "Express",
+    "Apple Wallet Pass",
+    "Google Wallet",
+    "Javascript",
+    "Typescript",
+    "Github",
+    "Github Actions",
+    "Gitlab",
+  ]
 ---
 
 As a leftover of my previously founded WebAtlas GbR I still work closely together with the people of Kontrollfeld by supporting the development of Ionic applications for iOS and Android as well as NodeJS backend services related to mobile usage.  
