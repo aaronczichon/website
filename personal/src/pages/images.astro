@@ -14,7 +14,7 @@ const files = await Promise.all(
 );
 const images = files.map((item: any) => {
   const fileId = item.filename_disk;
-  const url = `${import.meta.env.DIRECTUS_BASE}/assets/${fileId}?quality=70&width=300`;
+  const url = `${import.meta.env.DIRECTUS_BASE}/assets/${fileId}`;
   const alt = item.description || "";
   return {
     url,
@@ -25,8 +25,25 @@ const images = files.map((item: any) => {
 
 <Layout title="Aaron Czichon - Images">
   <main>
+    <article class="container">
+      <h1>Images</h1>
+      <p>
+        Sometimes I take pictures. And instead of only publishing them on social
+        media I decided zu publish them on my website as well.
+      </p>
+      <p>
+        The main camera I'm using is an iPhone 15 Pro Max. <br /> Some pictures are
+        taken with the iPhone 12 Pro.
+      </p>
+    </article>
     <div class="waterfall-container">
-      {images.map((image) => <img src={image.url} alt={image.alt} />)}
+      {
+        images.map((image) => (
+          <a target="_blank" href={`${image.url}`}>
+            <img src={`${image.url}?quality=70&width=300`} alt={image.alt} />
+          </a>
+        ))
+      }
     </div>
     <p style="text-align: center;">More to follow...</p>
   </main>
