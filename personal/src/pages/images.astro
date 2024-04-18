@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const resp = await fetch(import.meta.env.DIRECTUS_IMAGE_ENDPOINT);
+const data = await resp.json();
+const fileIds = data.data.map((item: any) => item.directus_files_id);
+const files = await Promise.all(
+  fileIds.map(async (fileId: string) => {
+    const resp = await fetch(
+      `${import.meta.env.DIRECTUS_BASE}/files/${fileId}?fields=*`,
+    );
+    return (await resp.json()).data;
+  }),
+);
+const images = files.map((item: any) => {
+  const fileId = item.filename_disk;
+  const url = `${import.meta.env.DIRECTUS_BASE}/assets/${fileId}?quality=70&width=300`;
+  const alt = item.description || "";
+  return {
+    url,
+    alt,
+  };
+});
+---
+
+<Layout title="Aaron Czichon - Images">
+  <main>
+    <div class="waterfall-container">
+      {images.map((image) => <img src={image.url} alt={image.alt} />)}
+    </div>
+    <p style="text-align: center;">More to follow...</p>
+  </main>
+</Layout>
