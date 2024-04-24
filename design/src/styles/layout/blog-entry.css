@@ -45,3 +45,9 @@ details {
 	background-color: var(--blog-entry-details);
 	padding: 0 4px 0 4px;
 }
+
+.inline-icon img {
+	width: 28px;
+	height: 28px;
+	vertical-align: middle;
+}
