@@ -9,6 +9,7 @@
 	border: var(--nav-border);
 	border-radius: var(--nav-border-radius);
 	width: 100%;
+	padding: 8px 0 8px 0;
 }
 
 /* Style the links inside the navigation bar */
