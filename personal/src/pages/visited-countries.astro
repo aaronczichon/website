@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import CountryMap from "../components/dynamic/CountryMap";
+---
+
+<Layout title="Aaron Czichon - Visited Countries">
+  <main class="container">
+    <h1>Visited Countries</h1>
+    <p>
+      I've already visited a bunch of countries in my life. I love to keep track
+      of such things.
+    </p>
+  </main>
+
+  <!-- Map Component here -->
+  <CountryMap client:visible zoom="3" center={[10.451526, 51.165691]} />
+</Layout>
