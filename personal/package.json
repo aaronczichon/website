@@ -1,7 +1,7 @@
 {
 	"name": "aaronczichon.de",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Personal website of Aaron Czichon",
 	"scripts": {
 		"dev": "astro dev",
@@ -28,6 +28,7 @@
 		"typescript": "^5.3.3"
 	},
 	"devDependencies": {
+		"@types/mapbox-gl": "^3.1.0",
 		"prettier": "^3.2.5",
 		"prettier-plugin-astro": "^0.13.0"
 	}
