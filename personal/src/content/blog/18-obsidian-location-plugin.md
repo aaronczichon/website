@@ -23,13 +23,12 @@ The plugin itself takes a latitude and longitude value as a code block inside Ob
 
 The syntax for it is quite simple:
 
-````markdown
+```markdown
 ````location
 Latitude: 44.64266326577057
 Longitude: -63.57530151565183
 \```
-````
-````
+```
 
 (ignore the `\` it's only for escaping the character here)
 
