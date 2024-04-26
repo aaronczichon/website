@@ -14,7 +14,7 @@ function parseGPX(gpxData) {
 
 export default function PathDynamicMap({gpxUrl, zoom, tooltip}) {
   const [map, setMap] = useState(null);
-  const [popup, setPopup] = useState(null);
+  const [popup, _setPopup] = useState(null);
   const [routeCoordinates, setRouteCoordinates] = useState(null);
 
   useEffect(() => {
