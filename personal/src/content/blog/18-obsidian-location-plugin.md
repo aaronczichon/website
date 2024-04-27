@@ -37,11 +37,14 @@ As my work life plays around my computer I created a simple Apple Shortcut which
 ![Shows a screenshot of an apple shortcut which gets the current location and builds a markdown string for the obsidian location plugin and copies it to the clipboard](https://directus.aaronczichon.de/assets/179eddd5-d6d7-4d45-9ce8-baa9e197cf06.png)
 
 Now, more than a year later I made the plugin configurable so that you can now provide the Mapbox API key, the marker color and the marker size via the Obsidian settings.  
+
+![Shows the settings screen of Obsidian in specific the settings ob the location plugin](https://directus.aaronczichon.de/assets/7854f8f8-f96f-48f6-a3b3-e0eeb82f27d2.png)
+
 I created a public [Github repository](https://github.com/aaronczichon/obisidian-location-plugin) and made the whole thing open source. So it's now free to use for everyone 🎉
 
 I also created a pull request to the official community plugin list so that it's installable through the community plugin list inside the settings of Obsidian. You can now install it there easily as well:
 
-![Shows the settings screen of Obsidian in specific the settings ob the location plugin](https://directus.aaronczichon.de/assets/7854f8f8-f96f-48f6-a3b3-e0eeb82f27d2.png)
+![Screenshot: Shows the obisidan plugin registry with the focus on the location plugin](https://directus.aaronczichon.de/assets/eadb219f-3cd2-454a-8dc4-047a52841c7b.png)
 
 You may like the plugin and I hope it brings some more visuality to your notes!  
 I already thinking of extending it's functionality with some new features like different markers, more flexible syntax and maybe interactive map integration.
