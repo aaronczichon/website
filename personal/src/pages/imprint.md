@@ -6,9 +6,9 @@ title: "Imprint"
 Information in accordance with Section 5 TMG
 
 Aaron Czichon  
-5274 South St.  
-Halifax, Nova Scotia, B3J 1A4  
-Canada
+Kronenstraße 84  
+89568 Hermaringen  
+Germany
 
 ## Contact Information
 
