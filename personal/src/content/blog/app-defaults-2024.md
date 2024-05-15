@@ -107,6 +107,8 @@ Bought a lifetime license a few years ago. Is actually the first app I install o
 **📁 Backup: Time Machine to an external SSD + Synology Diskstation**  
 I have an external SSD where I do my Time Machine backups. Also from time to time I connect to my Synology Diskstation (using Tailscale) and make a backup there as well.
 
-**🛜 Going online: [Airalo](https://www.airalo.com/) + [Satellite](https://www.satellite.me/)**  
+**🛜 Going online: [Airalo](https://ref.airalo.com/3xBM) + [Satellite](https://www.satellite.me/)**  
 Currently in Canada I still have my German phone number (which is on a 2€ prepaid eSIM) and I'm using Airalo for a data only eSIM and the Satellite app. I have call forwarding set up from my personal number to my satellite number so I can pick up calls through the data network instead of the phone network without any costs and still use my German number (which is with me for like 16 years).  
 Props for eSIM. They make travelling easy and cost efficient.
+
+> If you use Airalo on your next trip, use the [link](https://ref.airalo.com/3xBM) above and enter the code `AARON8596` at the checkout to get 3$ for free!
