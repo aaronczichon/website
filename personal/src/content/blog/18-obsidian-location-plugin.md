@@ -23,12 +23,13 @@ The plugin itself takes a latitude and longitude value as a code block inside Ob
 
 The syntax for it is quite simple:
 
-```markdown
+`````markdown
 ````location
 Latitude: 44.64266326577057
 Longitude: -63.57530151565183
 \```
-```
+````
+`````
 
 (ignore the `\` it's only for escaping the character here)
 
@@ -36,7 +37,7 @@ As my work life plays around my computer I created a simple Apple Shortcut which
 
 ![Shows a screenshot of an apple shortcut which gets the current location and builds a markdown string for the obsidian location plugin and copies it to the clipboard](https://directus.aaronczichon.de/assets/179eddd5-d6d7-4d45-9ce8-baa9e197cf06.png)
 
-Now, more than a year later I made the plugin configurable so that you can now provide the Mapbox API key, the marker color and the marker size via the Obsidian settings.  
+Now, more than a year later I made the plugin configurable so that you can now provide the Mapbox API key, the marker color and the marker size via the Obsidian settings.
 
 ![Shows the settings screen of Obsidian in specific the settings ob the location plugin](https://directus.aaronczichon.de/assets/7854f8f8-f96f-48f6-a3b3-e0eeb82f27d2.png)
 
