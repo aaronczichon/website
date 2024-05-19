@@ -55,7 +55,7 @@ I can switch now to the `Today` section and see everything that need to be done 
 
 ## During a work day
 
-Developers and engineers love not to be interrupted during there work phases as they mostly can only focus on one thing. I'm no exception to this. The key to this is on how you handle it.  
+Developers and engineers love not to be interrupted during their work phases as they mostly can only focus on one thing. I'm no exception to this. The key to this is on how you handle it.  
 It's important that you block yourself some time slots inside your calendar for focused work (like 1-2h blocks). Make sure you turn off your phone and your communication tools like Teams or Slack at this time.  
 Let your team know that you do this to keep focus and they not going mad at you if they can't reach you right away.
 
@@ -66,7 +66,7 @@ For anything besides tasks and todos, which are created in Things, I use Anybox.
 ### Working on projects
 
 My main work is related to projects and repositories. Therefore I streamlined most of my project work so that I have the same environment for every project.  
-With the responsible of multiple projects a context switch between them can't be avoided fully. And everyone who praises something else should show me how it works in the IT consulting industry. It doesn't.
+With the responsibility of multiple projects a context switch between them can't be avoided fully. And everyone who praises something else should show me how it works in the IT consulting industry. It doesn't.
 
 Being an engineer the work is not about coding. It's about writing. A lot of writing.  
 Over the years I found a simple rule which can be more or less applied to all of my projects: for every line code I write, I write 2-3 lines of context or documentation. And by documentation I don't mean code documentation (as this counts towards my line of codes). I means the things around a feature/task/bug/issue (or whatever you want to call it).  
@@ -105,7 +105,7 @@ That's it!
 
 As this all may sound structured and very goal driven, trust me, it's not. I started with some small things, like writing down everything into the Things app. As soon as this habit sticked I added more. Building a habit here is the key to success.  
 It's even more easier if you're a person who loves structure and preparation. If that is not something for you, you may should pick another strategy to get your work done.  
-My work routine is far from perfect by I'm always adjusting and improving it to make it better and to fit into my work life even more.
+My work routine is far from perfect but I'm always adjusting and improving it to make it better and to fit into my work life even more.
 
 ## Working remotely
 
