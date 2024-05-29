@@ -1,6 +1,6 @@
 ---
 title: "Obsidian Mapbox Location Image Plugin 1.1 available!"
-pubDate: 2024-05-28
+pubDate: 2024-05-29
 description: "My Obsidian plugin for maps got an update with new functionality regarding markers and styles."
 author: "Aaron Czichon"
 tags: ["Plugin", "Obsidian", "Development", "Github"]
