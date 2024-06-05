@@ -25,7 +25,6 @@ export const addMapLayer = (map: mapboxgl.Map) => {
     "in",
     "iso_3166_1_alpha_3",
     'ITA',
-    'CAN',
     'DEU',
     'ESP',
     'SVK',
@@ -38,8 +37,46 @@ export const addMapLayer = (map: mapboxgl.Map) => {
     'LTU',
     'FIN',
     'EST',
-    'USA',
     'CHE',
     'FRA'
   ]);
+}
+
+
+export const addCanadaProvinceLayer = (map: mapboxgl.Map) => {
+  map.addSource('canada-provinces', {
+    'type': 'geojson',
+    'data': 'https://directus.aaronczichon.de/assets/5a299041-2049-4ce9-ab0c-27de01cd3697.geojson' // Replace with the path to your GeoJSON file
+});
+
+// Add a new layer to visualize the provinces
+map.addLayer({
+    'id': 'can-provinces-layer',
+    'type': 'fill',
+    'source': 'canada-provinces',
+    'layout': {},
+    'paint': {
+      'fill-color': '#19bf32',
+      'fill-opacity': 0.7,
+    }
+});
+}
+
+export const addUsStateLayer = (map: mapboxgl.Map) => {
+  map.addSource('us-states', {
+    'type': 'geojson',
+    'data': 'https://directus.aaronczichon.de/assets/279dcd14-2c8f-4065-95dc-4b0bb77d983c.json' // Replace with the path to your GeoJSON file
+});
+
+// Add a new layer to visualize the provinces
+map.addLayer({
+    'id': 'us-states-layer',
+    'type': 'fill',
+    'source': 'us-states',
+    'layout': {},
+    'paint': {
+      'fill-color': '#19bf32',
+      'fill-opacity': 0.7,
+    }
+});
 }

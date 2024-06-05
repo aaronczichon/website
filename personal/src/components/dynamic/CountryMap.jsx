@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 
 import BasicMap from './BasicMap';
-import { addMapLayer } from './map.func';
+import { addCanadaProvinceLayer, addMapLayer, addUsStateLayer } from './map.func';
 
 export default function CountryDynamicMap({zoom, center}) {
   const [map, setMap] = useState(null);
@@ -10,6 +10,8 @@ export default function CountryDynamicMap({zoom, center}) {
     if (map) {
       map.on('load', () => {
         addMapLayer(map);
+        addCanadaProvinceLayer(map);
+        addUsStateLayer(map);
       });
     }
   }, [map]);
