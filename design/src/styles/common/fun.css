@@ -1,3 +1,13 @@
 .canada-flag a:hover {
 	/* cursor: url('../../assets/icons/canada_flag.svg'), auto; */
 }
+
+.eu-banner {
+	width: 100%;
+	height: 60px;
+	background-color: #013399;
+}
+
+.eu-banner img {
+	max-height: 100%;
+}
