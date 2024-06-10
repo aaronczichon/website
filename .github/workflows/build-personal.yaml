@@ -14,12 +14,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: cd personal && npm i
-      - run: cd personal && npm run build
+      - run: cd site && npm i
+      - run: cd site && npm run build
       - name: Sync to FTP
         uses: airvzxf/ftp-deployment-action@latest
         with:
           server: ${{ secrets.FTP_SERVER_AC }}
           user: ${{ secrets.FTP_USER_AC }}
           password: ${{ secrets.FTP_PW_AC }}
-          local_dir: "./personal/dist"
+          local_dir: "./site/dist"

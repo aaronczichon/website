@@ -12,6 +12,7 @@ import "../styles/fonts/mona-sans.css";
 import Nav from "../components/Nav.astro";
 import ColorSchemeToggle from "../components/ColorSchemeToggle.astro";
 import MatomoTracking from "../components/MatomoTracking.astro";
+import Banner from "../components/EUBanner.astro";
 ---
 
 <!doctype html>
@@ -45,6 +46,7 @@ import MatomoTracking from "../components/MatomoTracking.astro";
     <title>{title}</title>
   </head>
   <body>
+    <Banner />
     <ColorSchemeToggle />
     <Nav />
     <slot />
