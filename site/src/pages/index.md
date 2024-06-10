@@ -5,7 +5,7 @@ title: "Home"
 
 # Hi, I'm Aaron!
 
-Currently I'm working remotely from Canada and calling Halifax, Nova Scotia my home away from home.
+Currently I'm working remotely from Canada and calling Newfoundland my home away from home.
 As a seasoned Senior Javascript Engineer from Germany, I've been weaving my web tech magic since 2020 over at PlanB. GmbH.
 Previously I worked at a small startup as Head of Software Development where developed a digital asset and twin platform for the industry based on NodeJS, Angular and VueJS.
 
