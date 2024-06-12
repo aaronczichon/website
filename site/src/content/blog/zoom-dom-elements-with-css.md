@@ -3,7 +3,7 @@ title: "Zoom DOM elements with CSS"
 pubDate: 2020-12-20
 description: "How to zoom a DOM element or even a complete HTML document without using the scaling function of the browser? I found a solution for a particular problem I had..."
 author: "Aaron Czichon"
-tags: ["Javascript", "CSS", "Web Development", "Element zoom"]
+tags: ["Javascript", "Development"]
 ---
 
 Yes, I'm frontend developer but maybe Javascript developer would be more accurate because I'm not using CSS that much.

@@ -3,7 +3,7 @@ title: "Personal: I feel old lately"
 pubDate: 2024-04-10
 description: "Too much free time leads to (over)thinking things. Lately I feel old."
 author: "Aaron Czichon"
-tags: ["Work", "Personal", "Development"]
+tags: ["Personal", "Work"]
 ---
 
 <details>

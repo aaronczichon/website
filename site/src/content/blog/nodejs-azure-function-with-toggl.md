@@ -3,7 +3,7 @@ title: "NodeJS Azure Function with Toggl"
 pubDate: 2018-03-25
 description: "This article describes on how to build an Azure HTTP Function which will be triggered by the Geofency App which is available on the App Store."
 author: "Aaron Czichon"
-tags: ["Azure Function", "NodeJS", "Toggl", "Geofency"]
+tags: ["Javascript", "Development"]
 ---
 
 ## Metadata for this article

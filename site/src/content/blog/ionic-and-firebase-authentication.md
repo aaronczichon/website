@@ -3,8 +3,7 @@ title: "Ionic and Firebase Authentication"
 pubDate: 2017-03-07
 description: "Learn how to implement simple OAuth authentication into a mobile app using the authentication provider of Firebase."
 author: "Aaron Czichon"
-tags:
-  ["Ionic", "Firebase", "oauth", "authentication", "web", "facebook", "google"]
+tags: ["Development", "Javascript"]
 ---
 
 ## Metadata for this article

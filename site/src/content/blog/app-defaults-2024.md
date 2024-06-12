@@ -3,7 +3,7 @@ title: "App Defaults 2024"
 pubDate: 2024-03-17
 description: "A list of my app defaults I'm currently using in 2024 during my daily life."
 author: "Aaron Czichon"
-tags: ["Work", "Personal", "Tools", "Software"]
+tags: ["Work", "Personal"]
 ---
 
 Recently I found on the internet this beautiful [website](https://defaults.rknight.me/) where [Robb](https://rknight.me/) was talking about app defaults in the linked podcast episode.

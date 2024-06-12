@@ -3,7 +3,7 @@ title: "WFH / Desk Setup"
 pubDate: 2022-04-13
 description: "I'll wrote down on my work from home setup. For my own archive and for people who are interested in it."
 author: "Aaron Czichon"
-tags: ["Work from Home", "WFH", "Desk Setup"]
+tags: ["Work"]
 ---
 
 I'm now working from home since the beginning of 2020 for a longer time. In the years before I also worked from home but not on a daily/regular base.

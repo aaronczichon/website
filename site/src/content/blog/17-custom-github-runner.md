@@ -6,7 +6,7 @@ author: "Aaron Czichon"
 image:
   src: "https://directus.aaronczichon.de/assets/fcff64aa-1ddd-445e-a5fc-531a5dde6b12.jpg?quality=70&width=2000"
   alt: "Shows a Raspberry Pi Model 3 on top of an Apple TV 4"
-tags: ["Work", "Raspberry Pi", "Development", "Github"]
+tags: ["Development", "Work"]
 ---
 
 ## Backstory

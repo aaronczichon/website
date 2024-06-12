@@ -3,7 +3,7 @@ title: "Integrate Facebook Login to Ionic Firebase App"
 pubDate: 2017-08-03
 description: "Learn how to integrate the native Facebook login into your Ionic Firebase application."
 author: "Aaron Czichon"
-tags: ["Ionic", "Firebase", "Facebook", "Login", "Authentication"]
+tags: ["Development", "Javascript"]
 ---
 
 ## Metadata for this article

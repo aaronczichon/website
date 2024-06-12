@@ -3,7 +3,7 @@ title: "Ionic and Firebase Storage - Saving Images"
 pubDate: 2017-04-18
 description: "Combining Ionic and the Firebase service. Use the Firebase storage provider to save taken images and show them inside the app."
 author: "Aaron Czichon"
-tags: ["Ionic", "Firebase", "Storage", "Images"]
+tags: ["Development", "Javascript"]
 ---
 
 ## Metadata for this article

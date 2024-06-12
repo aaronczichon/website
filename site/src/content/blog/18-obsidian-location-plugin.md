@@ -6,7 +6,7 @@ author: "Aaron Czichon"
 image:
   src: "https://directus.aaronczichon.de/assets/605c1449-ec1b-48f1-aabc-211487871805.png?quality=70&width=1000"
   alt: "Shows an obsidian stone laying on a table along a map and a pen on paper"
-tags: ["Plugin", "Obsidian", "Development", "Github"]
+tags: ["Development", "Work"]
 ---
 
 Here we are. More than a year ago, I think it was February 2023, I developed an Obsidian plugin for myself.  

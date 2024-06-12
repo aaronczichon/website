@@ -3,7 +3,7 @@ title: "January 24 Winter Days"
 pubDate: 2024-01-24
 description: "Some pictures from the January 2024 winter in Germany"
 author: "Aaron Czichon"
-tags: ["Personal", "Images"]
+tags: ["Personal"]
 ---
 
 After stressful weeks and days ending 2023 and in the beginning of 2024 I finally found a resting day last Saturday.

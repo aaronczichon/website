@@ -3,7 +3,7 @@ title: "I want to love Windows, but..."
 pubDate: 2021-01-10
 description: "A letter from me to Windows which should be a love letter but can't be one. It's hard for me to use it on a daily work basis. I describe some basic problems I have and how I work around them daily."
 author: "Aaron Czichon"
-tags: ["Windows", "Problem", "macOS"]
+tags: ["Work"]
 ---
 
 ...it makes it hard for me.

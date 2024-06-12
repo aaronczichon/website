@@ -3,7 +3,7 @@ title: "Don't underestimate the power of colors"
 pubDate: 2022-05-19
 description: "A short hail to the great VSCode extension Peacock."
 author: "Aaron Czichon"
-tags: ["Development", "VSCode", "Setup"]
+tags: ["Development"]
 ---
 
 There are a bunch of cool Visual Studio Code extensions out there. Most of them are known or used by a large group of people.

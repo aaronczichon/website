@@ -3,7 +3,7 @@ title: "Year Review 2023"
 pubDate: 2024-01-02
 description: "I'm doing my year 2023 review in this post. Hope you all had a good start into 2024!"
 author: "Aaron Czichon"
-tags: ["Personal", "Recap", "Review", "Statistics"]
+tags: ["Personal", "Recap"]
 ---
 
 Another year is about to finish so it‘s time for a short review.

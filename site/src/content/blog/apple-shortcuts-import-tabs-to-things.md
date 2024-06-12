@@ -3,7 +3,7 @@ title: "Apple Shortcuts: Import Tabs to Things"
 pubDate: 2022-09-26
 description: "How I use a simple Apple Shortcut to import all my open safari tabs into my daily Things list."
 author: "Aaron Czichon"
-tags: ["Apple", "Things", "Shortcuts"]
+tags: ["Work", "Personal"]
 ---
 
 As I mostly work with devices in the Apple ecosystem I also often use the Apple Shortcuts for some things I need to improve or automate.

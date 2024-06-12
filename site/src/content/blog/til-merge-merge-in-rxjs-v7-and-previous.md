@@ -6,9 +6,8 @@ This one shows the different between merge operator and merge observer."
 author: "Aaron Czichon"
 tags:
   [
-    "Web Development",
-    "Javascript",
-    "RxJS"
+    "Development",
+    "Javascript"
   ]
 ---
 

@@ -3,15 +3,7 @@ title: "Sending FCM Push using Cloud Functions for Firebase"
 pubDate: 2017-03-13
 description: "With Firebase Cloud Messaging system there is an option to send push notifications through their service. Learn how to integrate them with a serverless function into an app."
 author: "Aaron Czichon"
-tags:
-  [
-    "Ionic",
-    "Firebase",
-    "FCM",
-    "Cloud Messaging",
-    "Push Notifications",
-    "Serverless",
-  ]
+tags: ["Development", "Javascript"]
 ---
 
 ## Metadata for this article

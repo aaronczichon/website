@@ -3,7 +3,7 @@ title: "How to use JSON.stringify"
 pubDate: 2020-09-28
 description: "An easy and extended way to use JSON.stringify method."
 author: "Aaron Czichon"
-tags: ["Javascript", "JSON", "Web Development"]
+tags: ["Development", "Javascript"]
 ---
 
 I bet every Javascript developer has used `JSON.stringify` before. So you definitely know how to make an Javascript object into a JSON string.

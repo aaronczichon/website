@@ -6,16 +6,7 @@ author: "Aaron Czichon"
 image:
   src: "https://directus.aaronczichon.de/assets/409e2108-87a9-4464-83da-cef2656783b5.jpg?quality=70&width=1000"
   alt: "Showing Aaron sitting fully dressed up in warm clothes in a chair on the upper patio in front of the ocean in Newfoundland. It's sunny but cold."
-tags:
-  [
-    "Work Routine",
-    "Routine",
-    "Developer",
-    "Engineering",
-    "Things",
-    "Workflow",
-    "Obsidian",
-  ]
+tags: ["Development", "Work"]
 ---
 
 ## Intro
