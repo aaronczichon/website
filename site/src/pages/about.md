@@ -21,4 +21,7 @@ If you want to get more details, feel free to visit my [Github profile](https://
 
 ---
 
+## Things to explore on this website
+
+**Country Map**  
 I love getting in touch with people all over the world. If you're interested, take a look at the [map with my visited countries in the world](/visited-countries/).
