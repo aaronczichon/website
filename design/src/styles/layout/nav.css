@@ -63,23 +63,34 @@
 		display: none;
 	}
 	.topnav a.icon {
-		float: right;
 		display: block;
+		position: absolute;
+    right: 30px;
+    top: 133px;
 	}
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 48em) {
+	.topnav {
+		display: flex;
+    flex-direction: column;
+	}
+
 	.topnav.responsive {
 		position: relative;
 	}
 	.topnav.responsive a.icon {
 		position: absolute;
-		right: 0;
-		top: 0;
+    right: 8px;
+    top: 16px;
 	}
 	.topnav.responsive a {
 		float: none;
 		display: block;
+		text-align: left;
+	}
+	.topnav.responsive a:first-of-type {
+		float: left;
 	}
 }
