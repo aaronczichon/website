@@ -12,10 +12,6 @@ const { frontmatter } = Astro.props;
 ---
 
 <Layout title={"Aaron Czichon - " + frontmatter.title}>
-  <Hero
-    image={HeroImage}
-    alt="Showing Aaron in the forebround on the right side in a dark green hoodie with a sunny landscape in the background"
-  />
   <main class="container">
     <article>
       <slot />
