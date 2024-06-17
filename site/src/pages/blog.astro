@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import BlogEntryList from "../components/BlogEntryList.astro";
+import Divider from "../components/Divider.astro";
 import { Image } from "astro:assets";
 
 import rssIcon from "../resources/rss.svg";
@@ -37,6 +38,7 @@ import rssIcon from "../resources/rss.svg";
         only what you like. <br />
       </p>
     </article>
+    <Divider margin="32px 0 32px 0" />
     <BlogEntryList />
   </main>
 </Layout>
