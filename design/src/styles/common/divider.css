@@ -3,3 +3,8 @@
 	border-top: 1px solid var(--primary-color-light);
 	margin: 16px 0 16px 0;
 }
+
+hr {
+	border: none;
+  border-bottom: 1px solid var(--primary-color-light);
+}
