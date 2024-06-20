@@ -22,3 +22,7 @@
 	margin: 0;
 	font-size: 0.9em;
 }
+
+.note-list-item--default {
+	font-weight: initial;
+}
