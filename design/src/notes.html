@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Aaron Czichon - Notes</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="preload" href="./assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="./styles/fonts/mona-sans.css" />
+</head>
+
+<body class="container">
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">
+      <img src="./assets/images/profile.jpg" alt="Aaron Czichon" class="img-profile" />
+    </a>
+    <a href="#contact">Canada</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="images.html">Images</a>
+    <a href="map.html">Map</a>
+    <a href="#about">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+      <?xml version="1.0" encoding="utf-8"?>
+      <div class="icon-menu">
+        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M1 12C1 11.4477 1.44772 11 2 11H22C22.5523 11 23 11.4477 23 12C23 12.5523 22.5523 13 22 13H2C1.44772 13 1 12.5523 1 12Z"
+            fill="#0F0F0F" />
+          <path
+            d="M1 4C1 3.44772 1.44772 3 2 3H22C22.5523 3 23 3.44772 23 4C23 4.55228 22.5523 5 22 5H2C1.44772 5 1 4.55228 1 4Z"
+            fill="#0F0F0F" />
+          <path
+            d="M1 20C1 19.4477 1.44772 19 2 19H22C22.5523 19 23 19.4477 23 20C23 20.5523 22.5523 21 22 21H2C1.44772 21 1 20.5523 1 20Z"
+            fill="#0F0F0F" />
+        </svg>
+      </div>
+    </a>
+  </div>
+  <main>
+    <h1>Notes</h1>
+    <p>
+      Everything that pops in my mind and isn't a full blog post.
+    </p>
+    <ol class="note-list">
+      <li class="note-list-item">
+        <a href="#2" target="_blank">
+          <h3 id="2">I have some notes now</h3>
+        </a>
+        <p class="note-list-item--time">20. June 2024 08:07pm</p>
+        <p>
+          This is more or less my personal place for short notes which came into my mind. Nothings special and
+          definitely not something worth a full blogpost.
+        </p>
+        <hr>
+        </hr>
+      </li>
+      <li class="note-list-item">
+        <a href="#1" target="_blank">
+          <h3 id="1">I have some notes now</h3>
+        </a>
+        <p class="note-list-item--time">20. June 2024 08:07pm</p>
+        <p>
+          This is more or less my personal place for short notes which came into my mind. Nothings special and
+          definitely not something worth a full blogpost.
+        </p>
+        <hr>
+        </hr>
+      </li>
+    </ol>
+  </main>
+  <script>
+    const checkHashAndApplyClass = () => {
+      const currentHash = window.location.hash;
+
+      // If the current hash matches the id of the h3, add the highlight class
+      if (currentHash) {
+        document.getElementById(currentHash.replace('#', '')).parentElement.parentElement.classList.add('note-list-item--active');
+      }
+    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+      // Get the current hash from the URL
+      checkHashAndApplyClass();
+    });
+  </script>
+  <script>
+    function toggleNav() {
+      var x = document.getElementById('myTopnav');
+      if (x.className === 'topnav') {
+        x.className += ' responsive';
+      } else {
+        x.className = 'topnav';
+      }
+    }
+  </script>
+</body>
+
+</html>

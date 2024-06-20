@@ -65,8 +65,8 @@
 	.topnav a.icon {
 		display: block;
 		position: absolute;
-    right: 30px;
-    top: 73px;
+		right: 30px;
+		top: 73px;
 	}
 }
 
@@ -74,7 +74,7 @@
 @media screen and (max-width: 48em) {
 	.topnav {
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 	}
 
 	.topnav.responsive {
@@ -82,8 +82,8 @@
 	}
 	.topnav.responsive a.icon {
 		position: absolute;
-    right: 8px;
-    top: 16px;
+		right: 8px;
+		top: 16px;
 	}
 	.topnav.responsive a {
 		float: none;
