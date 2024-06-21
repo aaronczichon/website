@@ -9,7 +9,7 @@ export const fetchNotes = async () => {
     const aCreated = new Date(a.date_created);
     const bCreated = new Date(b.date_created);
 
-    return aCreated > bCreated ? 1 : -1;
+    return aCreated < bCreated ? 1 : -1;
   });
   return items;
 }
