@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'preact/hooks';
+import Note from "./Note";
 import markdownit from 'markdown-it';
 const md = markdownit();
 
@@ -21,26 +22,11 @@ export default function NoteList() {
     setItems(items);
   }, []);
 
-  const getFormattedDate = (date) => {
-    const d = new Date(date);
-    const browserLang = window.navigator.language;
-    return `${d.toLocaleDateString(browserLang)} ${d.toLocaleTimeString(browserLang, {timeStyle: 'short'})}`;
-  }
-
   return (
     <ol class="note-list">
       {
         items.map(item => (
-            <li class="note-list-item">
-              <a href="#2" target="_blank">
-                <h3 id="2">{item.title}</h3>
-              </a>
-              <p class="note-list-item--time">{getFormattedDate(item.date_created)}</p>
-              <p dangerouslySetInnerHTML={{__html: md.render(item.text)}}>
-              </p>
-              <hr>
-              </hr>
-            </li>
+            <Note item={item} />
           )
         )
       }
