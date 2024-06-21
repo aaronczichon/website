@@ -1,0 +1,28 @@
+.note-list {
+	padding-left: 0;
+}
+
+.note-list-item {
+	list-style: none;
+}
+
+.note-list-item--active {
+	background-color: var(--secondary-color-light);
+}
+
+.note-list-item a {
+	text-decoration: none;
+}
+
+.note-list-item h3 {
+	margin-bottom: 4px;
+}
+
+.note-list-item--time {
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.note-list-item--default {
+	font-weight: initial;
+}

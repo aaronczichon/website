@@ -12,7 +12,6 @@ import "../styles/fonts/mona-sans.css";
 import Nav from "../components/Nav.astro";
 import ColorSchemeToggle from "../components/ColorSchemeToggle.astro";
 import MatomoTracking from "../components/MatomoTracking.astro";
-import Banner from "../components/EUBanner.astro";
 ---
 
 <!doctype html>
@@ -41,6 +40,12 @@ import Banner from "../components/EUBanner.astro";
       type="application/rss+xml"
       title="Aaron Czichon Blog - RSS Feed"
       href={`${Astro.site}rss.xml`}
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Aaron Czichon Notes - RSS Feed"
+      href={`${Astro.site}/notes/rss.xml`}
     />
     {imgUrl ? <meta property="og:image" content={imgUrl} /> : ""}
     <title>{title}</title>
