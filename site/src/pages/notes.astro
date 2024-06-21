@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+import NoteList from "../components/dynamic/NoteList";
+---
+
+<Layout title="Aaron Czichon - Notes">
+  <main class="container">
+    <h1>Notes</h1>
+    <p>Everything that pops in my mind and isn't a full blog post.</p>
+    <ol class="note-list">
+      <NoteList client:visible />
+    </ol>
+  </main>
+  <script is:inline>
+    const checkHashAndApplyClass = () => {
+      const currentHash = window.location.hash;
+
+      // If the current hash matches the id of the h3, add the highlight class
+      if (currentHash) {
+        document
+          .getElementById(currentHash.replace("#", ""))
+          .parentElement.parentElement.classList.add("note-list-item--active");
+      }
+    };
+    document.addEventListener("DOMContentLoaded", (event) => {
+      // Get the current hash from the URL
+      checkHashAndApplyClass();
+    });
+  </script>
+</Layout>
