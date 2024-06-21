@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'preact/hooks';
 import Note from "./Note";
-import markdownit from 'markdown-it';
+import SkeletonList from "./SkeletonList";
 import { fetchNotes } from '../../functions/notes.func';
-const md = markdownit();
 
 export default function NoteList() {
   const [items, setItems] = useState([]);
@@ -14,6 +13,9 @@ export default function NoteList() {
 
   return (
     <ol class="note-list">
+      {
+        items.length === 0 ? <SkeletonList /> : null
+      }
       {
         items.map(item => (
             <Note item={item} />

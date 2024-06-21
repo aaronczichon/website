@@ -11,14 +11,14 @@ export default function NoteList({ item }) {
 
   return (
     <li class="note-list-item">
-              <a href={`#${item.id}`} target="_blank">
-                <h3 id={item.id}>{item.title}</h3>
-              </a>
-              <p class="note-list-item--time">{getFormattedDate(item.date_created)}</p>
-              <p dangerouslySetInnerHTML={{__html: md.render(item.text)}}>
-              </p>
-              <hr>
-              </hr>
-            </li>
+      <a href={`#${item.id}`} target="_blank">
+        <h3 id={item.id}>{item.title}</h3>
+      </a>
+      <p class="note-list-item--time">{getFormattedDate(item.date_created)}</p>
+      <p dangerouslySetInnerHTML={{__html: md.render(item.text)}}>
+      </p>
+      <hr>
+      </hr>
+    </li>
   );
 }
