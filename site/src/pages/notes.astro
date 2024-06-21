@@ -1,11 +1,25 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import NoteList from "../components/dynamic/NoteList";
+import { Image } from "astro:assets";
+
+import rssIcon from "../resources/rss.svg";
 ---
 
 <Layout title="Aaron Czichon - Notes">
   <main class="container">
-    <h1>Notes</h1>
+    <h1>
+      Notes
+      <a title="Yeah RSS is still cool!" href="/notes/rss.xml"
+        ><Image
+          style="width: 25px; height: 25px"
+          src={rssIcon}
+          alt="RSS Icon for subscribe to RSS feed."
+          widths={[30]}
+          sizes={`30px`}
+        /></a
+      >
+    </h1>
     <p>Everything that pops in my mind and isn't a full blog post.</p>
     <ol class="note-list">
       <NoteList client:visible />

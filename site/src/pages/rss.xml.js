@@ -9,7 +9,7 @@ export async function GET(_context) {
 	return rss({
 		title: 'Aaron Czichon - Blog - RSS',
 		// `<description>` field in output xml
-		description: 'Aaron\' Blog as RSS feed',
+		description: 'Aaron\'s Blog as RSS feed',
 		site: 'https://aaronczichon.de',
 		items: blog.map((post) => ({
 			title: post.data.title,
