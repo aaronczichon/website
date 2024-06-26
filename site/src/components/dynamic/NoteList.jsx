@@ -10,7 +10,6 @@ export default function NoteList() {
     const items = await fetchNotes();
     setItems(items);
   }, []);
-
   return (
     <ol class="note-list">
       {

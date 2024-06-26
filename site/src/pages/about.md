@@ -18,10 +18,3 @@ In my free time I love to play volleyball or go out for running and sometimes at
 Over the past years I also had different roles for volunteering in my hometown community and the local sports club from being responsible for the financial parts of the Volleyball branch, being a chairman of the whole club from 2020 until 2024 and now in the responsible for IT and official communications. I always got my hands in something worthwhile.
 
 If you want to get more details, feel free to visit my [Github profile](https://github.com/aaronczichon) or contact me on [Mastodon](https://mastodon.social/@czichon) and let's chat about code, development or share a Formula 1 story!
-
----
-
-## Things to explore on this website
-
-**Country Map**  
-I love getting in touch with people all over the world. If you're interested, take a look at the [map with my visited countries in the world](/visited-countries/).
