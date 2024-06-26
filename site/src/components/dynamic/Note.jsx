@@ -1,5 +1,11 @@
 import markdownit from 'markdown-it';
-const md = markdownit();
+
+const md = markdownit({
+  highlight: (str, lang) => {
+    console.log(lang);
+    return '<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
+  }
+});
 
 export default function NoteList({ item }) {
 
