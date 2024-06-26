@@ -4,6 +4,12 @@ pre.astro-code {
 	padding-bottom: 8px;
 }
 
+code {
+	overflow: auto;
+	max-width: 100%;
+	display: block;
+}
+
 code > span {
 	padding-left: 8px;
 }
