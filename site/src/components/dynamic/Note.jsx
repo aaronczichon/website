@@ -9,8 +9,16 @@ export default function NoteList({ item }) {
     return `${d.toLocaleDateString(browserLang)} ${d.toLocaleTimeString(browserLang, {timeStyle: 'short'})}`;
   }
 
+  /**
+   * Extract the hash link from URL and check if it matches the item id
+   */
+  const applyActiveClass = () => {
+    const hash = location.hash.replace('#', '');
+    return hash && parseInt(hash) === item.id ? ' note-list-item--active' : '';
+  }
+
   return (
-    <li class="note-list-item">
+    <li class={'note-list-item' + applyActiveClass()}>
       <a href={`#${item.id}`} target="_blank">
         <h3 id={item.id}>{item.title}</h3>
       </a>
