@@ -18,3 +18,19 @@ In my free time I love to play volleyball or go out for running and sometimes at
 Over the past years I also had different roles for volunteering in my hometown community and the local sports club from being responsible for the financial parts of the Volleyball branch, being a chairman of the whole club from 2020 until 2024 and now in the responsible for IT and official communications. I always got my hands in something worthwhile.
 
 If you want to get more details, feel free to visit my [Github profile](https://github.com/aaronczichon) or contact me on [Mastodon](https://mastodon.social/@czichon) and let's chat about code, development or share a Formula 1 story!
+
+## How to communicate with me
+
+I follow a simple rule: Async > Sync.  
+The async part is followed by these ways (first one is the most preferred one):
+
+1. Project management mention (Github Issue, Work Item, Jira Ticket)
+2. Instant messaging (Slack, iMessage, Teams (if you have to))
+3. E-Mail
+
+If it has to by sync, it's important to schedule it before. This is the list:
+
+1. Virtual Meeting (FaceTime + VS Code Live Share)
+2. Slack Huddle, Zoom (Teams (but avoid it))
+3. In person meeting (if possible)
+4. Classic phone call

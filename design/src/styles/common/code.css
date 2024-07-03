@@ -4,7 +4,7 @@ pre.astro-code {
 	padding-bottom: 8px;
 }
 
-code {
+pre > code {
 	overflow: auto;
 	max-width: 100%;
 	display: block;

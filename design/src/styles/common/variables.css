@@ -1,4 +1,13 @@
 :root {
+	/**
+	* Font related stuff
+	*/
+	--h1-font-size: 1.7em;
+	--h2-font-size: 1.3em;
+
+	/**
+	* Colors
+	*/
 	--primary-color: #4f627f;
 	--primary-color-dark: #0b1733;
 	--primary-color-light: #c9d7dd;
