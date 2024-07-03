@@ -9,7 +9,7 @@
 		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.mdx,.css,.md,.html,.astro}\"",
+		"prettier": "prettier --config ./.prettierrc.mjs --write \"**{.ts,.mdx,.css,.md,.html,.astro}\"",
 		"copy:styles": "cp -R ../design/src/styles ./src/styles",
 		"rm:styles": "rm -rf ./src/styles",
 		"copy:assets": "cp -R ../design/src/assets ./public/assets"

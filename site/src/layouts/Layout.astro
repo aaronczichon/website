@@ -12,6 +12,7 @@ import "../styles/fonts/mona-sans.css";
 import Nav from "../components/Nav.astro";
 import ColorSchemeToggle from "../components/ColorSchemeToggle.astro";
 import MatomoTracking from "../components/MatomoTracking.astro";
+import { GLOBAL_CONFIG } from "../config";
 ---
 
 <!doctype html>
@@ -23,6 +24,8 @@ import MatomoTracking from "../components/MatomoTracking.astro";
       content="Personal website of Aaron Czichon, Software & Web Engineer"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- This is used to identify posts of this website are related to my mastodon account -->
+    <meta name="fediverse:creator" content={GLOBAL_CONFIG.social.mastodon} />
     <link
       rel="icon"
       type="image/jpg"
