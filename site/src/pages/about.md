@@ -28,7 +28,7 @@ The async part is followed by these ways (first one is the most preferred one):
 2. Instant messaging (Slack, iMessage, Teams (if you have to))
 3. E-Mail
 
-If it has to by sync, it's important to schedule it before. This is the list:
+If it has to be sync, it's important to schedule it before. This is the list:
 
 1. Virtual Meeting (FaceTime + VS Code Live Share)
 2. Slack Huddle, Zoom (Teams (but avoid it))
