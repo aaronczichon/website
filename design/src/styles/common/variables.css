@@ -25,10 +25,16 @@
 	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 
 	/**
+	* Box border
+	*/
+	--box-border: 2px solid var(--primary-color);
+	--box-border-radius: 8px;
+
+	/**
 	* Navigation related variables
 	*/
 	--nav-margin: 1rem 0 1rem 0;
-	--nav-border: 1px solid var(--primary-color-dark);
-	--nav-border-radius: 8px;
+	--nav-border: 2px solid var(--primary-color-dark);
+	--nav-border-radius: var(--box-border-radius);
 	--entry-date-margin: 0 0 0 0;
 }

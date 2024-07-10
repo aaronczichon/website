@@ -1,0 +1,5 @@
+.where-card {
+	border: var(--box-border);
+	border-radius: var(--box-border-radius);
+	padding: 16px;
+}
