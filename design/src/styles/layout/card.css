@@ -3,3 +3,9 @@
 	border-radius: var(--box-border-radius);
 	padding: 16px;
 }
+
+.where-card-icon {
+	width: 40px;
+	height: 40px;
+	margin-top: 8px;
+}
