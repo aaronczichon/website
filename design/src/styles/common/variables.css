@@ -8,7 +8,8 @@
 	/**
 	* Colors
 	*/
-	--primary-color: #4f627f;
+	/* --primary-color: #4f627f; */
+	--primary-color: #5b8e7d;
 	--primary-color-dark: #0b1733;
 	--primary-color-light: #c9d7dd;
 	--secondary-color: #e8c872;
@@ -24,70 +25,8 @@
 	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 
 	/**
-	* Dark color specifications
+	* Navigation related variables
 	*/
-	--dark-primary-color: #f2f0e9;
-	--dark-primary-color-dark: #e8c872;
-	--dark-primary-color-light: #fff8e2;
-	--dark-secondary-color: #0b1733;
-	--dark-secondary-color-light: #637a9f;
-	--dark-secondary-color-ultra-light: #c9d7dd;
-	--secondary-color-ultra-light-shade: #f2f2f2;
-	--dark-background-color: var(--dark-secondary-color);
-	--dark-heading-color: var(--dark-primary-color);
-	--dark-primary-font-color: var(--dark-primary-color-dark);
-	--dark-bg-color-simple-code: #172f69;
-
-	@media (prefers-color-scheme: dark) {
-		--primary-color: var(--dark-primary-color);
-		--primary-color-dark: var(--dark-primary-color-dark);
-		--primary-color-light: var(--dark-primary-color-light);
-		--secondary-color: var(--dark-secondary-color);
-		--secondary-color-light: var(--dark-secondary-color-light);
-		--secondary-color-ultra-light: var(--dark-secondary-color-ultra-light);
-
-		--background-color: var(--dark-secondary-color);
-		--heading-color: var(--dark-primary-color);
-		--primary-font-color: var(--dark-primary-color-dark);
-		--bg-color-simple-code: var(--dark-bg-color-simple-code);
-	}
-}
-
-.dark-mode {
-	--primary-color: var(--dark-primary-color);
-	--primary-color-dark: var(--dark-primary-color-dark);
-	--primary-color-light: var(--dark-primary-color-light);
-	--secondary-color: var(--dark-secondary-color);
-	--secondary-color-light: var(--dark-secondary-color-light);
-	--secondary-color-ultra-light: var(--dark-secondary-color-ultra-light);
-
-	--background-color: var(--dark-secondary-color);
-	--heading-color: var(--dark-primary-color);
-	--primary-font-color: var(--dark-primary-color-dark);
-	--bg-color-simple-code: var(--dark-bg-color-simple-code);
-	--blog-entry-details: var(--dark-bg-color-simple-code);
-
-	--link-color: var(--primary-font-color);
-	--nav-margin: 1rem 0 1rem 0;
-	--nav-border: 1px solid var(--primary-color-dark);
-	--nav-border-radius: 8px;
-	--entry-date-margin: 0 0 0 0;
-}
-
-.light-mode {
-	--primary-color: #4f627f;
-	--primary-color-dark: #0b1733;
-	--primary-color-light: #c9d7dd;
-	--secondary-color: #e8c872;
-	--secondary-color-light: #fff3cf;
-	--secondary-color-ultra-light: #ffffff;
-
-	--background-color: var(--secondary-color-ultra-light);
-	--heading-color: var(--primary-color-dark);
-	--primary-font-color: var(--primary-color-dark);
-	--bg-color-simple-code: var(--secondary-color-light);
-	--link-color: var(--primary-font-color);
-
 	--nav-margin: 1rem 0 1rem 0;
 	--nav-border: 1px solid var(--primary-color-dark);
 	--nav-border-radius: 8px;
