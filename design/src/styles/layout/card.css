@@ -9,3 +9,7 @@
 	height: 40px;
 	margin-top: 8px;
 }
+
+.where-updated {
+	font-size: var(--default-small-font-size);
+}
