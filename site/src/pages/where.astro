@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PlaneIcon from "../components/PlaneIcon.astro";
+import WhereContent from "../components/dynamic/Where.jsx";
+---
+
+<Layout title="Aaron Czichon - Where">
+  <main class="container">
+    <article>
+      <h1>Where</h1>
+      <p>This is my <code>/where</code> page, showing where in the world I am right now.</p>
+      <div class="where-card">
+        <PlaneIcon color="#5b8e7d" />
+        <WhereContent client:load />
+      </div>
+    </article>
+  </main>
+</Layout>

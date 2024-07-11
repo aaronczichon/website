@@ -1,0 +1,15 @@
+.where-card {
+	border: var(--box-border);
+	border-radius: var(--box-border-radius);
+	padding: 16px;
+}
+
+.where-card-icon {
+	width: 40px;
+	height: 40px;
+	margin-top: 8px;
+}
+
+.where-updated {
+	font-size: var(--default-small-font-size);
+}
