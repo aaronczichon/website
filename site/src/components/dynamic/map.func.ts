@@ -41,5 +41,6 @@ export const addMapLayer = (map: mapboxgl.Map) => {
     "USA",
     "CHE",
     "FRA",
+    "SPM",
   ]);
 };

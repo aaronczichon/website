@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 22. July 224
+
+- ✍️: Updated map (including St. Pierre and Michquelon)
+
 ## 11. July 2024
 
 - 🚀: New page `/where` with current location
