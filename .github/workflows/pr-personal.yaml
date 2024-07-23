@@ -15,7 +15,7 @@ jobs:
         with:
           args: --base ./site/src/content --verbose --no-progress './**/*.md'
           # Use json as output format (instead of markdown)
-          format: json
+          #format: json
       - uses: actions/upload-artifact@v3
         with:
           name: link-report.md
