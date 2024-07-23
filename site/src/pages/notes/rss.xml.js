@@ -1,4 +1,3 @@
-import { getCollection } from 'astro:content';
 import rss from '@astrojs/rss';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
@@ -16,8 +15,8 @@ export async function GET(_context) {
 			title: post.title,
 			pubDate: post.date_created,
 			content: sanitizeHtml(parser.render(post.text)),
-			// Compute RSS link from post `slug`
-			// This example assumes all posts are rendered as `/blog/[slug]` routes
+			// Compute RSS link from post `id`
+			// This example assumes all posts are rendered as `/notes/#hash` routes
 			link: `/notes#${post.id}`,
 		})),
 	});
