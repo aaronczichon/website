@@ -16,15 +16,6 @@ jobs:
           args: --base ./site/src/content --verbose --no-progress './**/*.md'
           # Use json as output format (instead of markdown)
           format: json
-          # Don't fail action on broken links
-          fail: false
-      - name: Create Issue From File
-        if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@v4
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: bug
   run-build:
     name: Build Assets
     runs-on: ubuntu-latest
