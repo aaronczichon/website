@@ -16,6 +16,10 @@ jobs:
           args: --base ./site/src/content --verbose --no-progress './**/*.md'
           # Use json as output format (instead of markdown)
           format: json
+      - uses: actions/upload-artifact@v3
+        with:
+          name: link-report.md
+          path: ./lychee/out.md
   run-build:
     name: Build Assets
     runs-on: ubuntu-latest
