@@ -10,7 +10,7 @@ Another year is about to finish so it‘s time for a short review.
 Normally I do this in private (with some friends) but I think this year I'll try something different.
 
 I'll split this article a bit up into several sections so if you're not interested in one you can skip it.
-Let's start with my initial thoughts and targets for 2023 at the beginning of the year. Since 3 or 4 years every year a [friend](https://philippreiner.info) and myself are defining our main goals for the upcoming year and sharing them with each other to build up some "pressure" to ourself.
+Let's start with my initial thoughts and targets for 2023 at the beginning of the year. Since 3 or 4 years every year a [friend](https://philippreiner.com) and myself are defining our main goals for the upcoming year and sharing them with each other to build up some "pressure" to ourself.
 I defined 5 goals for 2023 some are quite large others are easy to achieve but need consistency.
 
 ## Defined goals and the results
