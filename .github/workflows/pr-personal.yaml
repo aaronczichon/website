@@ -6,6 +6,20 @@ on:
       - main
 
 jobs:
+  check-links:
+    name: Check Links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v1
+        with:
+          args: --base ./site/src/content --verbose --no-progress './**/*.md' --max-concurrency 10
+          # Use json as output format (instead of markdown)
+          #format: json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: link-report.md
+          path: ./lychee/out.md
   run-build:
     name: Build Assets
     runs-on: ubuntu-latest

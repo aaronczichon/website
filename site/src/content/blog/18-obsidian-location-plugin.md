@@ -41,7 +41,7 @@ Now, more than a year later I made the plugin configurable so that you can now p
 
 ![Shows the settings screen of Obsidian in specific the settings ob the location plugin](https://directus.aaronczichon.de/assets/7854f8f8-f96f-48f6-a3b3-e0eeb82f27d2.png)
 
-I created a public [Github repository](https://github.com/aaronczichon/obisidian-location-plugin) and made the whole thing open source. So it's now free to use for everyone 🎉
+I created a public [Github repository](https://github.com/aaronczichon/obsidian-location-plugin) and made the whole thing open source. So it's now free to use for everyone 🎉
 
 I also created a pull request to the official community plugin list so that it's installable through the community plugin list inside the settings of Obsidian. You can now install it there easily as well:
 

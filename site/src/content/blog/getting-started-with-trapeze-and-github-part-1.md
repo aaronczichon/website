@@ -73,10 +73,6 @@ updated ios/App/App/Info.plist
 
 After applying the changes the native projects got updated and where good to go with our new versions.
 
-For better understanding I created a public Github repository which has the changes I've done to a simple demo application: [Github - Aaron Czichon Ionic Demo App](https://github.com/aaronczichon/aaronczichon-ionic-demo).
-
-The changes of the Demo app adding the Trapeze package and configuration can be found in this [commit 5c58ce4](https://github.com/aaronczichon/aaronczichon-ionic-demo/commit/5c58ce4d89ca927c16c8a273848d8d6a1db5c74e).
-
 ## Automate package build with Github Actions
 
 Before we continue with Trapeze in combination with CI/CD systems I'll make a short break and cover some Github Action things.

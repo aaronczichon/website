@@ -370,7 +370,7 @@ After a successful deployment, you should get something like this.
 
 Hint: If you want to have a good logging, which is shown inside the `Logs` tab of your Firebase Console, add `console.log` statements to your cloud function.
 
-Second Hint: According to the [comment](http://disq.us/p/1h8zwj4) of Ovidiu Anghelina, I want you to know after deploying your functions you're able to fully manage them inside the [Google Cloud Dashboard](https://console.cloud.google.com/functions). Inside this dashboard for example you're able to test the function and you get better logging of error messages. You can also have a look at the function code of your project.
+Second Hint: According to the comment of Ovidiu Anghelina, I want you to know after deploying your functions you're able to fully manage them inside the [Google Cloud Dashboard](https://console.cloud.google.com/functions). Inside this dashboard for example you're able to test the function and you get better logging of error messages. You can also have a look at the function code of your project.
 
 ## Conclusion
 

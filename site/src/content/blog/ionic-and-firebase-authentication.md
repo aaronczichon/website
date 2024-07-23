@@ -28,7 +28,7 @@ You can find the sample project on my Github page: [Ionic 2 and Firebase Authent
 
 ## Introduction into Firebase
 
-![Firebase Logo](https://f001.backblazeb2.com/file/aaronczichon-de/ionic-firebase-authentication/firebase_logo.png)
+![Firebase Logo](https://directus.aaronczichon.de/assets/63d2c49e-ff98-4806-bb75-e064eac395e5.png)
 
 Firebase is a realtime database which focuses on delivering and saving data for client apps. Firebase was founded in 2011 and was acquired by Google back in 2014. Since this time Firebase is a part of the Google developer platform. Started as a simple realtime database, firebase is now a way more. It has evolved as a realtime backend.
 Also an important component is the Firebase authentication. This module unifies many OAuth provider and classical e-mail / password as one authentication service.
@@ -680,4 +680,4 @@ Update from 17. December 2017:
 - I updated the article to Ionic 3.9.2, Anuglar 5 and AngularFire2 5 RC4.
 - Also in header you can now find all important version informations. (Ionic, Angular, AngularFire2, Firebase)
 - Updated Conclusion section
-- If you updating your project, check the packages for upgrade instructions (like [Ionic](https://github.com/ionic-team/ionic/CHANGELOG.md))
+- If you updating your project, check the packages for upgrade instructions (like [Ionic](https://github.com/ionic-team/ionic-framework/blob/main/CHANGELOG.md))
