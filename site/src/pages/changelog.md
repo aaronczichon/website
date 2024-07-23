@@ -3,6 +3,11 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 23. July 224
+
+- 🎨: Updated styles of the `/notes` section to match overall design
+- 🚀: Integrated `lychee` as a link checker to detect broken links (and fixed some of them)
+
 ## 22. July 224
 
 - ✍️: Updated map (including St. Pierre and Michquelon)

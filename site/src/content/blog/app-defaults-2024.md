@@ -76,7 +76,7 @@ Love it that Strongbox works on a Keepass database. Gives me control over my dat
 **🗺️ Maps: Mostly Apple Maps**  
 It got really good in recent years!
 
-**📚 Reading: [Tolino Shine 4](https://mytolino.de/produkte/tolino-shine-4/) + Physical Books + [Goodreads](https://www.goodreads.com/)**  
+**📚 Reading: [Tolino Shine 4](https://mytolino.de/produkte/tolino-shine/) + Physical Books + [Goodreads](https://www.goodreads.com/)**  
 I actually hate eBooks and love to buy physical books. But as I'm currently travelling through Canada I can't take real books with me so I bought a eReader called Tolino Shine 4. It does the thing.
 I track progress and what I want to read with the Goodreads service.
 
