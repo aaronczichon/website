@@ -19,7 +19,7 @@ Additionally to these things there is my daily backpack if I commute or working 
 - MacBook Pro M1 Pro 14"
 - Logitech MX Master 3S
 - Lululook 100W power adapter
-- 1.5m USB-C Thunderbolt 4 Cable (for everything data and charging)
+- 0.3m and 1m USB-C Thunderbolt 4 Cable (for everything data and charging)
 - iPad Air (2022) WiFi only + Logitech Touch Combo
 - USB 3.2 NVMe SSD Enclosure + 4TB SSD
 - Samsung A30s (Android test device)
