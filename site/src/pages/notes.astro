@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import NoteList from "../components/dynamic/NoteList";
+import NoteList from "../components/NoteList.astro";
 import { Image } from "astro:assets";
 
 import rssIcon from "../resources/rss.svg";
@@ -22,7 +22,7 @@ import rssIcon from "../resources/rss.svg";
     </h1>
     <p>Everything that pops in my mind and isn't a full blog post.</p>
     <ol class="note-list">
-      <NoteList client:visible />
+      <NoteList />
     </ol>
   </main>
 </Layout>
