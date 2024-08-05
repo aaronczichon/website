@@ -1,6 +1,9 @@
 ---
 layout: "../layouts/BasicPage.astro"
 title: "Everyday carry"
+image:
+  url: "https://directus.aaronczichon.de/assets/c07422bd-9593-4348-adce-e9fa96a98216.jpg"
+  alt: "Shows my everyday carry: Passport, Yubikey, AirPods Pro, iPhone 15 Pro Max, Apple Wallet, 50 CAD Cash, Apple Watch Ultra 2, Microfiber Cloth"
 ---
 
 These are the things I currently carry with me every day.
