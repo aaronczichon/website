@@ -1,6 +1,6 @@
 ---
 title: "Obsidian Location Plugin 1.3.0"
-pubDate: 2024-08-08
+pubDate: 2024-08-12
 description: "A lot of new features and improvements since the initial release."
 author: "Aaron Czichon"
 tags: ["Development", "Work"]
