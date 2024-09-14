@@ -247,3 +247,5 @@ Now we have a full setup on Cloudflare Pages using a Github repository with an A
 This setup has custom deployments on every commit, protected preview deployments and a cleanup on pull request merge.
 
 The best part: You can build that all under an hour and for free on Cloudflare. Nice 😎
+
+If you want to support me writing more of these articles I would appreciate your [support by buying me a coffee](https://buymeacoffee.com/aaronczichon.de).
