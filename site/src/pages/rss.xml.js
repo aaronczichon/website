@@ -7,7 +7,7 @@ const parser = new MarkdownIt();
 export async function GET(_context) {
 	const blog = await getCollection('blog');
 	return rss({
-		title: 'Aaron Czichon - Blog - RSS',
+		title: 'Aaron Czichon - Blog',
 		// `<description>` field in output xml
 		description: 'Aaron\'s Blog as RSS feed',
 		site: 'https://aaronczichon.de',

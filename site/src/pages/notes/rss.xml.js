@@ -7,7 +7,7 @@ const parser = new MarkdownIt();
 export async function GET(_context) {
 	const notes = await fetchNotes();
 	return rss({
-		title: 'Aaron Czichon - Notes - RSS',
+		title: 'Aaron Czichon - Notes',
 		// `<description>` field in output xml
 		description: 'Aaron\'s notes as RSS feed. This feed only contains the notes, not the blog posts.',
 		site: 'https://aaronczichon.de/notes/',
