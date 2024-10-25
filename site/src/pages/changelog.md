@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 25. October 2024
+
+- ⚙️: Updated AstroJS
+
 ## 25. July 2024
 
 - ⚙️: Updated AstroJS

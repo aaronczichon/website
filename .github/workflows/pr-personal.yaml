@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: lycheeverse/lychee-action@v1
         with:
-          args: --base ./site/src/content --verbose --no-progress './**/*.md' --max-concurrency 10
+          args: --base ./site/src/content --verbose --no-progress './**/*.md' --max-concurrency 10 --exclude cloudflarestream\.com
           # Use json as output format (instead of markdown)
           #format: json
       - uses: actions/upload-artifact@v4
