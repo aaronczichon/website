@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 29. October 2024
+
+- ✍️: updated page `Every Day Carry (EDC)`
+
 ## 25. October 2024
 
 - ⚙️: Updated AstroJS
