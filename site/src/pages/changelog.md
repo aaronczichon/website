@@ -5,7 +5,8 @@ title: "Changelog"
 
 ## 29. October 2024
 
-- ✍️: updated page `Every Day Carry (EDC)`
+- ✍️: updated page `Everyday Carry`
+- 🚀: Added latest notes to index page
 
 ## 25. October 2024
 
