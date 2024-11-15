@@ -6,9 +6,9 @@ const handler = async (req: Request, res: Response) => {
 	if (!host?.includes('aaronczichon.de')) {
 		return res.status(403).send('Forbidden');
 	}
-	return res.status(200).send('Hello World');
+	return res.status(200).send(req.body);
 };
 
 export default defineEndpoint((router) => {
-	router.get('/', (_req, res) => handler(_req, res));
+	router.post('/', (_req, res) => handler(_req, res));
 });
