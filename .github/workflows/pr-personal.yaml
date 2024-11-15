@@ -43,5 +43,5 @@ jobs:
       # Zip the extension folder only (comment-submit) from root folder starting
       - uses: actions/upload-artifact@v4
         with:
-          name: directus-extension-comment-submit.zip
+          name: directus-extension-comment-submit
           path: ./comment-submit
