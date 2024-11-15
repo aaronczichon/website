@@ -7,6 +7,7 @@ title: "Changelog"
 
 - 🎨: Changed inline code style
 - 🎨: Changed style of italic text
+- ⚙️: Updated AstroJS
 
 ## 29. October 2024
 
