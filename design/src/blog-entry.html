@@ -325,6 +325,29 @@
 			</p>
 			<p>Cheers to a new year, Aaron</p>
 		</main>
+		<div class="divider"></div>
+		<h2>Comments</h2>
+		<details class="new-comment">
+			<summary>Write a new comment</summary>
+			<form
+				class="new-comment-form"
+				action="https://directus.aaronczichon.de/something"
+				method="post"
+			>
+				<input type="text" placeholder="Name" name="fullName" />
+				<input type="email" placeholder="Email" name="email" />
+				<textarea placeholder="Comment" name="comment"></textarea>
+				<p>Hint: Comment will be visible after approval.</p>
+				<button type="submit">Submit</button>
+			</form>
+		</details>
+		<article class="comment">
+			<h3>Aaron Czichon <span class="comment-time">14. November 2024</span></h3>
+			<p>
+				Thanks for reading my article. If you have any questions or feedback feel free to write me
+				an email or contact me on Twitter. I'm always happy to hear from you.
+			</p>
+		</article>
 		<script>
 			function toggleNav() {
 				var x = document.getElementById('myTopnav');
