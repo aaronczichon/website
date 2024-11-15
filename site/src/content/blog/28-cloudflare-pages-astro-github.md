@@ -221,11 +221,11 @@ jobs:
 Go to the settings of your repository and add the 3 secrets `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_PROJECT_NAME` and `CLOUDFLARE_API_TOKEN` to it.  
 Make sure that `REPOSITORY_NAME` is matching the name of your Cloudflare Pages project name. If yes, you can use `${{ github.event.repository.name }}` as input. Otherwise, like us now, you need to give the name of the project.
 
-> Hint: You can generate a new API token for Cloudflare if you click inside the Dashboard on the profile on the top right and selecting `My Profile`.  
-> Then go to `API Tokens` and click on `Create Token`. Select `Custom Token`. Give it a proper name and under `Permissions` add one with `Account | Cloudflare Pages | Edit`.  
-> Then go to `Continue to summary` and `Create token`.
+_Hint: You can generate a new API token for Cloudflare if you click inside the Dashboard on the profile on the top right and selecting `My Profile`._  
+_Then go to `API Tokens` and click on `Create Token`. Select `Custom Token`. Give it a proper name and under `Permissions` add one with `Account | Cloudflare Pages | Edit`.  
+Then go to `Continue to summary` and `Create token`._
 
-> 2. Hint: The Account ID can be found in the right column of the `Workers & Pages` dashboard.
+_2. Hint: The Account ID can be found in the right column of the `Workers & Pages` dashboard._
 
 Commit your new workflows and create a pull request on your repository.  
 Cloudflare creates you a nice little comment on the PR if the deployment was successful (or failed):

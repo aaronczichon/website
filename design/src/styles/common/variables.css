@@ -21,7 +21,8 @@
 	--background-color: var(--secondary-color-ultra-light);
 	--heading-color: var(--primary-color-dark);
 	--primary-font-color: var(--primary-color-dark);
-	--bg-color-simple-code: var(--secondary-color-light);
+	--bg-color-simple-code: var(--primary-color-light);
+	--inline-code-font-size: var(--default-small-font-size);
 	--link-color: var(--primary-font-color);
 	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 

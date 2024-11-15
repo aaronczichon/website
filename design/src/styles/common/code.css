@@ -14,6 +14,9 @@ code > span {
 	padding-left: 8px;
 }
 
-p > code {
+p > code,
+em > code {
 	background-color: var(--bg-color-simple-code);
+	padding: 2px 4px 2px 4px;
+	font-size: var(--inline-code-font-size);
 }
