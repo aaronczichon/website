@@ -24,7 +24,6 @@
 
 .project img {
 	width: 100%;
-	/* max-height: 300px; */
 	object-fit: cover;
 	border-radius: var(--border-radius);
 }
@@ -36,11 +35,4 @@
 .project p {
 	font-weight: 400;
 	line-height: 1.7em;
-}
-
-/* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 48em) {
-	/* .project img {
-		max-height: 400px;
-	} */
 }
