@@ -39,6 +39,11 @@
 	--nav-border: 2px solid var(--primary-color-dark);
 	--nav-border-radius: var(--box-border-radius);
 	--entry-date-margin: 0 0 0 0;
+
+	/**
+	* Projects
+	*/
+	--project-border: 2px solid var(--primary-color-light);
 }
 
 /**

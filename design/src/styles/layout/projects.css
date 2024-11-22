@@ -6,6 +6,9 @@
 
 .project {
 	width: 100%;
+	border: var(--project-border);
+	border-radius: var(--nav-border-radius);
+	margin-bottom: 16px;
 }
 
 .project,
@@ -15,9 +18,13 @@
 	text-decoration: none;
 }
 
+.project div {
+	padding: 0 16px 16px 16px;
+}
+
 .project img {
 	width: 100%;
-	max-height: 300px;
+	/* max-height: 300px; */
 	object-fit: cover;
 	border-radius: var(--border-radius);
 }
@@ -33,7 +40,7 @@
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
-	.project img {
+	/* .project img {
 		max-height: 400px;
-	}
+	} */
 }
