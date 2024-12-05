@@ -6,6 +6,7 @@ title: "Changelog"
 ## 05. December 2024
 
 - ✍️: updated page `Everyday Carry`
+- ⚙️: Updated AstroJS to v5
 
 ## 14. November 2024
 
