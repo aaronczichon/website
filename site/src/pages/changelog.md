@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 05. December 2024
+
+- ✍️: updated page `Everyday Carry`
+
 ## 14. November 2024
 
 - 🎨: Changed inline code style
