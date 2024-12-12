@@ -1,18 +1,18 @@
 ---
 interface Props {
-  title: string;
-  imgUrl?: string;
+	title: string;
+	imgUrl?: string;
 }
 
 const { title, imgUrl } = Astro.props;
 
-import "../styles/index.css";
-import "../styles/fonts/mona-sans.css";
+import '../styles/index.css';
+import '../styles/fonts/mona-sans.css';
 
-import Nav from "../components/Nav.astro";
-import ColorSchemeToggle from "../components/ColorSchemeToggle.astro";
-import MatomoTracking from "../components/MatomoTracking.astro";
-import { GLOBAL_CONFIG } from "../config";
+import ColorSchemeToggle from '../components/ColorSchemeToggle.astro';
+import MatomoTracking from '../components/MatomoTracking.astro';
+import Nav from '../components/Nav.astro';
+import { GLOBAL_CONFIG } from '../config';
 ---
 
 <!doctype html>

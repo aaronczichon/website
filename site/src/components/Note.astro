@@ -1,22 +1,18 @@
 ---
-import markdownit from "markdown-it";
+import markdownit from 'markdown-it';
 
 const { item } = Astro.props;
 
 const md: markdownit = markdownit({
-  highlight: (str: string, lang: string) => {
-    return (
-      '<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;"><code style="padding-left: 8px;">' +
-      md.utils.escapeHtml(str) +
-      "</code></pre>"
-    );
-  },
+	highlight: (str: string, lang: string) => {
+		return `<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;"><code style="padding-left: 8px;">${md.utils.escapeHtml(str)}</code></pre>`;
+	},
 });
 
 const getFormattedDate = (date: string) => {
-  const d = new Date(date);
-  const browserLang = Astro.currentLocale;
-  return `${d.toLocaleDateString(browserLang)} ${d.toLocaleTimeString(browserLang, { timeStyle: "short" })}`;
+	const d = new Date(date);
+	const browserLang = Astro.currentLocale;
+	return `${d.toLocaleDateString(browserLang)} ${d.toLocaleTimeString(browserLang, { timeStyle: 'short' })}`;
 };
 ---
 

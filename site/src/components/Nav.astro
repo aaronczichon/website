@@ -1,10 +1,10 @@
 ---
-import MenuIcon from "./MenuIcon.astro";
+import MenuIcon from './MenuIcon.astro';
 
 const pathname = new URL(Astro.request.url).pathname;
 const currentPath = pathname.slice(1); // remove the first "/"
-import mainImage from "../resources/refresh_squared.jpg";
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
+import mainImage from '../resources/refresh_squared.jpg';
 ---
 
 <div class="container">

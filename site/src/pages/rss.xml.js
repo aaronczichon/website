@@ -1,7 +1,7 @@
 import { getCollection } from 'astro:content';
 import rss from '@astrojs/rss';
-import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
+import sanitizeHtml from 'sanitize-html';
 const parser = new MarkdownIt();
 
 export async function GET(_context) {
@@ -9,7 +9,7 @@ export async function GET(_context) {
 	return rss({
 		title: 'Aaron Czichon - Blog',
 		// `<description>` field in output xml
-		description: 'Aaron\'s Blog as RSS feed',
+		description: "Aaron's Blog as RSS feed",
 		site: 'https://aaronczichon.de',
 		items: blog.map((post) => ({
 			title: post.data.title,

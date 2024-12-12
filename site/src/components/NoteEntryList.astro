@@ -1,13 +1,13 @@
 ---
-import { getCollection } from "astro:content";
-import { fetchNotes } from "../functions/notes.func";
+import { getCollection } from 'astro:content';
+import { fetchNotes } from '../functions/notes.func';
 
 const items = await fetchNotes();
 
 const dateOptions: object = {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
 };
 
 const { limit } = Astro.props;
