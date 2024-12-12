@@ -1,14 +1,14 @@
 :root {
 	/**
-	* Font related stuff
-	*/
+	 * Font related stuff
+	 */
 	--h1-font-size: 1.7em;
 	--h2-font-size: 1.3em;
 	--default-small-font-size: 0.9em;
 
 	/**
-	* Colors
-	*/
+	 * Colors
+	 */
 	/* --primary-color: #4f627f; */
 	--primary-color: #5b8e7d;
 	--primary-color-dark: #0b1733;
@@ -27,26 +27,26 @@
 	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 
 	/**
-	* Box border
-	*/
+	 * Box border
+	 */
 	--box-border: 2px solid var(--primary-color);
 	--box-border-radius: 8px;
 
 	/**
-	* Navigation related variables
-	*/
+	 * Navigation related variables
+	 */
 	--nav-margin: 1rem 0 1rem 0;
 	--nav-border: 2px solid var(--primary-color-dark);
 	--nav-border-radius: var(--box-border-radius);
 	--entry-date-margin: 0 0 0 0;
 
 	/**
-	* Projects
-	*/
+	 * Projects
+	 */
 	--project-border: 2px solid var(--primary-color-light);
 }
 
 /**
-* Future Colors:
-* #8CB369, #F4E285, #F4A259, #5B8E7D, #BC4B51
-*/
+ * Future Colors:
+ * #8CB369, #F4E285, #F4A259, #5B8E7D, #BC4B51
+ */

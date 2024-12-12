@@ -1,5 +1,5 @@
 export const GLOBAL_CONFIG = {
-  social: {
-    mastodon: "@czichon@mastodon.social",
-  },
+	social: {
+		mastodon: '@czichon@mastodon.social',
+	},
 };
