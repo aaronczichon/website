@@ -23,7 +23,7 @@
 	--primary-font-color: var(--primary-color-dark);
 	--bg-color-simple-code: var(--primary-color-light);
 	--inline-code-font-size: var(--default-small-font-size);
-	--link-color: var(--primary-font-color);
+	--link-color: var(--primary-color);
 	--blog-entry-details: var(--secondary-color-ultra-light-shade);
 
 	/**
@@ -36,7 +36,7 @@
 	 * Navigation related variables
 	 */
 	--nav-margin: 1rem 0 1rem 0;
-	--nav-border: 2px solid var(--primary-color-dark);
+	--nav-border: var(--box-border);
 	--nav-border-radius: var(--box-border-radius);
 	--entry-date-margin: 0 0 0 0;
 

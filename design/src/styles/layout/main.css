@@ -16,6 +16,10 @@ a {
 	font-weight: 700;
 }
 
+a h3 {
+	color: var(--link-color) !important;
+}
+
 .container {
 	width: calc(100% - 16px);
 	/* height: 100vh; */

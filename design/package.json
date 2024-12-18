@@ -11,12 +11,7 @@
 		"format": "biome format --write .",
 		"format:check": "biome format ."
 	},
-	"keywords": [
-		"design",
-		"personal",
-		"blog",
-		"website"
-	],
+	"keywords": ["design", "personal", "blog", "website"],
 	"author": "Aaron Czichon <mail@aaronczichon.de>",
 	"license": "ISC",
 	"devDependencies": {
