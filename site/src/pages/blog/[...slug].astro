@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Hero from '../../components/Hero.astro';
 import PubDate from '../../components/PubDate.astro';
 import Layout from '../../layouts/Layout.astro';
+import { GLOBAL_CONFIG } from '../../config';
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection('blog');
@@ -18,6 +19,8 @@ const { Content } = await entry.render();
 const wordCount = entry.body.split(/\s+/).filter((word) => word !== '').length;
 const averageWPM = 200; // Adjust according to your audience's reading speed
 const readingTime = Math.ceil(wordCount / averageWPM);
+const contactMail = GLOBAL_CONFIG.social.contactMail;
+const replyLink = `mailto:${contactMail}?subject=Reply to: ${entry.data.title}`;
 ---
 
 <Layout
@@ -44,6 +47,9 @@ const readingTime = Math.ceil(wordCount / averageWPM);
       <Content />
     </article>
   </main>
+	<div class="button-container">
+    <a class="button" href={replyLink}>Reply by email</a>
+	</div>
 </Layout>
 <script is:inline>
   /**

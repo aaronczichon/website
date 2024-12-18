@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 18. December 2024
+
+- 🚀: Added a `Reply by email` button to my blog posts
+
 ## 05. December 2024
 
 - ✍️: updated page `Everyday Carry`
