@@ -6,6 +6,7 @@ title: "Changelog"
 ## 18. December 2024
 
 - 🚀: Added a `Reply by email` button to my blog posts
+- 🎨: Changing main color for links
 
 ## 05. December 2024
 
