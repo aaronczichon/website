@@ -9,7 +9,7 @@ const { title, imgUrl } = Astro.props;
 import '../styles/index.css';
 import '../styles/fonts/mona-sans.css';
 
-import ColorSchemeToggle from '../components/ColorSchemeToggle.astro';
+import Footer from '../components/Footer.astro';
 import MatomoTracking from '../components/MatomoTracking.astro';
 import Nav from '../components/Nav.astro';
 import { GLOBAL_CONFIG } from '../config';
@@ -57,6 +57,7 @@ import { GLOBAL_CONFIG } from '../config';
     <!-- <ColorSchemeToggle /> -->
     <Nav />
     <slot />
+    <Footer />
     <MatomoTracking />
   </body>
 </html>

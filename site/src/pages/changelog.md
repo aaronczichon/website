@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 04. January 2025
+
+- ✍️: Moved imprint to end of page, removed it from main navigation
+
 ## 18. December 2024
 
 - 🚀: Added a `Reply by email` button to my blog posts
