@@ -22,7 +22,7 @@
 		"@astrojs/mdx": "^4.0.1",
 		"@astrojs/preact": "^4.0.0",
 		"@astrojs/rss": "^4.0.10",
-		"astro": "^5.0.3",
+		"astro": "^5.1.0",
 		"gpxparser": "^3.0.8",
 		"mapbox-gl": "^3.2.0",
 		"markdown-it": "^14.1.0",
