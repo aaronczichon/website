@@ -36,7 +36,7 @@ Flying to Whitehorse and travelling Yukon and Alaska was maybe the best part (if
 Making this step, working 100% remotely and travelling through my most favourite country in the world, was the best decision I've done in all these years. It also proves that you can and should take risks even if you're grounded for several years in your area with friends and family. It helped me a lot to get new views on nearly everything.   
 I'm sad that it will be over at the end of February but also looking forward to the next two months with joy and what they will have for me!
 
-![me at the marina of Thunder Bay in winter. Holding a cup of coffee and my skates. I look happy.](https://directus.aaronczichon.de/assets/6d6e9327-9d77-4087-b3a5-63c841bebbe7.jpg)
+![me at the marina of Thunder Bay in winter. Holding a cup of coffee and my skates. I look happy.](https://directus.aaronczichon.de/assets/6d6e9327-9d77-4087-b3a5-63c841bebbe7.jpg?height=900)
 
 ## Work
 
@@ -49,7 +49,7 @@ If you coordinate your schedule right, different timezones are not a problem at 
 
 A good friend of mine, who's also working at PlanB., and I are also pushing more and more standard libraries which we developed for our colleagues. Definitely something we can go even further and make projects more easier for our customers.
 
-![Me standing at the window in the early morning looking at the snowy backyard in Calgary. A light is on and two laptops are standing on the table.](https://directus.aaronczichon.de/assets/fcced661-8387-4cc4-823c-ba45125a79f3.jpg)
+![Me standing at the window in the early morning looking at the snowy backyard in Calgary. A light is on and two laptops are standing on the table.](https://directus.aaronczichon.de/assets/fcced661-8387-4cc4-823c-ba45125a79f3.jpg?width=900)
 
 ## Side projects
 
