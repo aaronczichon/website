@@ -1,4 +1,4 @@
-name: Build and Deploy Aaron Czichon
+name: Build
 
 on:
   push:
@@ -17,10 +17,3 @@ jobs:
           node-version: 20
       - run: cd site && npm i
       - run: cd site && npm run build
-      - name: Sync to FTP
-        uses: airvzxf/ftp-deployment-action@latest
-        with:
-          server: ${{ secrets.FTP_SERVER_AC }}
-          user: ${{ secrets.FTP_USER_AC }}
-          password: ${{ secrets.FTP_PW_AC }}
-          local_dir: "./site/dist"
