@@ -3,6 +3,11 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 05. January 2025
+
+- ⚙️: Switched to Cloudflare Pages
+- ⚙️: Changed workflows
+
 ## 04. January 2025
 
 - ✍️: Moved imprint to end of page, removed it from main navigation
