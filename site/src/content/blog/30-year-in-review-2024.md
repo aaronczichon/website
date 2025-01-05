@@ -49,6 +49,8 @@ If you coordinate your schedule right, different timezones are not a problem at 
 
 A good friend of mine, who's also working at PlanB., and I are also pushing more and more standard libraries which we developed for our colleagues. Definitely something we can go even further and make projects more easier for our customers.
 
+![Me standing at the window in the early morning looking at the snowy backyard in Calgary. A light is on and two laptops are standing on the table.](https://directus.aaronczichon.de/assets/fcced661-8387-4cc4-823c-ba45125a79f3.jpg)
+
 ## Side projects
 
 Every year I set the goal to work more on side projects. And this year I finally made some progress here.   
