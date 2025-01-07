@@ -3,6 +3,11 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 07. January 2025
+
+- ✍️: Grammar correction
+- ⚙️: Smaller thumbnails for CV entries
+
 ## 05. January 2025
 
 - ⚙️: Switched to Cloudflare Pages
