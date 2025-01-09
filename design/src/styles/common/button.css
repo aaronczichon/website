@@ -14,3 +14,9 @@
 	border-radius: var(--box-border-radius);
 	padding: 12px;
 }
+
+.button.disabled {
+	border-color: var(--primary-font-color);
+	color: var(--primary-font-color);
+	cursor: default;
+}

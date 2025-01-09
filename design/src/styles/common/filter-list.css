@@ -7,8 +7,3 @@ ul.filter {
 ul.filter > li {
 	margin-right: 8px;
 }
-
-ul.filter > li > .active {
-	text-decoration: none;
-	color: var(--primary-font-color);
-}
