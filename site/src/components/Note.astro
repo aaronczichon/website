@@ -8,6 +8,20 @@ const md: markdownit = markdownit({
 		return `<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;"><code style="padding-left: 8px;">${md.utils.escapeHtml(str)}</code></pre>`;
 	},
 });
+md.renderer.rules.image = (tokens, idx, options, env, self) => {
+	const token = tokens[idx];
+	if (!token || !token.attrs) {
+		return self.renderToken(tokens, idx, options);
+	}
+	let src = token.attrs[token.attrIndex('src')][1];
+
+	if (src.startsWith('https://directus.aaronczichon.de/assets')) {
+		src += '?quality=80&width=800';
+	}
+
+	token.attrs[token.attrIndex('src')][1] = src;
+	return self.renderToken(tokens, idx, options);
+};
 
 const getFormattedDate = (date: string) => {
 	const d = new Date(date);
