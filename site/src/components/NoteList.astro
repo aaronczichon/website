@@ -2,9 +2,18 @@
 import { fetchNotes } from '../functions/notes.func';
 import Note from './Note.astro';
 
-const items = await fetchNotes();
+var { filter } = Astro.props;
+
+const items = await fetchNotes(filter);
 ---
 
+{items.length === 0? <p>No notes found with this tag.</p>
+  : (
+      <ol class="note-list">
+        {items.map((item: any) => <Note item={item} />)}
+      </ol>
+    )
+}
 <ol class="note-list">
   {items.map((item: any) => <Note item={item} />)}
 </ol>
