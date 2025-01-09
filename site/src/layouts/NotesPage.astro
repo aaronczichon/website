@@ -6,7 +6,7 @@ import Layout from './Layout.astro';
 
 import rssIcon from '../resources/rss.svg';
 
-var { title, current } = Astro.props;
+var { title, current, hideDate } = Astro.props;
 ---
 
 <Layout title={title}>
@@ -27,7 +27,7 @@ var { title, current } = Astro.props;
     <FilterButtons current={current} />
     <slot />
     <ol class="note-list">
-      <NoteList filter={current} />
+      <NoteList filter={current} hideDate={hideDate} />
     </ol>
   </main>
 </Layout>

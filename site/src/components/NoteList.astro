@@ -2,7 +2,7 @@
 import { fetchNotes } from '../functions/notes.func';
 import Note from './Note.astro';
 
-var { filter } = Astro.props;
+var { filter, hideDate } = Astro.props;
 
 const items = await fetchNotes(filter);
 ---
@@ -10,7 +10,7 @@ const items = await fetchNotes(filter);
 {items.length === 0? <p>No notes found with this tag.</p>
   : (
       <ol class="note-list">
-        {items.map((item: any) => <Note item={item} />)}
+        {items.map((item: any) => <Note item={item} hideDate={hideDate} />)}
       </ol>
     )
 }
