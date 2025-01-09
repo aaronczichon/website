@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import NoteList from '../components/NoteList.astro';
+import FilterButtons from '../components/FilterButtons.astro';
+import Layout from './Layout.astro';
+
+import rssIcon from '../resources/rss.svg';
+
+var { title, current, hideDate } = Astro.props;
+---
+
+<Layout title={title}>
+  <main class="container">
+    <h1>
+      <a href="/notes" style="text-decoration: none;">Notes</a>
+      <a title="Yeah RSS is still cool!" href="/notes/rss.xml"
+        ><Image
+          style="width: 25px; height: 25px"
+          src={rssIcon}
+          alt="RSS Icon for subscribe to RSS feed."
+          widths={[30]}
+          sizes={`30px`}
+        /></a
+      >
+    </h1>
+    <p>Small notes related to development, personal recaps, images and more.</p>
+    <FilterButtons current={current} />
+    <slot />
+    <ol class="note-list">
+      <NoteList filter={current} hideDate={hideDate} />
+    </ol>
+  </main>
+</Layout>

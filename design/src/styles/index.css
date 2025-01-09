@@ -8,6 +8,7 @@
 @import "./common/code.css";
 @import "./common/divider.css";
 @import "./common/button.css";
+@import "./common/filter-list.css";
 
 @import "./layout/main.css";
 @import "./layout/hero.css";
