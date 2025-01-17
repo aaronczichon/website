@@ -6,6 +6,7 @@ title: "Changelog"
 ## 17. January 2025
 
 - 🚀: feat: moved 365pictures to new table
+- ⚙️: Updated AstroJS
 
 ## 07. January 2025
 
