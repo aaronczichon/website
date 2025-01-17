@@ -1,7 +1,7 @@
 ---
 import markdownit from 'markdown-it';
 
-const { item, hideDate } = Astro.props;
+const { item } = Astro.props;
 
 const md: markdownit = markdownit({
 	highlight: (str: string, lang: string) => {
@@ -35,13 +35,9 @@ const getFormattedDate = (date: string) => {
     <a href={`#${item.id}`} target="_blank">
       <h3 id={item.id}>{item.title}</h3>
     </a>
-    {
-      !hideDate && (
-        <p class="note-list-item--time">
-          {getFormattedDate(item.date_created)}
-        </p>
-      )
-    }
+      <p class="note-list-item--time">
+        {getFormattedDate(item.date_created)}
+      </p>
     <p set:html={md.render(item.text)} />
     <hr />
   </article>

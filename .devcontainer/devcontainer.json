@@ -2,6 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
 	"name": "Personal Website Aaron",
+	"runArgs": ["--name", "private-website"],
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:dev-20-bullseye",
 	"features": {
