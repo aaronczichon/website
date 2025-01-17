@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 17. January 2025
+
+- 🚀: feat: moved 365pictures to new table
+
 ## 07. January 2025
 
 - ✍️: Grammar correction
