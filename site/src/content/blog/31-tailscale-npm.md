@@ -9,8 +9,8 @@ tags: ["Work", "Personal"]
 <details>
 <summary>Used abbreviations</summary>
 <p>
-Some abbreviations used in this article (only valid for this article unless mentioned otherwise):   
-- NPM -> Nginx Proxy Manager   
+Some abbreviations used in this article (only valid for this article unless mentioned otherwise):<br />
+- NPM -> Nginx Proxy Manager<br />
 - TS -> Tailscale
 </p>
 </details>
