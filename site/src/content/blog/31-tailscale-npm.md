@@ -15,10 +15,10 @@ Some abbreviations used in this article (only valid for this article unless ment
 </p>
 </details>
 
-Over the holidays I finally moved from my old webspace which I had for the past 10 years to a VPS (virtual private server).   
-The main reason for this was that I want to run some software as containers and also many of my projects require a backend. Although the webspace allowed to run NodeJS, PHP and Ruby it had it's limitations.    
+Over the holidays I finally moved from my old webspace, which I had for the past 10 years, to a VPS (virtual private server).   
+The main reason for this was that I want to run some software as containers and also because some of my projects require a backend. Although the webspace allowed to run NodeJS, PHP and Ruby it had it's limitations.    
 
-I also have a NAS from Synology at a family members home. This NAS is running also some containers which I sometimes need. E.g. my finance software is running there (which I don't want to host on a different server).   
+I also have a NAS from Synology at a family members home. This NAS is running some containers which I sometimes need. E.g. my finance software is running there (which I don't want to host on a different server on the internet).   
 Until now I had to login to my Tailscale network (where all my devices are part of) to access this web service.    
 
 The first thing I've done on my VPS, besides installing Docker, was setting up Tailscale and the Nginx Proxy Manager.   
@@ -27,8 +27,8 @@ The proxy manager allows you to map incoming requests from a certain (sub)domain
 My main thought here was: If I can access my web service by it's IP and port inside the Tailscale network, I should also be able to put the container of my proxy manager into the TS network as well and route traffic from a subdomain to this IP 🤔
 
 Turns out, you can! By using the network features of Docker you can run Tailscale in a container with network capabilities.   
-You can use `docker-compose` to achieve this.    
-First of all we need to define a new service in your compose file for the Tailscale container. 
+To combine both services you can use `docker-compose`.    
+First of all you need to define a new service in your compose file for the Tailscale container. 
 ```yaml
 services:
   tailscale-nginxpm:
@@ -59,7 +59,8 @@ Replace `YOUR_TAILSCALE_AUTH_KEY` with your Tailscale authorization key. You can
 In the `volumes` section you need to map either a volume or local path for the Tailscale data folder. In this example we're using a docker volume called `tailscale_data` for the persistent data.   
 The second volume is the mapping between your hosts net folder and your containers net folder (as we want TS to access your hosts networking).   
 The last step is to add additional capabilities for `net_admin` and `sys_module`.   
-`net_admin` gives our Tailscale container the possibility to perform different network related task like interface configuration, modifying routing tables, editing firewall settings and more (what Tailscale is for actually). The `sys_module` gives it the options to load and unload kernel modules (which is also required by Tailscale).   
+`net_admin` gives our Tailscale container the possibility to perform different network related task like interface configuration, modifying routing tables, editing firewall settings and more (everything that Tailscale does). The `sys_module` gives it the options to load and unload kernel modules (which is also required by Tailscale).   
+
 Perfect. We now have the container configuration for our TS network. Now let's add the Nginx Proxy Manager as a second service to our docker compose file.    
 
 For the proxy manager we add another service to our compose file:
@@ -118,7 +119,7 @@ services:
       - 81:81
       - 443:443
     volumes:
-      - /home/marnie/docker-data/stack-nginx-proxy-manager/tailscale/state:/var/lib/tailscale
+      - tailscale_data:/var/lib/tailscale
       - /dev/net/tun:/dev/net/tun
     cap_add:
       - net_admin
@@ -148,6 +149,7 @@ services:
       retries: 5
       
 volumes:
+  tailscale_data:
   nginx-proxy-manager:
   lets-encrypt:
 ```
@@ -156,4 +158,4 @@ As soon as you have everything running, you can go and login to the NPM and setu
 
 ![Shows a screenshot of the Nginx Proxy Manager interface for configuring a proxy host for a specific domain and IP.](https://directus.aaronczichon.de/assets/027ee4b8-ce77-4799-abb6-bf2047918094.png)
 
-If you have some cool use cases for this, let me know on Mastodon or via email on the button below!
+If you have some cool use cases for this, let me know on [Mastodon](https://mastodon.social/@czichon) or via email on the button below!
