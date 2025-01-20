@@ -1,5 +1,5 @@
 ---
-title: "Proxy your home device through Tailscale and Nginx Proxy Manager"
+title: "Make a local service available with Tailscale and Nginx Proxy Manager"
 pubDate: 2025-01-21
 description: "How to make a service public available from your home network by using a (sub)domain without loosing security."
 author: "Aaron Czichon"
