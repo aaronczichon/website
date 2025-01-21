@@ -3,6 +3,12 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 21. January 2025
+
+- 🚀: Changes to `365 pictures`
+- 🚀: Moved `more` to start page
+- 🚀: Moved `changelog` to imprint
+
 ## 17. January 2025
 
 - 🚀: feat: moved 365pictures to new table

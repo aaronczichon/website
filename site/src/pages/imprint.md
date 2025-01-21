@@ -14,7 +14,9 @@ Germany
 
 Telephone: only on request by E-Mail  
 E-Mail: website[ at ]aaronczichon[.]de  
-Internet address: [https://aaronczichon.de](https://aaronczichon.de)
+Internet address: [https://aaronczichon.de](https://aaronczichon.de)   
+
+Changelog: [/changelog](/changelog)
 
 ## License
 
