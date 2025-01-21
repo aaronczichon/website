@@ -1,20 +1,13 @@
 ---
 import { fetchNotes } from '../functions/notes.func';
-import { fetch365Pictures } from '../functions/pictures.func';
 import Note from './Note.astro';
-import PictureNote from './PictureNote.astro';
 
-var { filter, hideDate } = Astro.props;
+var { filter } = Astro.props;
 
-const items = filter === '365pictures' ? await fetch365Pictures() : await fetchNotes(filter);
+const items = await fetchNotes(filter);
 ---
 
-{items.length === 0? <p>No notes found with this tag.</p>
-  : (
-      <ol class="note-list">
-        { filter === '365pictures' ? items.map((item: any) => <PictureNote item={item} />)
-          : items.map((item: any) => <Note item={item} />)
-        }
-      </ol>
-    )
+{
+items.length === 0? <p>No notes found with this tag.</p> : 
+items.map((item: any) => <Note item={item} />)
 }

@@ -1,0 +1,35 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import markdownit from 'markdown-it';
+import { fetch365Pictures } from '../../../functions/pictures.func';
+import { GLOBAL_CONFIG } from '../../../config';
+
+export async function getStaticPaths() {
+	const blogEntries = await fetch365Pictures();
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+
+let { entry } = Astro.props;
+
+const md: markdownit = markdownit();
+
+const formattedDate = new Date(entry.date).toLocaleDateString('en-US', {
+	year: 'numeric',
+	month: 'long',
+	day: 'numeric',
+});
+---
+
+<Layout title={formattedDate}>
+  <main class="container">
+      <article>
+          <h3>{formattedDate}</h3>
+        <img style="max-width: 100%;" src={`${GLOBAL_CONFIG.baseUrl}/assets/${entry.image.id}?quality=80&width=800`} alt={entry.image.description} />
+        <p set:html={md.render(entry.description)} />
+        <hr />
+      </article>
+  </main>
+</Layout>

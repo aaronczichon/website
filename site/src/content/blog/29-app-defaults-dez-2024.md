@@ -29,7 +29,7 @@ There is something similar (very similar) that is Open Source called Hoppscotch.
 
 **🐘 Mastodon: [Orbit](https://apps.apple.com/us/app/saturn-mastodon-for-everyone/id6502952407)**  
 I still consume Mastodon only on my phone. But I switch apps regularly as I haven't found the perfect solution for me. Any recommendations?   
-Previously: [Mammoth](https://getmammoth.app/)
+Previously: Mammoth (no longer available)
 
 **📆 Calendar: iCloud Calendar**  
 I stripped out the Fantastical app completely. They seem to shift more and more to business users only and it got expensive. I'm surprised how well the default calendar apps work for me.   

@@ -3,6 +3,7 @@ import markdownit from 'markdown-it';
 import { GLOBAL_CONFIG } from '../config';
 
 const { item } = Astro.props;
+const path = '/notes/365pictures/';
 
 const md: markdownit = markdownit();
 
@@ -15,7 +16,7 @@ const formattedDate = new Date(item.date).toLocaleDateString('en-US', {
 
 <li class="note-list-item">
   <article>
-    <a href={`#${item.id}`} target="_blank">
+    <a href={`${path}${item.id}`}>
       <h3 id={item.id}>{formattedDate}</h3>
     </a>
     <img src={`${GLOBAL_CONFIG.baseUrl}/assets/${item.image.id}?quality=80&width=800`} alt={item.image.description} />
@@ -23,18 +24,3 @@ const formattedDate = new Date(item.date).toLocaleDateString('en-US', {
     <hr />
   </article>
 </li>
-
-<script is:inline define:vars={{ id: item.id }}>
-  /**
-   * Extract the hash link from URL and check if it matches the item id
-   */
-  const applyActiveClass = () => {
-    const hash = location.hash.replace("#", "");
-    return hash && parseInt(hash) === id ? "note-list-item--active" : "";
-  };
-
-  const hashClass = applyActiveClass();
-  if (!hashClass) return;
-  const listElement = document.getElementById(id).closest("li");
-  listElement.classList.add(hashClass);
-</script>

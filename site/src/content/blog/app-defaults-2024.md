@@ -58,7 +58,7 @@ Whenever I need to check something in databases visually I use TablePlus. It's t
 **🚀 Launcher: [Raycast](https://www.raycast.com)**  
 Easy. Lightweight. And works (instead of Spotlight sometimes).
 
-**🐘 Mastodon: [Mammoth](https://getmammoth.app/)**  
+**🐘 Mastodon: Mammoth**  
 I consume and use Mastodon only on my mobile. An I found Mammoth the best app for it.
 
 **🦊 Browser: [Mozilla Firefox](https://www.mozilla.org/de/firefox/new/) (macOS) + Safari (iOS/iPadOS)**  

@@ -10,7 +10,7 @@ export async function GET(_context) {
 		title: 'Aaron Czichon - Notes',
 		// `<description>` field in output xml
 		description:
-			"Aaron's notes as RSS feed. This feed only contains the notes, not the blog posts.",
+			"Aaron's notes as RSS feed. This feed only contains the notes, not the blog posts and not the 365 pictures.",
 		site: 'https://aaronczichon.de/notes/',
 		items: notes.map((post) => ({
 			title: post.title,

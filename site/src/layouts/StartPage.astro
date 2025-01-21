@@ -2,11 +2,9 @@
 import { Image } from 'astro:assets';
 import BlogEntryList from '../components/BlogEntryList.astro';
 import Divider from '../components/Divider.astro';
-import Hero from '../components/Hero.astro';
 import Layout from './Layout.astro';
 
 import NoteEntryList from '../components/NoteEntryList.astro';
-import HeroImage from '../resources/hero.jpeg';
 import rssIcon from '../resources/rss.svg';
 
 const { frontmatter } = Astro.props;
@@ -45,5 +43,30 @@ const { frontmatter } = Astro.props;
     </h2>
     <NoteEntryList limit="4" />
     <a href="/notes" style="padding-bottom: 32px">read more...</a>
+    <Divider margin="32px 0 32px 0" />
+    <h2>More</h2>
+    <ul>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/notes">Notes</a> - Everything that is too small for a blog post.
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/notes/365pictures">365 pictures</a> - One picture of every day.
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/cv">CV</a> - My resume and where I work(ed).
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/carry">Everyday carry</a> - Things I use every day.
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/visited-countries">Visited countries</a> - All the countries I've visited so far.
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/where">Where</a> - Where am I right now?
+      </li>
+      <li class="note-list-item note-list-item--style note-list-item--padding">
+        <a href="/blog/29-app-defaults-dez-2024">App Defaults (2024)</a> - My current app defaults on my computer.
+      </li>
+    </ul>
   </main>
 </Layout>
