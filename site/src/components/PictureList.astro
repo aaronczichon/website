@@ -1,0 +1,35 @@
+---
+import { fetch365Pictures } from '../functions/pictures.func';
+import PictureNote from './PictureNote.astro';
+
+const items = await fetch365Pictures();
+
+const formattedDate = (date: string) => {
+	return new Date(date).toLocaleDateString('en-US', {
+		year: 'numeric',
+		month: 'long',
+		day: 'numeric',
+	});
+};
+---
+{items.length === 0? <p>No notes found with this tag.</p>
+  : (
+      <ol class="note-list">
+        { 
+          items.map((item: any, index: number) => {
+            if (index === 0) {
+              return <PictureNote item={item} />
+            }
+            else  {
+              return (
+              <li class="note-list-item">
+                <a class="note-list-item--default" href={`365pictures/${item.id}`}> { formattedDate(item.date) } </a>
+                <hr />
+              </li>
+              )
+            }
+          })
+        }
+      </ol>
+    )
+}
