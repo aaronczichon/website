@@ -6,6 +6,15 @@
 	list-style: none;
 }
 
+.note-list-item--style {
+	list-style: initial;
+}
+
+.note-list-item--padding {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
 .note-list-item--active {
 	background-color: var(--secondary-color-light);
 }
