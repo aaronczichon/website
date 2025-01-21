@@ -15,7 +15,7 @@ const formattedDate = new Date(item.date).toLocaleDateString('en-US', {
 
 <li class="note-list-item">
   <article>
-    <a href={`365pictures/${item.id}`} target="_blank">
+    <a href={`/${item.id}`}>
       <h3 id={item.id}>{formattedDate}</h3>
     </a>
     <img src={`${GLOBAL_CONFIG.baseUrl}/assets/${item.image.id}?quality=80&width=800`} alt={item.image.description} />

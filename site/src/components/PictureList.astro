@@ -23,7 +23,7 @@ const formattedDate = (date: string) => {
             else  {
               return (
               <li class="note-list-item">
-                <a class="note-list-item--default" href={`365pictures/${item.id}`}> { formattedDate(item.date) } </a>
+                <a class="note-list-item--default" href={`/${item.id}`}> { formattedDate(item.date) } </a>
                 <hr />
               </li>
               )
