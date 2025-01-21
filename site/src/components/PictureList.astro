@@ -3,6 +3,7 @@ import { fetch365Pictures } from '../functions/pictures.func';
 import PictureNote from './PictureNote.astro';
 
 const items = await fetch365Pictures();
+const path = '/notes/365pictures/';
 
 const formattedDate = (date: string) => {
 	return new Date(date).toLocaleDateString('en-US', {
@@ -23,7 +24,7 @@ const formattedDate = (date: string) => {
             else  {
               return (
               <li class="note-list-item">
-                <a class="note-list-item--default" href={`/${item.id}`}> { formattedDate(item.date) } </a>
+                <a class="note-list-item--default" href={`${path}${item.id}`}> { formattedDate(item.date) } </a>
                 <hr />
               </li>
               )
