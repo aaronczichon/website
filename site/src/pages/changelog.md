@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 11. February 2025
+
+- ⚙️: Updated AstroJS
+
 ## 21. January 2025
 
 - 🚀: Changes to `365 pictures`
