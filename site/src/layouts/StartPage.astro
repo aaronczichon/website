@@ -32,13 +32,15 @@ const { frontmatter } = Astro.props;
     <Divider margin="32px 0 32px 0" />
     <h2>
       My latest notes <a title="Yeah RSS is still cool!" href="/notes/rss.xml"
-        ><Image
+        >
+        <Image
           style="width: 25px; height: 25px"
           src={rssIcon}
           alt="RSS Icon for subscribe to RSS feed."
           widths={[30]}
           sizes={`30px`}
-        /></a
+        />
+        </a
       >
     </h2>
     <NoteEntryList limit="4" />
