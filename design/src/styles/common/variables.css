@@ -10,15 +10,15 @@
 	 * Colors
 	 */
 	/* --primary-color: #4f627f; */
-	--primary-color: #5b8e7d;
+	--primary-color: #5E409D;
 	--primary-color-dark: #0b1733;
 	--primary-color-light: #c9d7dd;
 	--secondary-color: #e8c872;
-	--secondary-color-light: #fff3cf;
+	--secondary-color-light: #FFFCF0;
 	--secondary-color-ultra-light: #ffffff;
 	--secondary-color-ultra-light-shade: #f2f2f2;
 
-	--background-color: var(--secondary-color-ultra-light);
+	--background-color: var(--secondary-color-light);
 	--heading-color: var(--primary-color-dark);
 	--primary-font-color: var(--primary-color-dark);
 	--bg-color-simple-code: var(--primary-color-light);
