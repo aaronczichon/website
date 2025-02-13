@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 13. Feburary 2025
+
+- 🎨: Changed background color and primary color to be compatible with WCAG standard
+
 ## 11. February 2025
 
 - ⚙️: Updated AstroJS
