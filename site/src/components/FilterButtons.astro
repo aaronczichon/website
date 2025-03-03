@@ -4,5 +4,4 @@ var { current } = Astro.props;
 <ul class="filter" style="padding-top: 16px; padding-bottom: 8px;">
   <li><a class={current === undefined ? 'disabled button' : 'button'} href="/notes">Notes</a></li>
   <li><a class={current === 'recap' ? 'disabled button' : 'button'} href="/notes/recap">Monthly Recap</a></li>
-  <li><a class={current === '365pictures' ? 'disabled button' : 'button'} href="/notes/365pictures">365-Pictures</a></li>
 </ul>

@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 03. March 2025
+
+- ❌: Removed `365 pictures`
+
 ## 13. Feburary 2025
 
 - 🎨: Changed background color and primary color to be compatible with WCAG standard

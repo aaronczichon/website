@@ -10,17 +10,13 @@ var { title, current } = Astro.props;
 <Layout title={title}>
   <main class="container">
     <h1>
-      <a href="/notes/365pictures" style="text-decoration: none;">Notes</a>
+      <a href="/notes" style="text-decoration: none;">Notes</a>
     </h1>
     <p>Small notes related to development, personal recaps, images and more.</p>
     <FilterButtons current={current} />
     <slot />
     <ol class="note-list">
-      {
-        current === '365pictures' ? 
-        (<PictureList />) : 
-        (<NoteList filter={current} />)
-      }
+      <NoteList filter={current} />
     </ol>
   </main>
 </Layout>
