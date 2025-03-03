@@ -6,6 +6,7 @@ title: "Changelog"
 ## 03. March 2025
 
 - ❌: Removed `365 pictures`
+- ⚙️: Updated AstroJS
 
 ## 13. Feburary 2025
 
