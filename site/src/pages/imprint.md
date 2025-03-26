@@ -16,6 +16,12 @@ Telephone: only on request by E-Mail
 E-Mail: website[ at ]aaronczichon[.]de  
 Internet address: [https://aaronczichon.de](https://aaronczichon.de)   
 
+## Encrypted E-Mail
+
+If you like to sent me a mail, you also can sent it encrypted using GPG. My public GPG key can be downloaded [here](https://directus.aaronczichon.de/assets/5113e2e1-cf35-4beb-8cb3-6c16f1271690.asc) if you like.   
+
+## Changelog
+
 Changelog: [/changelog](/changelog)
 
 ## License

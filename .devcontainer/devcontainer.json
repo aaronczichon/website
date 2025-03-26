@@ -8,9 +8,6 @@
 	"features": {
 		"ghcr.io/devcontainers-community/npm-features/prettier:1": {}
 	},
-	"mounts": [
-    "source=${localEnv:HOME}/sourcecode/devcontainer-sharing,target=/workspaces/shared,type=bind,consistency=cached"
-	],
 	"customizations": {
 		"vscode": {
 			"extensions": ["esbenp.prettier-vscode", "mutantdino.resourcemonitor", "astro-build.astro-vscode"]
