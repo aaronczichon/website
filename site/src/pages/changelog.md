@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 26. March 2025
+
+- 🚀: Added public GPG key for encrypted E-Mail contact
+
 ## 03. March 2025
 
 - ❌: Removed `365 pictures`
