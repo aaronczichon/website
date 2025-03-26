@@ -6,6 +6,7 @@ title: "Changelog"
 ## 26. March 2025
 
 - 🚀: Added public GPG key for encrypted E-Mail contact
+- ⚙️: Updated AstroJS
 
 ## 03. March 2025
 
