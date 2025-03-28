@@ -3,6 +3,10 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 28. March 2025
+
+- ✍️: Added link to Obsidian Location Plugin
+
 ## 26. March 2025
 
 - 🚀: Added public GPG key for encrypted E-Mail contact
