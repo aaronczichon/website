@@ -51,10 +51,15 @@ Hint: You cannot use the combination of Maki icon and a custom marker. If you ha
 ## Smaller improvements
 
 Additionally to these major new features I also done some more minor ones.  
-There is now a [DOCUMENTATION.md](https://github.com/aaronczichon/obsidian-location-plugin/blob/main/DOCUMENTATION.md) file as well as a [CHANGELOG.md](https://github.com/aaronczichon/obsidian-location-plugin/blob/main/CHANGELOG.md) so it's easier to get started and see what has changed in the versions.  
+There is now a [Documentation](https://obsidian-location.czichon.cloud/) as well as a [CHANGELOG.md](https://github.com/aaronczichon/obsidian-location-plugin/blob/main/CHANGELOG.md) so it's easier to get started and see what has changed in the versions.  
 It's now also no longer required to have `latitude` as the first entry of your code block and `longitude` the second one. You can place them now where you like.
 
 ## Feedback
 
 If you have any feedback (positive or negative) feel free to reach out via the [Github repository](https://github.com/aaronczichon/obsidian-location-plugin).  
 There is also a small [roadmap](https://github.com/aaronczichon/obsidian-location-plugin/milestones) on what is coming up in the next versions.
+
+## Update
+
+*Updated 31.03.2025*   
+Removed the link to the Documentation markdown file and replaced it with the link to the documentation website.
