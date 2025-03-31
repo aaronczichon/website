@@ -32,6 +32,9 @@ As we have now clarified the definition of "remote work" (at least partly), we s
 Our team has 12 members. We're a mix of people from my company, external suppliers, and people from the customer.   
 Two of the customer's people are working mostly from the office, so they see each other nearly every day. The rest of us are spread throughout the world. I was working from Canada; we have people across Germany, one in Spain, India, and Bulgaria.
 
+![Shows Aaron sitting on an armchair in a hotel room. In front of him a small white table with a MacBook on it. On the left there is a night stand and on the right a window covered with a curtain. He's smiling with the two pointing fingers upwards.](https://directus.aaronczichon.de/assets/94f181f4-260f-4056-8b6e-3e7fa8a19990.jpeg)
+> Over the last years I learned to be productive on various places. Even hotel rooms on a small table.
+
 ## Syncing and Meetings
 In a team that is spread across the globe, it's important to commit to certain processes.   
 As we're working with an Agile approach which is Scrum-like, we have sync meetings which are on a daily or weekly basis.    
@@ -54,3 +57,5 @@ But on the same page, this is something you should consider the other way around
 I also heard a lot from people that they like to mix and match things here. Working 1-2 days from the office and 3-4 days from home. That's also fine.   
 
 Especially in Germany, where a constant lack of good people in IT is the norm, we should provide a work environment which fits best for them. And usually, these changes don't cost the company much but have a major impact on the productivity of a team. In both ways. In the office, remote, or hybrid.
+
+What are your experiences with remote work? Or do you want to get in touch with additional information? Let me know!
