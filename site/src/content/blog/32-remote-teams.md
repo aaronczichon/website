@@ -32,7 +32,7 @@ As we have now clarified the definition of "remote work" (at least partly), we s
 Our team has 12 members. We're a mix of people from my company, external suppliers, and people from the customer.   
 Two of the customer's people are working mostly from the office, so they see each other nearly every day. The rest of us are spread throughout the world. I was working from Canada; we have people across Germany, one in Spain, India, and Bulgaria.
 
-![Shows Aaron sitting on an armchair in a hotel room. In front of him a small white table with a MacBook on it. On the left there is a night stand and on the right a window covered with a curtain. He's smiling with the two pointing fingers upwards.](https://directus.aaronczichon.de/assets/94f181f4-260f-4056-8b6e-3e7fa8a19990.jpeg)
+![Shows Aaron sitting on an armchair in a hotel room. In front of him a small white table with a MacBook on it. On the left there is a night stand and on the right a window covered with a curtain. He's smiling with the two pointing fingers upwards.](https://directus.aaronczichon.de/assets/94f181f4-260f-4056-8b6e-3e7fa8a19990.jpeg?quality=70&width=1600)
 > Over the last years I learned to be productive on various places. Even hotel rooms on a small table.
 
 ## Syncing and Meetings
