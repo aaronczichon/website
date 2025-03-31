@@ -11,7 +11,7 @@ I always see discussions about whether working fully remotely is good or bad for
 
 But what are the factors that make a team work remotely? What's the definition of "remote work"? And lastly, can you adopt it for your team?
 
-## The Definition
+## The definition
 The definition of working remotely depends on whom you ask.   
 In Germany, there is (like for everything) an official government definition of what types of remote work exist. Depending on which way you or your employer choose, this even affects your taxes.   
 
@@ -27,7 +27,7 @@ Let's take me, for example. I was working from Canada for the last year. I chang
 
 My personal definition of remote work is if you work most of the time, which is at least 4 days a week, outside the office. This can be a workation, your home, or abroad. Everything that's not the office.
 
-## Remote Teams
+## Remote teams
 As we have now clarified the definition of "remote work" (at least partly), we should define a remote team.   
 Our team has 12 members. We're a mix of people from my company, external suppliers, and people from the customer.   
 Two of the customer's people are working mostly from the office, so they see each other nearly every day. The rest of us are spread throughout the world. I was working from Canada; we have people across Germany, one in Spain, India, and Bulgaria.
@@ -35,7 +35,7 @@ Two of the customer's people are working mostly from the office, so they see eac
 ![Shows Aaron sitting on an armchair in a hotel room. In front of him a small white table with a MacBook on it. On the left there is a night stand and on the right a window covered with a curtain. He's smiling with the two pointing fingers upwards.](https://directus.aaronczichon.de/assets/94f181f4-260f-4056-8b6e-3e7fa8a19990.jpeg?quality=70&width=1600)
 > Over the last years I learned to be productive on various places. Even hotel rooms on a small table.
 
-## Syncing and Meetings
+## Syncing and meetings
 In a team that is spread across the globe, it's important to commit to certain processes.   
 As we're working with an Agile approach which is Scrum-like, we have sync meetings which are on a daily or weekly basis.    
 With the different time zones, it's not easy to get everyone into a daily standup sync. Therefore, we created different time slots for the daily meeting.    
@@ -45,7 +45,7 @@ Every couple of months (2-3), there are in-person events for 2 days where we dis
 Besides the daily standup meetings, most of our communication works asynchronously. We use Teams and a group chat there for short-term syncs, and most of the "real" communication works through issues (work items) on Azure DevOps.    
 On the issues, clear outlining and requests are important. To avoid a few back-and-forth assignments, we discuss a feature/bug/improvement most of the time in the comment section of an item. As soon as all things are clarified there, we can provide a proper description for the item itself so that the person to whom it gets assigned knows what he or she needs to do.
 
-## Pitfalls and What You Need
+## Pitfalls and what you need
 The most important part of an asynchronous work environment is simply: everyone needs to know that we're working asynchronously.    
 This basically means: No one should expect to get an answer in the next 5 minutes. If you get one, you're probably lucky but shouldn't expect it every time.   
 Different time zones and asynchronous work mean trust and commitment on all sides. People in another time zone have another day schedule, and some may have kids or appointments during the workday. But this doesn't mean people don't do their jobs.    
