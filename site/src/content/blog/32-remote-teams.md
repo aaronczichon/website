@@ -6,7 +6,7 @@ author: "Aaron Czichon"
 tags: ["Work"]
 ---
 
-Over the last 4,5 years, I was working in a team that mostly worked remotely.   
+Over the last 4,5 years I was working in a team that mostly worked remotely.   
 I always see discussions about whether working fully remotely is good or bad for the working culture. What I learned about this narrative is that the answer is not so simple. As often in life, this is more a question of "it depends."   
 
 But what are the factors that make a team work remotely? What's the definition of "remote work"? And lastly, can you adopt it for your team?
