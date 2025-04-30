@@ -11,7 +11,7 @@ I wanted to release the new version 2 during the holiday season but missed this 
 
 ## What’s new?
 
-Most importantly, I now created a dedicated website and documentation for the plugin which can be found [here] (https://obsidian-location.czichon.cloud/). This side contains the documentation of v1.x and the current documentation of version 2 as well.    
+Most importantly, I now created a dedicated website and documentation for the plugin which can be found [here](https://obsidian-location.czichon.cloud/). This side contains the documentation of v1.x and the current documentation of version 2 as well.    
 We now have support for some commands, so that you don’t have to manually add e.g. location from your clipboard. You can also change various settings via commands instead clicking through the settings panel.
 
 The most awaited feature actually is now also available as a preview: Interactive Maps!
@@ -21,7 +21,7 @@ The most awaited feature actually is now also available as a preview: Interactiv
 Interactive maps is a new feature with a new code block for your notes!
 By using the keyword `interactive-location` for a code block you can now force the plugin to render a location inside an interactive map.
 
-Here is an example: https://share.czichon.cloud/Screen-Capture-2025-04-30-10-22-30
+Here is an example: [Screen Recording](https://share.czichon.cloud/Screen-Capture-2025-04-30-10-22-30)
 
 Sadly this feature currently does not support custom markers, icons and so on. It’s in preview and I’m testing it throughout my own notes.
 
