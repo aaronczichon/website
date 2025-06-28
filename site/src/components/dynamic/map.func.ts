@@ -42,5 +42,9 @@ export const addMapLayer = (map: mapboxgl.Map) => {
 		'CHE',
 		'FRA',
 		'SPM',
+		'GRC',
+		'ALB',
+		'MNE',
+		'BIH',
 	]);
 };
