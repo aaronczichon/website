@@ -6,7 +6,7 @@ author: "Aaron Czichon"
 tags: ["Work", "Personal"]
 ---
 
-As many people currently updating their app defaults list, I'll use the time for an update of my list as well. 
+As many people currently updating their app defaults list, I'll use the time for an update of my list as well.
 
 I divided it into 3 sections. First is `New / Added` which is all that's new since the last version. In `Changed` is everything where I changed the app or service or removed/added something to the existing ones. Last, but not least, is the `Unchanged` section. These are the consistent parts which are still the same since the last issue of the App Defaults.
 
@@ -14,38 +14,38 @@ Feel free to use the new `Reply by email` button if you want to share a link to 
 
 ## New / Added
 
-**📑 Clipboard Manager: [Maccy](https://github.com/p0deje/Maccy)**   
+**📑 Clipboard Manager: [Maccy](https://github.com/p0deje/Maccy)**
 All the years I though that I don't need a clipboard manager. I was wrong. Maccy is super simple but yet powerful. Safes my life multiple times a day.
 
-**🔄 Sync: [Syncthing](https://syncthing.net/)**   
-Additional to my document sync via iCloud for syncing things I use more and more Syncthing. Open source and powerful sync engine. Only annoying thing is that there is no iOS app (which has technical reasons).   
+**🔄 Sync: [Syncthing](https://syncthing.net/)**
+Additional to my document sync via iCloud for syncing things I use more and more Syncthing. Open source and powerful sync engine. Only annoying thing is that there is no iOS app (which has technical reasons).
 I've never had something that is that reliable as a Syncthing service running on my NAS.
 
-**🔌 APIs: [Hoppscotch](https://hoppscotch.com/)**   
-I used Postman for years but it got slow and overwhelming over the years (and also requires you to have an account).   
+**🔌 APIs: [Hoppscotch](https://hoppscotch.com/)**
+I used Postman for years but it got slow and overwhelming over the years (and also requires you to have an account).
 There is something similar (very similar) that is Open Source called Hoppscotch. Use this for nearly everything now.
 
 ## Changed
 
 **🐘 Mastodon: [Orbit](https://apps.apple.com/us/app/saturn-mastodon-for-everyone/id6502952407)**  
-I still consume Mastodon only on my phone. But I switch apps regularly as I haven't found the perfect solution for me. Any recommendations?   
+I still consume Mastodon only on my phone. But I switch apps regularly as I haven't found the perfect solution for me. Any recommendations?
 Previously: Mammoth (no longer available)
 
 **📆 Calendar: iCloud Calendar**  
-I stripped out the Fantastical app completely. They seem to shift more and more to business users only and it got expensive. I'm surprised how well the default calendar apps work for me.   
+I stripped out the Fantastical app completely. They seem to shift more and more to business users only and it got expensive. I'm surprised how well the default calendar apps work for me.
 Previously: iCloud Calendar + [Fantastical](https://flexibits.com/fantastical)
 
 **🦊 Browser: [Zen Browser](https://zen-browser.app/) (macOS) + Safari (iOS/iPadOS)**  
-Firefox is still my favourite browser. To bring some change in the UX concept I'm currently mostly using the early version of the Zen browser (which is based on Firefox and you simply could bring your Firefox account). Still waiting for Gecko Engine on iOS / iPad OS.   
+Firefox is still my favourite browser. To bring some change in the UX concept I'm currently mostly using the early version of the Zen browser (which is based on Firefox and you simply could bring your Firefox account). Still waiting for Gecko Engine on iOS / iPad OS.
 Previously: [Mozilla Firefox](https://www.mozilla.org/de/firefox/new/) (macOS) + Safari (iOS/iPadOS)
 
 **📚 Reading: [Tolino Shine 4](https://mytolino.de/produkte/tolino-shine/) + Physical Books + [The Story Graph](https://thestorygraph.com/)**  
-For tracking my book challenges and progress I switched to `The Story Graph` as I want to strip out Amazon-related stuff (and Goodreads belongs to Amazon).   
+For tracking my book challenges and progress I switched to `The Story Graph` as I want to strip out Amazon-related stuff (and Goodreads belongs to Amazon).
 Previously: Tolino Shine 4 + Physical Books + [Goodreads](https://www.goodreads.com/)
 
 **📊 Presentations: [iA Presenter](https://ia.net/presenter), sometimes Powerpoint**  
-iA Presenter helps to solve me 2 problems:   
-First, I hate creating presentations, with iA Presenter it's less annoying and second: I can create them with markdown. And this wins me always over.   
+iA Presenter helps to solve me 2 problems:
+First, I hate creating presentations, with iA Presenter it's less annoying and second: I can create them with markdown. And this wins me always over.
 Previously: Powerpoint, sometimes Keynote
 
 ## Unchanged
@@ -66,7 +66,7 @@ Shot all my photos this year in Canada. Would do it again this way.
 I store every Photo onto iCloud Photos which is my single source of truth. Even if I take pictures with a "real" camera I import them always into iCloud. I do backups of iCloud Photos from time to time to my [Synology Diskstation](https://www.synology.com/en-global/support/download/DS415+?version=7.1#system) (which is old but does the job).
 
 **🗄️ Cloud File Storage: iCloud Drive**  
-Is store there everything. It's, like with the photos, my single source of truth.
+I store there everything. It's, like with the photos, my single source of truth.
 
 **📥 RSS: [Feedly](https://feedly.com/i) + [NetNewsWire](https://netnewswire.com/)**  
 Feedly is my "backend" for this which syncs across devices. As an interface for it I use NetNewsWire on mobile and desktop.
