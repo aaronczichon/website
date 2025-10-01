@@ -46,5 +46,6 @@ export const addMapLayer = (map: mapboxgl.Map) => {
 		'ALB',
 		'MNE',
 		'BIH',
+		'POL',
 	]);
 };
