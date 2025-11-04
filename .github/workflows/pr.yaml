@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: lycheeverse/lychee-action@v1
+      - uses: lycheeverse/lychee-action@v2.0.2
         with:
           args: --base ./site/src/content --verbose --no-progress './**/*.md' --max-concurrency 10 --exclude cloudflarestream\.com --exclude-path **/*/LICENSE.md
           # Use json as output format (instead of markdown)
