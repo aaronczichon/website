@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import mastodonIcon from '../resources/mastodon.svg';
+import pixelfedIcon from '../resources/pixelfed.svg';
+---
+<section>
+  <ul class="social-list">
+    <li>
+      Mastodon:
+      <a href="https://mastodon.social/@czichon" target="_blank" rel="noopener">
+        <Image
+          style="width: 25px; height: 25px"
+          src={mastodonIcon}
+          alt="Mastodon Icon for visit my Mastodon profile."
+          widths={[30]}
+          sizes={`30px`}
+        />
+    </a></li>
+    <li>
+      Pixelfed:
+      <a href="https://pixelfed.de/aaronczichon" target="_blank" rel="noopener">
+        <Image
+          style="width: 25px; height: 25px"
+          src={pixelfedIcon}
+          alt="Pixelfed Icon for visit my Pixelfed profile."
+          widths={[30]}
+          sizes={`30px`}
+        />
+    </a></li>
+  </ul>
+</section>
