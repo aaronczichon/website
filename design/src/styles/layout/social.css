@@ -1,0 +1,23 @@
+.social-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.social-list a {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	text-decoration: none;
+	color: var(--link-color);
+	font-weight: 700;
+}
+
+/* any image inside the social-list */
+.social-list img {
+	width: 32px;
+	height: 32px;
+}

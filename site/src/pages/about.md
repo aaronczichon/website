@@ -20,6 +20,7 @@ Over the past years I also had different roles for volunteering in my hometown c
 
 If you want to get more details, feel free to visit my [Github profile](https://github.com/aaronczichon) or contact me on [Mastodon](https://mastodon.social/@czichon) and let's chat about code, development or share a Formula 1 story!
 
+<!--
 ## How to communicate with me
 
 I follow a simple rule: Async > Sync.  
@@ -35,3 +36,4 @@ If it has to be sync, it's important to schedule it before. This is the list:
 2. Slack Huddle, Zoom, Teams
 3. In person meeting (if possible)
 4. Classic phone call
+-->

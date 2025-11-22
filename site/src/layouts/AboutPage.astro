@@ -1,5 +1,6 @@
 ---
 import Hero from '../components/Hero.astro';
+import Social from '../components/Social.astro';
 import Layout from './Layout.astro';
 
 import HeroImage from '../resources/hero.jpeg';
@@ -16,5 +17,6 @@ const { frontmatter } = Astro.props;
     <article>
       <slot />
     </article>
+    <Social />
   </main>
 </Layout>
