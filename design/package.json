@@ -11,11 +11,16 @@
 		"format": "biome format --write .",
 		"format:check": "biome format ."
 	},
-	"keywords": ["design", "personal", "blog", "website"],
+	"keywords": [
+		"design",
+		"personal",
+		"blog",
+		"website"
+	],
 	"author": "Aaron Czichon <mail@aaronczichon.de>",
 	"license": "ISC",
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"parcel": "^2.11.0"
+		"@biomejs/biome": "^2.3.7",
+		"parcel": "^2.16.1"
 	}
 }
