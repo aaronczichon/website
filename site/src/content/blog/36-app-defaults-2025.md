@@ -20,7 +20,7 @@ Below you can find my list of which I use in my daily life. Things marked with �
 - 📃 Notes: [Obsidian](https://obsidian.md)
 - 📸 Photo Shooting: iPhone 15 Pro Max
 - 🌅 Photo Management: [Immich](https://immich.app) ✨
-- 📥 RSS: [FreshRSS](https://freshrss.github.io) ✨ + NetNewsWire
+- 📥 RSS: [FreshRSS](https://freshrss.org/index.html) ✨ + NetNewsWire
 - 👥 Contacts: Nextcloud ✨
 - 🔖 Bookmarks: [Karakeep](https://karakeep.app/) ✨
 - 🕐 Read it later: Karakeep ✨
