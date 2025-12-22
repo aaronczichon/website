@@ -4,7 +4,7 @@
 	"version": "1.0.1",
 	"description": "Personal website of Aaron Czichon",
 	"scripts": {
-		"dev": "astro dev --host 127.0.0.1",
+		"dev": "astro dev",
 		"start": "npm run rm:styles && npm run copy:styles && npm run dev",
 		"build": "npm run copy:styles && astro check && astro build",
 		"preview": "astro preview",
