@@ -7,7 +7,7 @@ interface Note {
 	tag: string;
 }
 
-export const fetchNotes = async (filter: string) => {
+export const fetchNotes = async (filter?: string) => {
 	const response = await fetch(`${GLOBAL_CONFIG.baseUrl}/items/microblog`);
 	const result = await response.json();
 	let items: Note[] = result.data;
