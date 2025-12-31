@@ -29,12 +29,6 @@ A new location can simply be stored by selecting one on Apple Maps, clicking the
 
 See it in action:
 
-<div style="position: relative;" class="video">
-  <iframe
-    src="https://customer-rnx58v5rm01lsk0m.cloudflarestream.com/583f57db1f8920c2b5f89316d27f007e/iframe?poster=https%3A%2F%2Fcustomer-rnx58v5rm01lsk0m.cloudflarestream.com%2F583f57db1f8920c2b5f89316d27f007e%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-    loading="lazy"
-    style="border: none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;"
-    allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-    allowfullscreen="true"
-  ></iframe>
-</div>
+<video style="max-width: 100%; max-height: 500px;" preload="metadata" controls="">
+<source src="https://video.r2.aaronczichon.com/Shortcuts-Video.mp4" type="video/mp4">  
+</video>
