@@ -14,7 +14,6 @@ These are the things I currently carry with me every day.
 - [Yubikey 5C NFC](https://www.yubico.com/product/yubikey-5c-nfc/) + AirTag
 - Microfiber cloth for glasses
 - Apple MagSafe Wallet (with: 2 Credit Cards, Driver license, some cash)
-- Currently: My passport
 
 Additionally to these things there is my daily backpack if I commute or working in a café or at the library.
 
@@ -23,9 +22,7 @@ Additionally to these things there is my daily backpack if I commute or working 
 - Logitech MX Master 3S
 - [Lululook 100W power adapter](https://www.lululook.com/products/100w-usb-c-gan-charger-4-ports)
 - [1m USB-C Thunderbolt 4 Cable](https://www.amazon.de/dp/B0B9GXDN27) (for everything data and charging)
-- ~~iPad Air (2022) WiFi only + Logitech Touch Combo~~
 - iPad Pro M4 11" Cellular\*
 - [USB 3.2 NVMe SSD Enclosure](https://www.amazon.de/dp/B08X9YTWJC) + [4TB SSD](https://www.amazon.de/dp/B0C9LMJR17)
-- Samsung A30s (Android test device)
 
-\*I bought a new iPad. Mostly because the iPad Air only had 64GB storage and it was constantly full. And iOS/iPadOS is pretty unusable on low storage...
+\* latest update: Februrary 2026
