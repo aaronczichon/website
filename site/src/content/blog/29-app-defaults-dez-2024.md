@@ -27,7 +27,7 @@ There is something similar (very similar) that is Open Source called Hoppscotch.
 
 ## Changed
 
-**🐘 Mastodon: [Orbit](https://apps.apple.com/us/app/saturn-mastodon-for-everyone/id6502952407)**  
+**🐘 Mastodon: Orbit**  
 I still consume Mastodon only on my phone. But I switch apps regularly as I haven't found the perfect solution for me. Any recommendations?
 Previously: Mammoth (no longer available)
 
