@@ -1,8 +1,11 @@
 // 1. Import utilities from `astro:content`
-import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+import { z } from 'astro/zod';
+import { defineCollection } from 'astro:content';
+
 // 2. Define your collection(s)
 const blogCollection = defineCollection({
-	type: 'content', // v2.5.0 and later
+	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
@@ -20,7 +23,7 @@ const blogCollection = defineCollection({
 });
 
 const cvCollection = defineCollection({
-	type: 'content', // v2.5.0 and later
+	loader: glob({ base: './src/content/cv', pattern: '**/*.{md,mdx}' }),
 	schema: () =>
 		z.object({
 			title: z.string(),
@@ -28,7 +31,7 @@ const cvCollection = defineCollection({
 			timeframe: z.string(),
 			location: z.string(),
 			order: z.number(),
-			type: z.ZodEnum.create(['current', 'past']),
+			type: z.enum(['current', 'past']),
 			image: z.object({
 				assetId: z.string(),
 				alt: z.string(),

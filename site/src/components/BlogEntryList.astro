@@ -19,7 +19,7 @@ const { limit } = Astro.props;
       })
       .slice(0, limit)
       .map((post) => (
-        <a href={"/blog/" + post.slug} class="entry">
+        <a href={"/blog/" + post.id} class="entry">
           <h3>
             {post.data.title} <br />
             <span class="entry--date">

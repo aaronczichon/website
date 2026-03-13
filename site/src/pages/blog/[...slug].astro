@@ -1,22 +1,23 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Hero from '../../components/Hero.astro';
 import PubDate from '../../components/PubDate.astro';
 import Layout from '../../layouts/Layout.astro';
-import { GLOBAL_CONFIG } from '../../config';
+import { GLOBAL_CONFIG } from '../../app-config';
 
 export async function getStaticPaths() {
 	const blogEntries = await getCollection('blog');
 	return blogEntries.map((entry) => ({
-		params: { slug: entry.slug },
+		params: { slug: entry.id },
 		props: { entry },
 	}));
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
 
-const wordCount = entry.body.split(/\s+/).filter((word) => word !== '').length;
+const { Content } = await render(entry);
+
+const wordCount = entry.body?.split(/\s+/).filter((word) => word !== '').length || 0;
 const averageWPM = 200; // Adjust according to your audience's reading speed
 const readingTime = Math.ceil(wordCount / averageWPM);
 const contactMail = GLOBAL_CONFIG.social.contactMail;
