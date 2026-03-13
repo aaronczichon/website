@@ -2,7 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import markdownit from 'markdown-it';
 import { fetch365Pictures } from '../../../functions/pictures.func';
-import { GLOBAL_CONFIG } from '../../../config';
+import { GLOBAL_CONFIG } from '../../../app-config';
 
 export async function getStaticPaths() {
 	const blogEntries = await fetch365Pictures();

@@ -1,4 +1,4 @@
-import { GLOBAL_CONFIG } from '../config';
+import { GLOBAL_CONFIG } from '../app-config';
 
 interface Note {
 	id: number;
