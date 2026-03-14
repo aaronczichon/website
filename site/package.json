@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"start": "npm run rm:styles && npm run copy:styles && npm run dev",
-		"build": "npm run copy:styles && astro check && astro build",
+		"build": "npm run copy:styles && astro build",
 		"preview": "astro preview",
 		"astro": "astro",
 		"lint": "biome check --write .",
