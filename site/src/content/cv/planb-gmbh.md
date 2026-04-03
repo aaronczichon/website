@@ -1,6 +1,6 @@
 ---
 title: "PlanB. GmbH"
-position: "Senior Javascript Engineer"
+position: "Senior Software Engineer"
 timeframe: "08-2020 - present"
 location: "Hüttlingen, Germany / Remote"
 order: 0
@@ -20,6 +20,7 @@ techSkills:
     "Azure",
     "MSSQL",
     "PostgreSQL",
+    "C#",
     "Design Systems",
     "Web Components",
     "NPM Library Distribution",
@@ -35,7 +36,8 @@ generalSkills:
   [
     "Team Management",
     "Developer Relations",
-    "Engineering managing",
+    "Engineering Management",
+    "Software Architecture",
     "Resource planning",
     "Public speaking",
     "Agile methodology",
