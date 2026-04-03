@@ -20,7 +20,7 @@ Additionally to these things there is my daily backpack if I commute or working 
 - [Peakdesign travel backback 30L](https://www.peakdesign.com/en-ca/products/travel-backpack?Size=30L&Color=Sage)
 - MacBook Pro M1 Pro 14"
 - Logitech MX Master 3S
-- [Lululook 100W power adapter](https://www.lululook.com/products/100w-usb-c-gan-charger-4-ports)
+- [Lululook 100W power adapter](https://www.amazon.de/dp/B0BLNPH1XK)
 - [1m USB-C Thunderbolt 4 Cable](https://www.amazon.de/dp/B0B9GXDN27) (for everything data and charging)
 - iPad Pro M4 11" Cellular\*
 - [USB 3.2 NVMe SSD Enclosure](https://www.amazon.de/dp/B08X9YTWJC) + [4TB SSD](https://www.amazon.de/dp/B0C9LMJR17)
