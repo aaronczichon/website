@@ -25,7 +25,7 @@ And I think this is something people oversee for the sake of AI. Yes, some thing
 
 Let‘s pick another thing I currently hear often: Software is a disposable product because everyone can create it now.
 I strongly disagree with this statement. I want to draw another comparison here for better understanding.
-Something I read made this very clear: `Bread is something everyone can bake easily at home, yet 99% of it is brought`.*
+Something I read made this very clear: `Bread is something everyone can bake easily at home, yet 99% of it is bought`.*
 This is a good analogy to the current, and maybe future, state of the software industry. Yes, everybody can now create a small app. Maybe even large apps. But 99% of the people will not do it. The same people that don‘t bake their bread at home.
 Yes, AI software can be good enough, but if you want good and high quality software you will still buy it from the people (and companies) that are good at it.
 
