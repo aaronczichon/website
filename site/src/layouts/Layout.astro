@@ -50,6 +50,8 @@ import { GLOBAL_CONFIG } from '../app-config';
       title="Aaron Czichon Notes - RSS Feed"
       href={`${Astro.site}/notes/rss.xml`}
     />
+    <!-- Participating in the human developed network of software: https://codeberg.org/robida/human.json  -->
+    <link rel="human-json" href="/human.json">
     {imgUrl ? <meta property="og:image" content={imgUrl} /> : ""}
     <title>{title}</title>
   </head>
