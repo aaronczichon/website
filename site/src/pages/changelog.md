@@ -3,6 +3,11 @@ layout: "../layouts/BasicPage.astro"
 title: "Changelog"
 ---
 
+## 08. July 2026
+
+- ⚙️: Updated AstroJS to v7
+- ✍️: Removed status page from imprint (no longer available)
+
 ## 28. March 2025
 
 - ✍️: Added link to Obsidian Location Plugin
