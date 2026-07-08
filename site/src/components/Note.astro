@@ -53,7 +53,8 @@ const getFormattedDate = (date: string) => {
   };
 
   const hashClass = applyActiveClass();
-  if (!hashClass) return;
-  const listElement = document.getElementById(id).closest("li");
-  listElement.classList.add(hashClass);
+  if (hashClass) {
+    const listElement = document.getElementById(id).closest("li");
+    listElement.classList.add(hashClass);
+  }
 </script>
