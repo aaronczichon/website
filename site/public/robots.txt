@@ -1,13 +1,30 @@
 User-agent: *
 Disallow:
 
+# As long as apart from Cloudflare noone else supports the Content-Signal, disallow some bots
+# Notice that this is only disallowing training, not necessarily summaries, search 
+# https://searchscore.io/guides/ai-crawlers-robots-txt/#:~:text=The%20major%20AI%20crawler%20user%2Dagents
+
+# First: Apple Training bot
+User-agent: Applebot-Extended
+Disallow: /
+
+# Now: Google AI Training bot
+User-agent: Google-Extended
+Disallow: /
+
+# Then: GPTBot (this is the training bot)
+User-agent: GPTBot 
+Disallow: /
+
+# And: Claude
+User-agent: ClaudeBot
+Disallow: /
+
 User-agent: AdsBot-Google
 Disallow: /
 
 User-agent: Amazonbot
-Disallow: /
-
-User-agent: anthropic-ai
 Disallow: /
 
 User-agent: AwarioRssBot
@@ -22,15 +39,6 @@ Disallow: /
 User-agent: CCBot
 Disallow: /
 
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: Claude-Web
-Disallow: /
-
 User-agent: cohere-ai
 Disallow: /
 
@@ -38,12 +46,6 @@ User-agent: DataForSeoBot
 Disallow: /
 
 User-agent: FacebookBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: GPTBot
 Disallow: /
 
 User-agent: ImagesiftBot
@@ -64,8 +66,8 @@ Disallow: /
 User-agent: peer39_crawler/1.0
 Disallow: /
 
-User-agent: PerplexityBot
-Disallow: /
-
 User-agent: YouBot
 Disallow: /
+
+# Indicate no AI training signal
+Content-Signal: ai-train=no, search=yes, ai-input=no
