@@ -2,7 +2,7 @@
 title: "Getting started with Trapeze and Github (Part 1)"
 pubDate: 2022-11-28
 description: "It gives a short introduction for the core concepts of Trapeze in connection with Github Actions. We'll cover which benefits it's providing and how you can use it.
-Part 2 (coming later) will cover a more detailed version of the Trapeze configuration including .plist and Manifest manipulation."
+  Part 2 (coming later) will cover a more detailed version of the Trapeze configuration including .plist and Manifest manipulation."
 author: "Aaron Czichon"
 tags: ["Development"]
 ---

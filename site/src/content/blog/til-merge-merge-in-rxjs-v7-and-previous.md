@@ -2,7 +2,7 @@
 title: "TIL: merge != merge in RxJS (v7 and previous)"
 pubDate: 2022-08-30
 description: "`TIL:` sections on my blog are small things I learned or notice during my day.
-This one shows the different between merge operator and merge observer."
+  This one shows the different between merge operator and merge observer."
 author: "Aaron Czichon"
 tags:
   [
